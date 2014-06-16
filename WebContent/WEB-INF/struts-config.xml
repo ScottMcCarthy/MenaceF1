@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+<struts-config>
+
+	<!-- Data Sources -->
+	<data-sources>
+	</data-sources>
+
+	<!-- Form Beans -->
+	<form-beans>
+		<form-bean name="passwordFormBean" type="menaceF1.struts.forms.PasswordFormBean">
+		</form-bean>
+		<form-bean name="hotelBookingFormBean" type="menaceF1.struts.forms.HotelBookingFormBean">
+		</form-bean>
+		<form-bean name="musicRequestFormBean" type="menaceF1.struts.forms.MusicRequestFormBean">
+		</form-bean>
+		<form-bean name="weddingGuestFormBean" type="menaceF1.struts.forms.WeddingGuestFormBean">
+		</form-bean>
+		<form-bean name="rsvpFormBean" type="menaceF1.struts.forms.RsvpFormBean">
+		</form-bean>
+	</form-beans>
+
+	<!-- Global Exceptions -->
+	<global-exceptions>
+	</global-exceptions>
+	<global-forwards>
+		<forward name="sessionExpired" path="/wedding/sessionExpired.jsp" redirect="false">
+		</forward>
+		<forward name="home" path="/wedding/menu.jsp" redirect="false">
+		</forward>
+	</global-forwards>
+
+	<!-- Global Forwards -->
+
+	<!-- Action Mappings -->
+	<action-mappings>
+		<action path="/password" type="menaceF1.struts.actions.PasswordAction" name="passwordFormBean" validate="true" input="/wedding/index.jsp">
+			<forward name="success" path="/wedding/menu.jsp">
+			</forward>
+			<forward name="failed" path="/wedding/index.jsp">
+			</forward>
+		</action>
+		<action path="/orderOfDay" type="menaceF1.struts.actions.OrderOfDayAction">
+			<forward name="dayOrder" path="/wedding/orderOfDay.jsp">
+			</forward>
+		</action>
+		<action path="/home" type="menaceF1.struts.actions.HomeAction">
+		</action>
+		<action path="/church" type="menaceF1.struts.actions.ChurchAction">
+			<forward name="church" path="/wedding/church.jsp">
+			</forward>
+		</action>
+		<action path="/reception" type="menaceF1.struts.actions.ReceptionAction">
+			<forward name="reception" path="/wedding/reception.jsp">
+			</forward>
+		</action>
+		<action path="/accomodation" type="menaceF1.struts.actions.AccomodationAction">
+			<forward name="accomodation" path="/wedding/accomodation.jsp">
+			</forward>
+		</action>
+		<action path="/hotelBookingForm" type="menaceF1.struts.actions.HotelBookingFormAction" >
+			<forward name="bookingForm" path="/wedding/hotelBookingForm.jsp">
+			</forward>
+		</action>
+		<action name="hotelBookingFormBean" path="/completeBooking" scope="request" type="menaceF1.struts.actions.CompleteBookingAction" validate="true" input="/wedding/hotelBookingForm.jsp">
+			<forward name="success" path="/wedding/bookingConfirmation.jsp">
+			</forward>
+			<forward name="failed" path="/wedding/hotelBookingForm.jsp">
+			</forward>
+			<forward name="soldOut" path="/wedding/roomSoldOut.jsp">
+			</forward>
+		</action>
+		<action path="/music" type="menaceF1.struts.actions.MusicAction">
+			<forward name="music" path="/wedding/music.jsp">
+			</forward>
+		</action>
+		<action name="musicRequestFormBean" path="/submitMusicRequest" type="menaceF1.struts.actions.SubmitMusicRequestAction" validate="true" input="/wedding/music.jsp">
+			<forward name="success" path="/wedding/music.jsp">
+			</forward>
+		</action>
+		<action path="/admin" type="menaceF1.struts.actions.AdminAction">
+			<forward name="admin" path="/wedding/admin.jsp">
+			</forward>
+		</action>
+		<action path="/hotelBookingPaymentReceived" type="menaceF1.struts.actions.HotelBookingPaymentReceivedAction">
+			<forward name="success" path="/wedding/admin.jsp">
+			</forward>
+		</action>
+		<action path="/directions" type="menaceF1.struts.actions.DirectionsAction">
+			<forward name="directions" path="/wedding/directions.jsp">
+			</forward>
+		</action>
+		<action name="weddingGuestFormBean" path="/addGuest" scope="request" type="menaceF1.struts.actions.AddGuestAction" validate="true" input="/wedding/admin.jsp">
+			<forward name="success" path="/wedding/admin.jsp">
+			</forward>
+		</action>
+		<action path="/rsvp"  type="menaceF1.struts.actions.RsvpAction">
+			<forward name="rsvp" path="/wedding/rsvp.jsp">
+			</forward>
+		</action>
+		<action name="rsvpFormBean" path="/submitRSVP" type="menaceF1.struts.actions.SubmitRSVPAction" validate="true" input="/wedding/rsvp.jsp">
+			<forward name="rsvpYES" path="/wedding/rsvpYES.jsp">
+			</forward>
+			<forward name="rsvpNO" path="/wedding/rsvpNO.jsp">
+			</forward>
+		</action>
+		<action path="/giftList" type="menaceF1.struts.actions.GiftListAction">
+			<forward name="giftList" path="/wedding/giftList.jsp">
+			</forward>
+		</action>
+		<action path="/rsvpMapping" type="menaceF1.struts.actions.RsvpMappingAction">
+			<forward name="admin" path="/wedding/admin.jsp">
+			</forward>
+		</action>
+		<action path="/receiveFile" type="menaceF1.struts.actions.ReceiveFileAction">
+			<forward name="UploadSuccessful" path="/wedding/fileUploaded.jsp">
+			</forward>
+		</action>
+		<action path="/photos" type="menaceF1.struts.actions.PhotosAction">
+			<forward name="photos" path="/wedding/photos.jsp">
+			</forward>
+		</action>
+		<action path="/photoUpload" type="menaceF1.struts.actions.PhotoUploadAction">
+			<forward name="photoUploadApplet" path="/wedding/photoUploads.jsp">
+			</forward>
+		</action>
+		<action path="/publishGallery" type="menaceF1.struts.actions.PublishGalleryAction">
+			<forward name="success" path="/wedding/publishSuccess.jsp">
+			</forward>
+		</action>
+		<action path="/deleteGallery" type="menaceF1.struts.actions.DeleteGalleryAction">
+			<forward name="success" path="/wedding/deleteSuccess.jsp">
+			</forward>
+		</action>
+		<action path="/menu" type="menaceF1.struts.actions.MenuAction">
+			<forward name="foodMenu" path="/wedding/foodMenu.jsp">
+			</forward>
+		</action>
+	</action-mappings>
+
+	<!-- Message Resources -->
+	<message-resources parameter="menaceF1.struts.resources.ApplicationResources"></message-resources>
+
+</struts-config>
