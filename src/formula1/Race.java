@@ -1,5 +1,9 @@
 package formula1;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 public class Race {
 
 	static F1Car alonso;
@@ -15,6 +19,24 @@ public class Race {
 	
 	public static void main(String[] args) {
 		setupGrid();
+		
+		String s = null;
+		
+		try {
+			Process p = Runtime.getRuntime().exec("ls -l");
+			
+            BufferedReader stdInput = new BufferedReader(new
+                    InputStreamReader(p.getInputStream()));
+			
+            while ((s = stdInput.readLine()) != null) {
+                System.out.println(s);
+            }
+             
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 		
 		System.out.println("DRS Enabled: "+alonso.drsEnabled);
 		System.out.println("Alonso's team name: "+alonso.getTeamName());
