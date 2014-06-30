@@ -88,6 +88,8 @@ public class Menweb {
 		
 		//Scale the image
 		
+		//TODO replace this with convert input.jsp -resize 800x200! output.jpg
+		
 		int height = ip.getHeight();
 		int factor = height/130;
 		ip = ip.resize (ip.getWidth()/factor,130);
