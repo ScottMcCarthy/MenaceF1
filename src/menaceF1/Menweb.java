@@ -1,6 +1,7 @@
 package menaceF1;
 import java.io.*;
 import java.util.*;
+
 import ij.*;
 import ij.io.*;
 import ij.process.*;
@@ -88,18 +89,22 @@ public class Menweb {
 		
 		//Scale the image
 		
-		//TODO replace this with convert input.jsp -resize 800x200! output.jpg
-		
 		int height = ip.getHeight();
 		int factor = height/130;
-		ip = ip.resize (ip.getWidth()/factor,130);
+		int width = ip.getWidth()/factor;
+		ip = ip.resize (width,130);
+		
 		
 		//save the scaled image
-		ImagePlus thumb = new ImagePlus("Thumbnail" , ip);
-		FileSaver thumbfile = new FileSaver(thumb);
 		String savePath = path.substring(0,path.lastIndexOf("/")) + "/thumbs" + path.substring(path.lastIndexOf("/"),path.length());
-		System.out.println(savePath);
-		thumbfile.saveAsJpeg (savePath);
+		String[] scaleCommandArguments = {"convert",path,"-resize",width+ "x130!",savePath};
+		
+		try {
+			Runtime.getRuntime().exec(scaleCommandArguments);	
+			} 
+		catch (IOException e) {
+			e.printStackTrace();
+		}    
 	}
 
 	public void makeMidsize(String path) {
@@ -118,11 +123,16 @@ public class Menweb {
 		ip = ip.resize (newWidthInt,800);
 		
 		//save the scaled image
-		ImagePlus thumb = new ImagePlus("Thumbnail" , ip);
-		FileSaver thumbfile = new FileSaver(thumb);
 		String savePath = path.substring(0,path.lastIndexOf("/")) + "/midsize" + path.substring(path.lastIndexOf("/"),path.length());
-		System.out.println(savePath);
-		thumbfile.saveAsJpeg (savePath);
+		String[] scaleCommandArguments = {"convert",path,"-resize",newWidthInt+ "x800!",savePath};
+		
+		try {
+			Runtime.getRuntime().exec(scaleCommandArguments);
+			} 
+		catch (IOException e) {
+			e.printStackTrace();
+		}    
+
 	}
 
 
@@ -296,15 +306,22 @@ public class Menweb {
 
 	public boolean securityCheck (String path, String userPassword) {
 	
+		boolean accessGranted = false;
+		BufferedReader in = null;
 		try {
-			BufferedReader in = new BufferedReader(new FileReader(path+"/password.txt"));
+			in = new BufferedReader(new FileReader(path+"/password.txt"));
 		 	String galleryPassword = in.readLine();
-		 	if (userPassword.equalsIgnoreCase(galleryPassword)) return true;
+		 	if (userPassword.equalsIgnoreCase(galleryPassword)) accessGranted = true;
 		}
 		catch (Exception e) {
 			return false;
 			};
-		return false;
+		try {
+			in.close();
+		} catch (IOException e) {
+			return false;
+		}
+		return accessGranted;
 	}
 
 	public void thumbsHTML (String path, String name, javax.servlet.jsp.JspWriter out, String gal, String jspPage) {
