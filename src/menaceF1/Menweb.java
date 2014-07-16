@@ -183,7 +183,7 @@ public class Menweb {
 					//Pause to allow Operating System to catch-up
 					
 					try {
-						Thread.sleep(300000);
+						Thread.sleep(275000);
 					} catch (InterruptedException e1) {
 						e1.printStackTrace();
 					}
