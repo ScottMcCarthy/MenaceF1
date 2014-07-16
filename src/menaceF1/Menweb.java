@@ -80,21 +80,49 @@ public class Menweb {
 										
 		return "" + Day + " " + today.get(Calendar.DAY_OF_MONTH) + suffix + " " + Month + " " + today.get(Calendar.YEAR) ;
 	}
+	
+	private String getImageDimensions(String imageDetails) {
+		int startChar = imageDetails.indexOf(" JPEG ");
+		String startDimensions = imageDetails.substring(startChar+6);
+		int endChar = startDimensions.indexOf(" ");
+		String dimensions = startDimensions.substring(0, endChar);
+		return dimensions;
+	}
+	
+	private int getImageWidth(String imageDetails) {
+		String dimensions = getImageDimensions(imageDetails);
+		return Integer.parseInt(dimensions.substring(0, dimensions.indexOf('x')));
+	}
+	
+	private int getImageHeight(String imageDetails) {
+		String dimensions = getImageDimensions(imageDetails);
+		return Integer.parseInt(dimensions.substring(1+dimensions.indexOf('x')));
+	}
 
 	public void makeThumb(String path) {
 	
-		Opener                o     = new Opener();
-		ImagePlus             imp   = o.openImage(path);
-		ImageProcessor        ip    = imp.getProcessor();
+		int sourceHeight = 0;
+		int sourceWidth = 0;
 		
-		//Scale the image
+		String[] identifyCommandArguments = {"identify",path};
 		
-		int height = ip.getHeight();
+		try {
+			Process proc = Runtime.getRuntime().exec(identifyCommandArguments);
+            BufferedReader in = new BufferedReader(  
+            new InputStreamReader(proc.getInputStream()));  
+            String line = in.readLine();
+            sourceHeight = getImageHeight(line);
+            sourceWidth = getImageWidth(line);
+			} 
+		catch (IOException e) {
+			e.printStackTrace();
+		} 
+	
+		
+		int height = sourceHeight;
 		int factor = height/130;
-		int width = ip.getWidth()/factor;
-		ip = ip.resize (width,130);
-		
-		
+		int width = sourceWidth/factor;
+
 		//save the scaled image
 		String savePath = path.substring(0,path.lastIndexOf("/")) + "/thumbs" + path.substring(path.lastIndexOf("/"),path.length());
 		String[] scaleCommandArguments = {"convert",path,"-resize",width+ "x130!",savePath};

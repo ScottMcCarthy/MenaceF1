@@ -17,7 +17,27 @@ public class Race {
 		
 	}
 	
+	private static String getImageDimensions(String imageDetails) {
+		int startChar = imageDetails.indexOf(" JPEG ");
+		String startDimensions = imageDetails.substring(startChar+6);
+		int endChar = startDimensions.indexOf(" ");
+		String dimensions = startDimensions.substring(0, endChar);
+		return dimensions;
+	}
+	
+	private static int getImageWidth(String imageDetails) {
+		String dimensions = getImageDimensions(imageDetails);
+		return Integer.parseInt(dimensions.substring(0, dimensions.indexOf('x')));
+	}
+	
+	private static int getImageHeight(String imageDetails) {
+		String dimensions = getImageDimensions(imageDetails);
+		return Integer.parseInt(dimensions.substring(1+dimensions.indexOf('x')));
+	}
+	
 	public static void main(String[] args) {
+		String image = "DSCN8737.JPG JPEG 4320x3240 4320x3240+0+0 8-bit DirectClass 5.295MB 0.010u 0:00.010";
+		System.out.println("Got back:"+getImageHeight(image)+"::");
 		setupGrid();
 		
 		String s = null;
