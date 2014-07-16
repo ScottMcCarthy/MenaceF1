@@ -2,9 +2,6 @@ package menaceF1;
 import java.io.*;
 import java.util.*;
 
-import ij.*;
-import ij.io.*;
-import ij.process.*;
 
 /**
  * @author Scott McCarthy
@@ -137,18 +134,28 @@ public class Menweb {
 
 	public void makeMidsize(String path) {
 	
-		Opener                o     = new Opener();
-		ImagePlus             imp   = o.openImage(path);
-		ImageProcessor        ip    = imp.getProcessor();
+		int sourceHeight = 0;
+		int sourceWidth = 0;
 		
-		//Scale the image
+		String[] identifyCommandArguments = {"identify",path};
 		
-		int height = ip.getHeight();
+		try {
+			Process proc = Runtime.getRuntime().exec(identifyCommandArguments);
+            BufferedReader in = new BufferedReader(  
+            new InputStreamReader(proc.getInputStream()));  
+            String line = in.readLine();
+            sourceHeight = getImageHeight(line);
+            sourceWidth = getImageWidth(line);
+			} 
+		catch (IOException e) {
+			e.printStackTrace();
+		} 
+		
+		int height = sourceHeight;
 		double factor = height/800.0;
-		double newWidth = ip.getWidth()/factor;
+		double newWidth = sourceWidth/factor;
 		Double newWidthObj = new Double(newWidth);
 		int newWidthInt = newWidthObj.intValue();
-		ip = ip.resize (newWidthInt,800);
 		
 		//save the scaled image
 		String savePath = path.substring(0,path.lastIndexOf("/")) + "/midsize" + path.substring(path.lastIndexOf("/"),path.length());
@@ -172,6 +179,15 @@ public class Menweb {
 				if (imageList[i].toUpperCase().indexOf(".JPG") > 0) {
 					makeThumb(path + imageList[i]);
 					makeMidsize(path + imageList[i]);
+					
+					//Pause to allow Operating System to catch-up
+					
+					try {
+						Thread.sleep(300000);
+					} catch (InterruptedException e1) {
+						e1.printStackTrace();
+					}
+					
 				}
 		}
 	}

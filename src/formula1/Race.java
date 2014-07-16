@@ -38,7 +38,17 @@ public class Race {
 	public static void main(String[] args) {
 		String image = "DSCN8737.JPG JPEG 4320x3240 4320x3240+0+0 8-bit DirectClass 5.295MB 0.010u 0:00.010";
 		System.out.println("Got back:"+getImageHeight(image)+"::");
+		
+		try {
+			Thread.sleep(100000);
+		} catch (InterruptedException e1) {
+			e1.printStackTrace();
+		}
+		
+		System.out.println("Got back:"+getImageWidth(image)+"::");
+		
 		setupGrid();
+		
 		
 		String s = null;
 		
