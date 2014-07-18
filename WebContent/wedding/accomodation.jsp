@@ -15,7 +15,6 @@
 
 <%
 	WeddingGuest guest = (WeddingGuest)session.getAttribute("WEDDINGGUEST");
-	Accomodation accomodation = (Accomodation)session.getAttribute("ACCOMODATION");
  %>
 
 <table border="0" width="106%" bgcolor="#d9dee4">
@@ -74,27 +73,14 @@
 			<td valign="top" align="center" width="780"><b><u><font size="+3">Local
 			Accommodation</font></u></b><br>
 			<strong><br></strong>
-			<% if (!accomodation.soldOut) { %>
-			<font size="+1">In addition to the hotels listed below we have
-			a limited number of rooms available at Downing College itself. <br>
-			These rooms must be booked through us so please do not contact the
-			College directly.</font><br \>
-			<br>
-			<font size="+1"><b>NB - </b>The College does not have any
-			double rooms available, only twin and single rooms as shown below. Prices are not including breakfast. A buffet style breakfast is available at a cost of £14.</font><br>
-
-			<br \>
-			<%=accomodation.getAvailableRoomsHTML() %>
-			
-			<br />
-			<% } %>			
+		
 			<font size="+1"><a
 				href="http://www.theaa.com/travel/basicsearch/preparepoisearchstage1.do?statusstage1=new&amp;page=placesstay">The
 			AA website</a> has a list of Hotels, B&amp;Bs and guest-houses in the area.<br>
 			<br>
 			The following is a list of local hotels and
 			guest houses near to the reception venue. Please check with the hotel for parking arrangements. Overnight parking at the College is only available to guests staying at the College.</font><br>
-			<br \>
+			<br />
 			<table border="1">
 				<tbody>
 					<tr>

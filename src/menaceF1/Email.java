@@ -191,9 +191,6 @@ public void send() throws IllegalStateException {
 
 	String dir = "c:\\predNotes\\";
 
-	if (dir == null)
-		throw new IllegalStateException("Unable to retrieve email directory path from svimtop.cfg");
-
 	if (toList==null)
 		throw new IllegalStateException("No sendTo address defined.");
 
@@ -255,9 +252,6 @@ public void send() throws IllegalStateException {
 public void send(String identifier) throws IllegalStateException {
 
 	String dir = "c:\\predNotes\\";
-
-	if (dir == null)
-		throw new IllegalStateException("Unable to retrieve email directory path from svimtop.cfg");
 
 	if (toList==null)
 		throw new IllegalStateException("No sendTo address defined.");

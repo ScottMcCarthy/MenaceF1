@@ -26,9 +26,8 @@ public class ReceiveFileAction extends Action
 
 	{
 
-	public static final String PHOTO_PATH = "/var/www/extras/wedding/";
+	public static final String PHOTO_PATH = "/var/www/wedding/";
 	
-    @SuppressWarnings("unchecked")
 	public ActionForward execute(ActionMapping mapping, ActionForm form,
 	    HttpServletRequest request, HttpServletResponse response)
 	    throws Exception {

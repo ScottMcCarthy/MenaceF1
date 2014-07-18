@@ -15,7 +15,6 @@
 
 <%
 	WeddingGuest guest = (WeddingGuest)session.getAttribute("WEDDINGGUEST");
-	Accomodation accomodation = (Accomodation)session.getAttribute("ACCOMODATION");
  %>
 
 <table border="0" width="100%" bgcolor="#d9dee4">
@@ -81,10 +80,8 @@
 			enhanced by harmonious proportions, graceful columned porticos, and
 			delicate pink and yellow stone.<b><br>
 			<br>
-			<% if (!accomodation.soldOut) { %>
-			Accommodation is available at the College (single and twin rooms
-			only), and there are many hotels nearby.<br><% } %>
-			Please see the <% if (!accomodation.soldOut) { %><a href="/MenaceF1/accomodation.do">accommodation page</a> for more details, and the <%} %><a
+
+			Please see the <a
 				href="/MenaceF1/directions.do">Map &amp; Directions</a> page for details of
 			how to get here. </b></font><br>
 			<br>

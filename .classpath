@@ -9,8 +9,6 @@
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/commons-lang.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/commons-logging.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/commons-validator.jar"/>
-	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/dbbeans.jar"/>
-	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/ij.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/jakarta-oro.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/mail.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/pqservices-clienthelpers-2.15.13.0.jar"/>
@@ -22,5 +20,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/mysql-connector-java-5.1.31-bin.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/dbbeans.jar"/>
 	<classpathentry kind="output" path="build"/>
 </classpath>

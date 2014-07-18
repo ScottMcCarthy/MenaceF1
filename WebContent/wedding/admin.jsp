@@ -102,13 +102,12 @@ function colapseSection(id)
 			 %>
 			
 			<p align="left"><b><u>Summary of activity</u></b><br />
-			There are <b><%=admin.getHotelBookingsNeedingPayment() %></b> hotel bookings that need payment confirming.<br/>
 			There are <b><%=admin.getOnlineRSVPNeedingChecking() %></b> on-line RSVP requests that need checking.<br/>
 			There are <b><%=admin.getDayGuestsNotConfirmed() %></b> day guests that have not yet confirmed their attendance.<br />
 			There are <b><%=admin.getEveningGuestsNotConfirmed() %></b> evening guests that have not yet confirmed their attendance.<br />
 			You can invite another <b><%=admin.getGuestsLeftToInvite() %></b> day guests to the wedding.<br /></p>
 
-			<div id="rsvpShow" style="display:none">
+			<div id="rsvpShow" style="display:block">
 			<p align="left"><a href="javascript:colapseSection('rsvp')"><img alt="Click to expand section" border="0" src="/MenaceF1/wedding/images/collapse.gif" width="17" height="14"></a><b><u>RSVPs</u></b>
 			<br />
 			The following RSVPs have been received via the website:
@@ -120,20 +119,7 @@ function colapseSection(id)
 			</p>
 			</div>
 
-
-			<div id="bookingsShow" style="display:none">
-			<p align="left"><a href="javascript:colapseSection('bookings')"><img alt="Click to expand section" border="0" src="/MenaceF1/wedding/images/collapse.gif" width="17" height="14"></a><b><u>Hotel Bookings</u></b>
-			<br />
-			The following hotel bookings have been received via the website:
-			<%=admin.getHotelBookingsHTML() %>
-			</p>
-			</div>
-			<div id="bookingsHide" style="display:block">
-			<p align="left"><a href="javascript:expandSection('bookings')"><img alt="Click to expand section" border="0" src="/MenaceF1/wedding/images/expan.gif" width="17" height="14"></a><b><u>Hotel Bookings</u></b>
-			</p>
-			</div>
-
-			<div id="dayGuestsShow" style="display:none">
+			<div id="dayGuestsShow" style="display:block">
 			<p align="left"><a href="javascript:colapseSection('dayGuests')"><img alt="Click to expand section" border="0" src="/MenaceF1/wedding/images/collapse.gif" width="17" height="14"></a><b><u>Day-Guest List</u></b>
 			<br />
 			The following table shows the status of day guests:
@@ -145,7 +131,7 @@ function colapseSection(id)
 			</p>
 			</div>
 
-			<div id="eveningGuestsShow" style="display:none">
+			<div id="eveningGuestsShow" style="display:block">
 			<p align="left"><a href="javascript:colapseSection('eveningGuests')"><img alt="Click to expand section" border="0" src="/MenaceF1/wedding/images/collapse.gif" width="17" height="14"></a><b><u>Evening-Guest List</u></b>
 			<br />
 			The following table shows the status of evening guests:
@@ -157,7 +143,7 @@ function colapseSection(id)
 			</p>
 			</div>
 
-			<div id="newGuestShow" style="display:none">
+			<div id="newGuestShow" style="display:block">
 			<p align="left"><a href="javascript:colapseSection('newGuest')"><img alt="Click to expand section" border="0" src="/MenaceF1/wedding/images/collapse.gif" width="17" height="14"></a><b><u>Add a new guest</u></b>
 			<br />
 			Please enter the details of the guest below:<br />
@@ -467,8 +453,8 @@ function colapseSection(id)
 <%
 			Menweb menJava = new Menweb();
 			menJava.setShowLogo(false);
-			menJava.directoryTrawler("/var/www/extras/wedding/");
-			menJava.restrictedGalleryFront("/var/www/extras/wedding/",out,"restrictedWeddingGallery.jsp");
+			menJava.directoryTrawler("/var/www/wedding/");
+			menJava.restrictedGalleryFront("/var/www/wedding/",out,"restrictedWeddingGallery.jsp");
 %>	
 			</p>
 			</div>

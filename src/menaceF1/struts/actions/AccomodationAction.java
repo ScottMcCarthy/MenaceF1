@@ -3,8 +3,6 @@ package menaceF1.struts.actions;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import menaceF1.wedding.Accomodation;
-
 import org.apache.struts.action.Action;
 import org.apache.struts.action.ActionError;
 import org.apache.struts.action.ActionErrors;
@@ -32,8 +30,6 @@ public class AccomodationAction extends Action
 	    if (request.getSession().getAttribute("WEDDINGGUEST")== null){
 	    	return mapping.findForward("sessionExpired");
 	    }
-	    Accomodation accomodation = new Accomodation();
-	    request.getSession().setAttribute("ACCOMODATION", accomodation);
 
 	} catch (Exception e) {
 

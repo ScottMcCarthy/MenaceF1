@@ -77,8 +77,8 @@
 <%
 			Menweb menJava = new Menweb();
 			menJava.setShowLogo(false);
-			menJava.directoryTrawler("/var/www/extras/wedding/");
-			menJava.galleryFront("/var/www/extras/wedding/",out,"weddingGallery.jsp");
+			menJava.directoryTrawler("/var/www/wedding/");
+			menJava.galleryFront("/var/www/wedding/",out,"weddingGallery.jsp");
 %>				
 				
 				<br /><b><u><font size="+3">Upload your photos</font></u></b><br />
