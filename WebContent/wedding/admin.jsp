@@ -114,7 +114,7 @@ function colapseSection(id)
 			<%=admin.getRsvpEntriesHTML() %>
 			</p>
 			</div>
-			<div id="rsvpHide" style="display:block">
+			<div id="rsvpHide" style="display:none">
 			<p align="left"><a href="javascript:expandSection('rsvp')"><img alt="Click to expand section" border="0" src="/MenaceF1/wedding/images/expan.gif" width="17" height="14"></a><b><u>RSVPs</u></b>
 			</p>
 			</div>
@@ -126,7 +126,7 @@ function colapseSection(id)
 				<%=admin.dayGuestTableHTML() %>		
 			</p>
 			</div>
-			<div id="dayGuestsHide" style="display:block">
+			<div id="dayGuestsHide" style="display:none">
 			<p align="left"><a href="javascript:expandSection('dayGuests')"><img alt="Click to expand section" border="0" src="/MenaceF1/wedding/images/expan.gif" width="17" height="14"></a><b><u>Day-Guest List</u></b>
 			</p>
 			</div>
@@ -138,7 +138,7 @@ function colapseSection(id)
 			<%=admin.eveningGuestTableHTML() %>
 			</p>
 			</div>
-			<div id="eveningGuestsHide" style="display:block">
+			<div id="eveningGuestsHide" style="display:none">
 			<p align="left"><a href="javascript:expandSection('eveningGuests')"><img alt="Click to expand section" border="0" src="/MenaceF1/wedding/images/expan.gif" width="17" height="14"></a><b><u>Evening-Guest List</u></b>
 			</p>
 			</div>
@@ -440,7 +440,7 @@ function colapseSection(id)
 			</html:form>
 			</p>
 			</div>
-			<div id="newGuestHide" style="display:block">
+			<div id="newGuestHide" style="display:none">
 			<p align="left"><a href="javascript:expandSection('newGuest')"><img alt="Click to expand section" border="0" src="/MenaceF1/wedding/images/expan.gif" width="17" height="14"></a><b><u>Add a new guest</u></b>
 			</p>
 			</div>
@@ -461,7 +461,7 @@ function colapseSection(id)
 			<div id="photoHide" style="display:none">
 			<p align="left"><a href="javascript:expandSection('photo')"><img alt="Click to expand section" border="0" src="/MenaceF1/wedding/images/expan.gif" width="17" height="14"></a><b><u>Uploaded photos to moderate</u></b>
 			</p>
-			</div>			
+			</div>		
 			
 			
 			</td>

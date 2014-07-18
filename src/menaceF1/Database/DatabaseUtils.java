@@ -9,6 +9,7 @@ import java.sql.SQLException;
 public class DatabaseUtils {
 	
 	private static final String usernameFile = "/mysql/username.txt";
+	private static final String databaseName = "raspberrypi";
 	
 	public static Connection getConnection() {
 		
@@ -33,7 +34,7 @@ public class DatabaseUtils {
 		Connection conn = null;
 		try {
 		    conn =
-		       DriverManager.getConnection("jdbc:mysql://menacef1.dnsalias.com/Wedding?" +
+		       DriverManager.getConnection("jdbc:mysql://"+databaseName+"/Wedding?" +
 		                                   "user="+username+"&password="+password);
 
 		} catch (SQLException ex) {
