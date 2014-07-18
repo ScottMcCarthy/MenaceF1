@@ -9,7 +9,9 @@ import java.sql.SQLException;
 public class DatabaseUtils {
 	
 	private static final String usernameFile = "/mysql/username.txt";
-	private static final String databaseName = "raspberrypi";
+	//private static final String databaseName = "raspberrypi";
+	private static final String databaseName = "localhost";
+	
 	
 	public static Connection getConnection() {
 		
