@@ -77,28 +77,18 @@
 <b><u><font size="+3">Upload your photos</font></u></b><br />
 				<br />Thank you <%=request.getSession().getAttribute("photoName") %><br/>Please use the tool below to upload your photos.
 <br />
-<applet
-		title="JUpload"
-		name="JUpload"
-		code="com.smartwerkz.jupload.classic.JUpload"
-		codebase="wedding/jupload/"
-		archive="dist/jupload.jar,
-				dist/commons-codec-1.3.jar,
-				dist/commons-httpclient-3.0-rc4.jar,
-				dist/commons-logging.jar,
-				dist/skinlf/skinlf-6.2.jar"
-		width="640"
-		height="480"
-		mayscript="mayscript"
-		alt="JUpload by www.jupload.biz">
 
-	<param name="Config" value="cfg/jupload.default.config">
+<form action="UploadServlet" method="post"
+                        enctype="multipart/form-data">
+<input type="file" multiple="multiple" name="file" size="50" />
+<br />
+<input type="submit" value="Upload File" />
+</form>
 
-	Your browser does not support Java Applets or you disabled Java Applets in your browser-options.
-	To use this applet, please install the newest version of Sun's Java Runtime Environment (JRE).
-	You can get it from <a href="http://www.java.com/">java.com</a>
 
-</applet>	
+
+
+
 <br />
 Once your photos have been uploaded, they will be checked by one of the site moderators, and can then be viewed on the <a href="/MenaceF1/photos.do">photos page</a>.	
 			</td>

@@ -83,11 +83,13 @@
 				
 				<br /><b><u><font size="+3">Upload your photos</font></u></b><br />
 				<br>We would love you to share any photos you took during our wedding with us and our other guests.<br>
-			<b>NB</b> - You will need the to install the Java plug in to upload your photos. This can be downloaded from the <a href="http://www.java.com/">Java Website</a>.
 
-	<form name="weddingimages" action="/MenaceF1/photoUpload.do"  >
+	<form name="weddingimages" method="post"
+                        enctype="multipart/form-data" action="/MenaceF1/photoUpload.do"  >
 	<br />Please enter your name:<br /><input type="text" name="name" size="50"><br />
-	<input type="submit" value="Open photo upload tool" />
+	<input type="file" multiple="multiple" name="files" size="50" />
+<br />
+	<input type="submit" value="Upload photos" />
 	<br />
 	</form>
 			</td>

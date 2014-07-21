@@ -10,7 +10,8 @@ public class DatabaseUtils {
 	
 	private static final String usernameFile = "/mysql/username.txt";
 	//private static final String databaseName = "raspberrypi";
-	private static final String databaseName = "localhost";
+	//private static final String databaseName = "localhost";
+	private static final String databaseName = "menacef1.dnsalias.com";
 	
 	
 	public static Connection getConnection() {
