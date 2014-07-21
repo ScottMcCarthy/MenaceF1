@@ -82,7 +82,9 @@
 %>				
 				
 				<br /><b><u><font size="+3">Upload your photos</font></u></b><br />
-				<br>We would love you to share any photos you took during our wedding with us and our other guests.<br>
+				<br />We would love you to share any photos you took during our wedding with us and our other guests.<br />
+				<br />You can upload multiple photos in one go providing you are using a modern browser / phone.<br />
+
 
 	<form name="weddingimages" method="post"
                         enctype="multipart/form-data" action="/MenaceF1/photoUpload.do"  >
