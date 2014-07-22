@@ -33,8 +33,8 @@ public class PublishGalleryAction extends Action
 	    }
 	    
 	    String directoryName = request.getParameter("directory");
-	    File dir = new File(ReceiveFileAction.PHOTO_PATH+directoryName);
-	    File renamedDir = new File(ReceiveFileAction.PHOTO_PATH+directoryName.substring(0,directoryName.length()-10));
+	    File dir = new File(PhotoUploadAction.filePath+directoryName);
+	    File renamedDir = new File(PhotoUploadAction.filePath+directoryName.substring(0,directoryName.length()-10));
 	    System.out.println("Found file, and is it a directory - "+dir.isDirectory());
 	    if (dir.isDirectory() & !renamedDir.exists()){
 	    	dir.renameTo(renamedDir);

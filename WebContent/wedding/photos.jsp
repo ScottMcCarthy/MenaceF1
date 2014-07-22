@@ -69,8 +69,22 @@
 				</tbody>
 			</table>
 			</td>
+			<td>
+				
+				<br /><b><u><font size="+3">Upload your photos</font></u></b><br />
+				<br />We would love you to share any photos you took during our wedding with us and our other guests.<br />
+				You can upload multiple photos in one go providing you are using a modern browser / phone.<br />
 
-			<td valign="top" align="center">
+
+	<form name="weddingimages" method="post"
+                        enctype="multipart/form-data" action="/MenaceF1/photoUpload.do"  >
+	<br />Please enter your name:<br /><input type="text" name="guestname" size="50"><br />
+	<input type="file" multiple="multiple" name="files" size="50" />
+<br />
+	<input type="submit" value="Upload photos" />
+	<br />
+	</form>
+			
 				<b><u><font size="+3">Photos</font></u></b><br />
 				<br />The following photo galleries have been uploaded to our website:
 				<br />
@@ -80,20 +94,6 @@
 			menJava.directoryTrawler("/var/www/wedding/");
 			menJava.galleryFront("/var/www/wedding/",out,"weddingGallery.jsp");
 %>				
-				
-				<br /><b><u><font size="+3">Upload your photos</font></u></b><br />
-				<br />We would love you to share any photos you took during our wedding with us and our other guests.<br />
-				<br />You can upload multiple photos in one go providing you are using a modern browser / phone.<br />
-
-
-	<form name="weddingimages" method="post"
-                        enctype="multipart/form-data" action="/MenaceF1/photoUpload.do"  >
-	<br />Please enter your name:<br /><input type="text" name="name" size="50"><br />
-	<input type="file" multiple="multiple" name="files" size="50" />
-<br />
-	<input type="submit" value="Upload photos" />
-	<br />
-	</form>
 			</td>
 		</tr>
 	</tbody>

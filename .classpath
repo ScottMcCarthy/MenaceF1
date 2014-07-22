@@ -21,5 +21,6 @@
 	</classpathentry>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/mysql-connector-java-5.1.31-bin.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/dbbeans.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/tomcat-coyote.jar"/>
 	<classpathentry kind="output" path="build"/>
 </classpath>

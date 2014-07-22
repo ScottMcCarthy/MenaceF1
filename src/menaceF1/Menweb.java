@@ -118,7 +118,8 @@ public class Menweb {
 		
 		int height = sourceHeight;
 		int factor = height/130;
-		int width = sourceWidth/factor;
+		int width = 0;
+		if (width>0) width = sourceWidth/factor;
 
 		//save the scaled image
 		String savePath = path.substring(0,path.lastIndexOf("/")) + "/thumbs" + path.substring(path.lastIndexOf("/"),path.length());
@@ -197,7 +198,7 @@ public class Menweb {
 		File[] dirList = dir.listFiles();
 		if (dirList==null) return;
 		for (int i=0;i<dirList.length;i++) {
-				if (dirList[i].isDirectory() && !dirList[i].toString().endsWith("extras")) {
+				if (dirList[i].isDirectory() && !dirList[i].toString().endsWith("extras") && !dirList[i].toString().endsWith("wedding") ) {
 					File thumbsDir  = new File(dirList[i] + "/thumbs");
 					File midsizeDir = new File(dirList[i] + "/midsize");
 					if (!thumbsDir.exists() && !midsizeDir.exists()) {
@@ -280,7 +281,7 @@ public class Menweb {
 		ArrayList<String> fileList = new ArrayList<String>();
 		Map<String,File> dirFileMap = new HashMap<String,File>();
 		for (int x=0;x<fileListArray.length;x++) {
-			if (dirList[x].isDirectory() && !dirList[x].toString().endsWith("extras") && !dirList[x].toString().endsWith("RESTRICTED")) {
+			if (dirList[x].isDirectory() && !dirList[x].toString().endsWith("extras") && !dirList[x].toString().endsWith("wedding") && !dirList[x].toString().endsWith("RESTRICTED")) {
 				fileList.add(fileListArray[x]);
 				dirFileMap.put(fileListArray[x], dirList[x]);
 				}

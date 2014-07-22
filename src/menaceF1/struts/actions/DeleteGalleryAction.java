@@ -4,6 +4,7 @@ import java.io.File;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
 import org.apache.struts.action.Action;
 import org.apache.struts.action.ActionError;
 import org.apache.struts.action.ActionErrors;
@@ -33,8 +34,8 @@ public class DeleteGalleryAction extends Action
 	    }
 	    
 	    String directoryName = request.getParameter("directory");
-	    File dir = new File(ReceiveFileAction.PHOTO_PATH+directoryName);
-	    File renamedDir = new File(ReceiveFileAction.PHOTO_PATH+directoryName+"extras");
+	    File dir = new File(PhotoUploadAction.filePath+directoryName);
+	    File renamedDir = new File(PhotoUploadAction.filePath+directoryName+"extras");
 	    System.out.println("Found file, and is it a directory - "+dir.isDirectory());
 	    if (dir.isDirectory() & !renamedDir.exists()){
 	    	dir.renameTo(renamedDir);

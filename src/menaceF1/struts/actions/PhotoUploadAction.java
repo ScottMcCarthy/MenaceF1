@@ -1,18 +1,16 @@
 package menaceF1.struts.actions;
 
 import java.io.File;
-import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-import java.util.Map.Entry;
-import java.util.Set;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import menaceF1.Menweb;
+
 import org.apache.struts.action.Action;
-import org.apache.struts.action.ActionError;
 import org.apache.struts.action.ActionErrors;
 import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
@@ -29,14 +27,21 @@ public class PhotoUploadAction extends Action
 
 {
 
-	   private int maxFileSize = 50 * 1024 * 1024;
-	   private int maxMemSize = 4 * 1024 * 1024;
-	   private String filePath = "/Users/ScottMcCarthy/upload/";
+	   private int maxFileSize = 500 * 1024 * 1024;
+	   private int maxMemSize = 10 * 1024 * 1024;
+	   public static String filePath = "/var/www/wedding/";
 	   private File file ;
-	
-	//public static String uploadedBy = "";
-	public static Map<String,String> uploadedByMap = new HashMap<String,String>();
-	
+
+	   static String convertStreamToString(java.io.InputStream is) {
+		    java.util.Scanner scanner1 = new java.util.Scanner(is);
+		    java.util.Scanner scanner2 = scanner1.useDelimiter("\\A");
+		    String streamString =  scanner2.hasNext() ? scanner2.next() : "";
+		    scanner1.close();
+		    scanner2.close();
+		    return streamString;
+		}
+	   
+	   
     public ActionForward execute(ActionMapping mapping, ActionForm form,
 	    HttpServletRequest request, HttpServletResponse response)
 	    throws Exception {
@@ -49,16 +54,27 @@ public class PhotoUploadAction extends Action
     // maximum size that will be stored in memory
     factory.setSizeThreshold(maxMemSize);
     // Location to save data that is larger than maxMemSize.
-    factory.setRepository(new File("/Users/ScottMcCarthy/upload/"));
+    factory.setRepository(new File(filePath));
 
     // Create a new file upload handler
     ServletFileUpload upload = new ServletFileUpload(factory);
     // maximum file size to be uploaded.
     upload.setSizeMax( maxFileSize );
-
-    try{ 
+    
+    Menweb tools = new Menweb();
+     try{ 
     // Parse the request to get file items.
     Map<String, List<FileItem>> fileItems = upload.parseParameterMap(request);
+    
+    List<FileItem> fileItemList = fileItems.get("guestname");
+    FileItem fiw = fileItemList.get(0);
+    String name = convertStreamToString(fiw.getInputStream());
+    String uploadedBy = "Uploaded by "+name+" on "+tools.printDate()+"RESTRICTED";
+ 
+	//create the folder
+	File dir = new File(filePath+uploadedBy);
+	if (!dir.exists()) dir.mkdir();
+    
     
     // Process the uploaded file items
 
@@ -72,23 +88,12 @@ public class PhotoUploadAction extends Action
        if ( !fi.isFormField () )	
        {
           // Get the uploaded file parameters
-          String fieldName = fi.getFieldName();
           String fileName = fi.getName();
-          String contentType = fi.getContentType();
-          boolean isInMemory = fi.isInMemory();
-          long sizeInBytes = fi.getSize();
           // Write the file
-          
-          if( fileName.lastIndexOf("\\") >= 0 ){
-        	  System.out.println("Writing file to: "+filePath + fileName.substring( fileName.lastIndexOf("\\")));
-        	  file = new File( filePath + 
-             fileName.substring( fileName.lastIndexOf("\\"))) ;
-          }else{
-        	  System.out.println("Writing file2 to: "+filePath + 
-             fileName.substring(fileName.lastIndexOf("\\")+1));
-             file = new File( filePath + 
-             fileName.substring(fileName.lastIndexOf("\\")+1)) ;
-          }
+
+        	 System.out.println("Writing file to: "+filePath + "/" + uploadedBy + "/" + fileName);
+             file = new File( filePath + "/" + uploadedBy + "/" + fileName) ;
+
           fi.write( file ) ;
           System.out.println("Uploaded Filename: " + fileName);
        }
@@ -98,47 +103,26 @@ public class PhotoUploadAction extends Action
  }
  	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	try {
 
-	    if (request.getSession().getAttribute("WEDDINGGUEST")== null){
-	    	return mapping.findForward("sessionExpired");
-	    }
+// If a message is required, save the specified key(s)
+// into the request for use by the <struts:errors> tag.
 
-	} catch (Exception e) {
+if (!errors.isEmpty()) {
+    saveErrors(request, errors);
 
-	    // Report the error using the appropriate name and ID.
-		errors.add("unknownError", new ActionError("unknown"));
+    // Forward control to the appropriate 'failure' URI (change name as desired)
+    //	forward = mapping.findForward("failure");
 
-	}
-	
-	System.out.println("IP address when setting name: "+request.getRemoteAddr());
-	uploadedByMap.put(request.getRemoteAddr(), request.getParameter("name"));
-	request.getSession().setAttribute("photoName", request.getParameter("name"));
+} else {
 
-	// If a message is required, save the specified key(s)
-	// into the request for use by the <struts:errors> tag.
+    // Forward control to the appropriate 'success' URI (change name as desired)
+    // forward = mapping.findForward("success");
 
-	if (!errors.isEmpty()) {
-	    saveErrors(request, errors);
-	}
-	// Write logic determining how the user should be forwarded.
-	forward = mapping.findForward("photoUploadApplet");
+}
 
-	// Finish with
-	return (forward);
+// Finish with
+forward = mapping.findForward("UploadSuccessful");
+return (forward);
 
     }
 }
