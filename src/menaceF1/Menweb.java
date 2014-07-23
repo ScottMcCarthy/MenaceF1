@@ -119,12 +119,12 @@ public class Menweb {
 		int height = sourceHeight;
 		int factor = height/130;
 		int width = 0;
-		if (width>0) width = sourceWidth/factor;
+		if (factor>0) width = sourceWidth/factor;
 
 		//save the scaled image
 		String savePath = path.substring(0,path.lastIndexOf("/")) + "/thumbs" + path.substring(path.lastIndexOf("/"),path.length());
 		String[] scaleCommandArguments = {"convert",path,"-resize",width+ "x130!",savePath};
-		
+
 		try {
 			Runtime.getRuntime().exec(scaleCommandArguments);	
 			} 
@@ -384,8 +384,13 @@ public class Menweb {
 		File dir = new File(path);
 		String localPath = name;
 		if (path.lastIndexOf("extras") != -1) {
-			localPath = path.substring(path.lastIndexOf("extras")).replace('/','/');
+			localPath = path.substring(path.lastIndexOf("extras"));
 		}
+
+		if (path.lastIndexOf("wedding") != -1) {
+			localPath = path.substring(path.lastIndexOf("wedding"));
+		}	
+		
 		String[] imageList = dir.list();
 		int count = 0;
 

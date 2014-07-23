@@ -36,8 +36,9 @@ public class Race {
 	}
 	
 	public static void main(String[] args) {
-		String image = "DSCN8737.JPG JPEG 4320x3240 4320x3240+0+0 8-bit DirectClass 5.295MB 0.010u 0:00.010";
+		String image = "/var/www/wedding/Uploaded by Scott on Tuesday 22nd July 2014RESTRICTED/DSCN9052.jpg JPEG 3240x4320 3240x4320+0+0 8-bit DirectClass 4.26MB 0.010u 0:00.020";
 		System.out.println("Got back:"+getImageHeight(image)+"::");
+		System.out.println("Got back:"+getImageWidth(image)+"::");
 		
 		try {
 			Thread.sleep(100000);
