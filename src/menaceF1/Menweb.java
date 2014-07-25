@@ -331,8 +331,11 @@ public class Menweb {
 		path.replace('/','¬');
 		String localPath = path.replace('/','¬').substring(path.replace('/','¬').lastIndexOf('¬')+1);
 		if (path.lastIndexOf("extras") != -1) {
-			localPath = path.substring(path.lastIndexOf("extras")).replace('/','/');
+			localPath = path.substring(path.lastIndexOf("extras"));
 		}		
+		if (path.lastIndexOf("wedding") != -1) {
+			localPath = path.substring(path.lastIndexOf("wedding"));
+		}	
 		
 		String imagePath = getDomainPrefix()+"/"+localPath+"/"+filename+"/thumbs/cover.JPG";
 		if (!fileList.contains("cover.jpg") && !fileList.contains("cover.JPG")) {
@@ -474,7 +477,10 @@ public class Menweb {
 
 		String localPath = name;
 		if (path.lastIndexOf("extras") != -1) {
-			localPath = path.substring(path.lastIndexOf("extras")).replace('/','/');
+			localPath = path.substring(path.lastIndexOf("extras"));
+		}
+		if (path.lastIndexOf("wedding") != -1) {
+			localPath = path.substring(path.lastIndexOf("wedding"));
 		}
 		out.println("<TD><a href='/" + localPath + "/" + imageName + "'><IMG border='0' src='/" + localPath + "/midsize/" + imageName + "'> </A>");
 		}

@@ -28,7 +28,7 @@ public class PhotoUploadAction extends Action
 {
 
 	   private int maxFileSize = 500 * 1024 * 1024;
-	   private int maxMemSize = 10 * 1024 * 1024;
+	   private int maxMemSize = 1 * 1024 * 1024;
 	   public static String filePath = "/var/www/wedding/";
 	   private File file ;
 
@@ -82,20 +82,20 @@ public class PhotoUploadAction extends Action
 
     Iterator<FileItem> i = files1.iterator();
     
+    int x=0;
+    
     while ( i.hasNext () ) 
     {
-       FileItem fi = i.next();
+       x++;
+    	FileItem fi = i.next();
        if ( !fi.isFormField () )	
        {
           // Get the uploaded file parameters
-          String fileName = fi.getName();
+          String fileName = x+fi.getName();
           // Write the file
-
-        	 System.out.println("Writing file to: "+filePath + "/" + uploadedBy + "/" + fileName);
              file = new File( filePath + "/" + uploadedBy + "/" + fileName) ;
 
           fi.write( file ) ;
-          System.out.println("Uploaded Filename: " + fileName);
        }
     }
  }catch(Exception ex) {
