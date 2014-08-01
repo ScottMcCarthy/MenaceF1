@@ -1,7 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-<title>claireandscottwedding.co.uk</title>
+<title>The Wedding of Sharon and Richard</title>
 <%@ page language="java" import="menaceF1.wedding.*"
 	contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="/WEB-INF/struts-html.tld" prefix="html" %>
@@ -71,14 +71,12 @@
 			</td>
 
 			<td valign="top" align="center">
-				<b><u><font size="+3">Downing College Cambridge</font></u></b><br>
+				<b><u><font size="+3">Farnham Castle</font></u></b><br>
 			<strong><br>
-			</strong><font size="+1">Downing College has a unique and
-			magnificent setting amid 20 acres of lawns and trees, yet is in the
-			very centre of Cambridge. The buildings, which are predominantly
-			neo-classical in style, convey a sense of elegance and spaciousness,
-			enhanced by harmonious proportions, graceful columned porticos, and
-			delicate pink and yellow stone.<b><br>
+			</strong><font size="+1">Farnham Castle overlooks the historic town of Farnham on the western border of Surrey.
+
+From the times of the Norman Conquest until the Tudors, the all-powerful Bishops of Winchester shaped English politics from within the walls of Farnham Castle. For over 900 years the Bishop's Palace has played host to meetings and celebrations and monarchs including King John and Queen Victoria have stayed at or visited the castle during this time.
+<br>
 			<br>
 
 			Please see the <a
@@ -86,52 +84,24 @@
 			how to get here. </b></font><br>
 			<br>
 			<img border="0"
-				src="/MenaceF1/wedding/images/downing_accommodation.jpg" width="500"
-				height="375">			
+				src="/MenaceF1/wedding/images/Farnham-castle-at-night.jpg" width="992"
+				height="660">			
 			<br>
 			<table>
 			<tr>
 			<td>
 			</td><td>
-			<p align="left"><font size="+1">The College was founded in
-					1800 under the will of Sir George Downing, Baronet (1685-1749), and
-					the Royal Charter was issued on 22 September of that year.&nbsp;
-					Sir George's grandfather gave his name to Downing Street in London
-					and parts of the house which he built still survive in the present
-					number 10.&nbsp; The highly respected Georgian architect, William
-					Wilkins, designed the College around a great quadrangle of 300 feet
-					square.</font></p>
-			<p align="left"><font size="+1">To plan the College on a
-					spacious campus layout was innovatory, and Downing was the first
-					example of this type of collegiate architecture.&nbsp; The building
-					of the College made a complete break with the very enclosed,
-					traditional monastic courts of the older foundations. The whole
-					feeling of Wilkins' College was to be one of space with buildings
-					set in a landscape.&nbsp; However, only part of Wilkins' scheme was
-					executed, comprising the West range and majority of the East range,
-					built 1807-21. In 1876 the northern two staircases of the East
-					range were completed to Wilkins' design by the architect E. M.
-					Barry.&nbsp; Much building activity took place during the last
-					century.&nbsp; Between 1929-32 the north corners of the quadrangle
-					were built by Sir Herbert Baker; the north side was completed by
-					A.R. Scott with the construction of the Chapel and two adjacent
-					accommodation blocks in the early 1950s.</font></p>
-			<p align="left"><font size="+1">Kenny Court, named after
-					Courtney Stanhope Kenny, Downing Professor of Law (1907-18), was
-					completed in 1963 (also by Scott), and the award-winning Senior
-					Combination Room followed in 1969 (by Professor W.G Howell), at
-					which time the Hall was also enlarged.&nbsp; More recently, the
-					Howard Building (a gift of the Howard Foundation) was opened in
-					1987, and the Junior Combination Room (JCR), named the Butterfield
-					Bar and Café after Lord Butterfield a former Master was opened in
-					1989.&nbsp; In 1993 the award-winning Maitland Robinson Library was
-					opened, and subsequently Howard Court comprising 32 high quality
-					student rooms was completed in 1996, all designed by Quinlan Terry.</font></p>
-			</td></tr></table>
+			<p align="left"><font size="+1"><p>Farnham Castle overlooks the historic town of Farnham on the western border of Surrey.<br />
+Playing an important part in the life of the town, the Keep and the Bishop&#8217;s Palace are popular tourist attractions. Historical associations and nearly continuous occupancy make the Castle one of the most important historical buildings in the south of England.</p>
+<p>For 800 years, the Bishops of Winchester used the Castle as a home and administrative centre. Powerful men from the Norman Conquest until the Tudors, the bishops often shaped English politics. Nine were Lord Chancellors. Most of the monarchs of England from King John to Queen Victoria visited or stayed at the castle.</p>
+<p>The Castle consists of two parts:</p>
+<ul>
+<li>The Keep, a Scheduled Ancient Monument. Put in the guardianship of the State in 1933, the Keep has been placed under the management of Farnham Castle on behalf of English Heritage.</li>
+<li>The Bishop&#8217;s Palace, a complex of Grade I and II listed buildings.</li>
+</ul>
+<p>Permanently lived in for almost 900 years, the buildings reflect changing architectural styles through the centuries. Though sometimes neglected in the past, the buildings are now well maintained. Recent HLF grants have allowed the undertaking of extensive repairs and restoration work to both the Palace and the Keep.</p></font></p>
+			For more details, please go to the <a href="http://www.farnhamcastle.com">Farnham Castle Website</a></td></tr></table>
 			<br />
-			<img border="0" src="/MenaceF1/images/pdf.gif" /><a href="/MenaceF1/wedding/images/Downingcollegemap.pdf">Download map as a PDF</a>
-			<img border="0" src="/MenaceF1/images/downingCollegeMap.jpg"
-				width="898" height="632"><br />
 			</td>
 		</tr>
 	</tbody>

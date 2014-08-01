@@ -1,7 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-<title>claireandscottwedding.co.uk</title>
+<title>The Wedding of Sharon and Richard</title>
 <%@ page language="java" import="menaceF1.wedding.*"
 	contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="/WEB-INF/struts-html.tld" prefix="html" %>
@@ -71,12 +71,11 @@
 			</td>
 
 			<td valign="top" align="center">
-				<b><u><font size="+3">The Church of St. John </font></u></b><br>
+				<b><u><font size="+3">All Saints Church </font></u></b><br>
 			<strong><br>
-			<b><font size="+1">The church of St. John  is in
-			the village of Waterbeach, <br>
-			which is approx. 7 miles north of
-			Cambridge.<br>
+			<b><font size="+1">All Saints Church is located in the centre of Fleet.
+			
+			<br>
 			<br>
 			It is easily accessible by both train and car. <br>
 			Please see the <a
@@ -84,34 +83,19 @@
 			how to get here. </font></b></strong><br>
 			<table CELLSPACING = "2" cellpadding="10">
 			<tr>
-			<td>
+			<td valign="top">
 			<p align="left"><img border="0"
-				src="/MenaceF1/wedding/images/church1.jpg" width="373" height="497"></p>
+				src="/MenaceF1/wedding/images/fleet13.JPG"></p>
 				</td><td valign="top">
 			<p align="left"><font size="+1"></font></p>
-					<p align="left"><font size="+1">The church of St. John
-					the Evangelist is an edifice of the 13th century, in the early
-					English style with perpendicular insertions, and consists of
-					chancel, clerestoried nave, aisles, south porch and an embattled
-					western tower containing a clock and bells. The windows of the
-					clerestory and aisles are perpendicular, and the chancel is
-					enriched with an alabaster and mosaic reredos. The beautiful font
-					of marble and Caen stone and a very elaborate brass lectern were
-					presented by friends of the late vicar. </font></p>
-					<p align="left"><font size="+1">The chancel, nave and
-					aisles have been restored, and the church enlarged and reseated
-					with carved oak benches, and in 1878 a stained window was placed in
-					the belfry. In the nave floor is a stone inscribed to William Stane
-					M.D. a Fellow of the Royal College of Physicians in London, d. 11
-					Feb. 1679. The pulpit was erected in 1879, as a memorial to the
-					Rev. William Keatinge Clay B.D. vicar here 1854-67, it is of Caen
-					stone and alabaster, inlaid with representations in mosaic of the
-					Sermon on the Mount and the preaching of St. Paul, and is further
-					adorned with statuettes of St. John the Baptist and the Prophet
-					Elijah. </font></p>
-					<p align="left"><font size="+1">The Church was restored
-					in 1878, at a cost of £3,500, and affords 450 sittings. The
-					register dates from the year 1653.</font></p>
+					<p align="left"><font size="+1">In 1860 Charles Edward Lefroy, Secretary to the Speaker of the House of Commons, commissioned All Saints Church, Fleet - in memory of his wife, Janet Walker, who had died in 1857. The architect was William Burges, among the greatest of the Victorian art-architects.
+The ecclesiastical parish of Ewshot and Crookham was split into two in 1862 with the northern section based on the All Saints church, becoming the new parish of Fleet.
+
+Lefroy did not live to complete the design. It was completed by James Walker, Janet's father.
+
+lefroy
+
+A memorial to Charles Lefroy, probably by Thomas Nicholls, is now in the north west of the church beside his wife, and with their dogs at their feet.</font></p>
 					</td></tr></table>
 			<p align="left"></p><br><br />
 			</td>

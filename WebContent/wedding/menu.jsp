@@ -1,7 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-<title>claireandscottwedding.co.uk</title>
+<title>The Wedding of Sharon and Richard</title>
 <%@ page language="java" import="menaceF1.wedding.*"
 	contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="/WEB-INF/struts-html.tld" prefix="html" %>
@@ -70,19 +70,17 @@
 			</table>
 			</td>
 
-			<td valign="top" align="center"><b><u><font size="+3">The
-			Wedding of Claire Helliwell &amp; Scott McCarthy</font></u></b>
+			<td valign="top" align="center"><b><u><font size="+3">The Wedding of Sharon McCarthy &amp; Richard Fuller</font></u></b>
 			<p align="left">
 			<font size="+1">Welcome to our wedding website. </font></p>
 			<p align="left"><font size="+1">We hope you will be able to
-			join us to celebrate our special day on Saturday 29th August 2009.<br>
-			Please note that our wedding takes place on a bank holiday, so we advise you to book accommodation early.<br />
+			join us to celebrate our special day on Saturday 9th May 2015.<br />
 			<br />
 			This website is designed to help you find all the information you
-			need for the day, including accomodation, maps and some fun elements
+			need for the day, including accommodation, maps and some fun elements
 			to help make the day as memorable for you as I'm sure it will be for
-			us.<br>
-			<br>
+			us.<br />
+			<br />
 			Please check back from time to time, as we'll try to keep this up to
 			date with the latest information you need and new features as the
 			date gets closer.</font></p>

@@ -1,7 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-<title>claireandscottwedding.co.uk</title>
+<title>The Wedding of Sharon and Richard</title>
 <%@ page language="java" import="menaceF1.wedding.*"
 	contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="/WEB-INF/struts-html.tld" prefix="html" %>
@@ -70,25 +70,13 @@
 			</td>
 
 			<td valign="top" align="center">
-				<b><u><font size="+3">Order of the Day</font></u></b><br>
-			<font size="+1"><br>
+				<b><u><font size="+3">Order of the Day</font></u></b><br />
+			<font size="+1"><br />
 			<% if (guest.isFullGuest()){ %>
-			12:30 - Guests arrive at St. John the Evangelist Church, Waterbeach<br>
-			13:00 - Marriage ceremony<br>
-			13:45 - Photos and afternoon tea in the Church hall<br>
-			<br>
-			15:30 - Drinks reception at Downing College, Cambridge<br>
-			17:00 - Wedding breakfast in the college hall<br>
-			<br>
-			
-			19:30 - Evening guests arrive &amp; disco <%if (!guest.isFullGuest()) {%>at Downing College, Cambridge<%} %><br>
-			Midnight - Bride &amp; Groom leave<br>
+			Full Day Guest timetable goes here. <br />
 			<% } %>
 			<% if (!guest.isFullGuest() ){ %>
-			19:30 - Evening guests arrive &amp; disco <%if (!guest.isFullGuest()) {%>at Downing College, Cambridge<%} %><br>
-			20:00 - First dance and disco <br />
-			21:30 - Coffee and wedding cake<br />
-			Midnight - Bride &amp; Groom leave<br>
+			Evening Guest timetable goes here. <br />
 			<% } %>
 			
 			

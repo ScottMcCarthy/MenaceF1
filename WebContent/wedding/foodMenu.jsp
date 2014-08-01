@@ -1,7 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-<title>claireandscottwedding.co.uk</title>
+<title>The Wedding of Sharon and Richard</title>
 <%@ page language="java" import="menaceF1.wedding.*"
 	contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="/WEB-INF/struts-html.tld" prefix="html" %>
@@ -80,23 +80,7 @@
 			<u>MENU<br>
 			<br>
 			</u>
-			Platter
-			of smoked salmon with fresh shallots, capers &amp; citrus dressing.<br>
-			<i>-<br>
-			</i>Oven roasted lamb valentines set on a heart croute served with straw potatoes &amp; a burgundy jus &amp; mint sauce.<br>
-			<br>
-			<br>
-			<u>VEGETARIAN MENU<br>
-			<br>
-			<b></b></u>Galia melon filled with strawberries steeped in Champagne.<br><i>-<br>
-			</i>
-			Mediterranean vegetable Wellington served with an aubergine confit.<br>
-			<i></i><u> </u><i> </i><br>
-			<br>
-			<u>DESSERT</u><br>
-			<br>
-			Chocolate torte with khalua cream.<br>
-			<br><br>
+			Menu to go here.
 			</font>
 			</td>
 		</tr>

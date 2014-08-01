@@ -1,7 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-<title>claireandscottwedding.co.uk</title>
+<title>The Wedding of Sharon and Richard</title>
 <%@ page language="java" import="menaceF1.wedding.*"
 	contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="/WEB-INF/struts-html.tld" prefix="html" %>
@@ -75,23 +75,7 @@
 				<b><u><font size="+3">Wedding Gift List</font></u></b><br>
 			<p align="left"><font size="+1">Dear Family &amp; Friends,<br>
 			<br>
-			We do not expect a gift and do not have a list as we already have everything we 
-need for our home.&nbsp;&nbsp; We understand that many of you will have the expense of 
-traveling and accommodation.&nbsp; Having our family and friends here to celebrate 
-with us is the best present we could ask for.&nbsp; <br>
-			<br>
-			We feel that happy memories are 
-far more precious than toasters and towels, so if you would really like to get 
-us something then vouchers towards our dream honeymoon in Mauritius would really 
-be appreciated and a gift never forgotten. <br>
-			<br>Vouchers can be purchased via the <a
-				href="http://www.kuoni.co.uk/vouchers/" target="_blank">Kuoni vouchers website</a>.<br>Please quote our booking reference number: <b>8712009</b><br>
-			<br>
-			Thank you so much for any contribution you make and we look forward to seeing you on our big day!<br>
-			<br>
-			Best wishes<br>
-			<br>
-			Scott &amp; Claire</font></p>
+			Gift list to go here</font></p>
 			</td>
 		</tr>
 </tbody>

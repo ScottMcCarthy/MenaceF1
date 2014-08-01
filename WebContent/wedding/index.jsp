@@ -1,7 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-<title>claireandscottwedding.co.uk</title>
+<title>The Wedding of Sharon and Richard</title>
 <%@ page language="java" 
 	contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="/WEB-INF/struts-html.tld" prefix="html" %>
@@ -17,8 +17,8 @@
 		<tr>
 			<td align="center">
 			
-			<object width="560" height="340"><param name="movie" value="http://www.youtube.com/v/pZRBrB6dlPs&hl=en_GB&fs=1&"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/pZRBrB6dlPs&hl=en_GB&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="560" height="340"></embed></object>
-			
+			<img border="1" src="/MenaceF1/wedding/images/sharonAndRich.jpg" >
+						
 			<html:errors /><br />
 			<br /><font size="4"><i>Welcome to our wedding website<br>
 			To enter our site,
