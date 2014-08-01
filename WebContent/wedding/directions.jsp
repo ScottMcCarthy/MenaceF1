@@ -75,117 +75,45 @@
 <% if (guest.isFullGuest()){ %>			
 			<strong><br />
 			</strong>
-			<p align="center"><b><font size="+2">St. John 
-			Church</font></b><br /><b><font size="+1"><span
-				class="street-address">Station Road</span>, Waterbeach, Cambridgeshire,
-			<span class="postal-code">CB25 9HT</span></font></b></p>
-			<p align="left"><font size="+1">Waterbeach is a village about
-			7 miles north of Cambridge off the A10. The church is on the main road from the
-			railway station to the village and is a 5 minute walk. The map below shows the location of
-			the church and the train station.</font></p>
-<iframe src="http://www.tinymap.net/embedded/38AX9Y8Mykq?w=700&h=300&clat=52.2627&clng=0.1862&z=15&v=h&c=1&d=1"
-frameborder="0" scrolling="no" width="700" height="300" marginwidth="0" marginheight="0"></iframe>			
-			<p align="left"><font size="+1"><b><u>By Car</u></b> <br>
-			The easiest way to get to Waterbeach is via the A14 and A10, entering
-			the village from the West.<br>
-			The church does have a small car-park, although probably not enough
-			for all our guests. However, you should be able to park in any of the
-			streets in the village</font>.</p>
-			<form action="http://maps.google.com/maps" method="get" target="googleMaps" >
-			<b>Get driving directions to the church, please enter your postcode:</b>
-			<input type="text" name="saddr" id="saddr" value="" />
-			
+			<p align="center"><b><font size="+2">All Saints Church</font></b><br /><b><font size="+1"><span
+				class="street-address">Church Road</span>, Fleet, Hampshire,
+			<span class="postal-code">GU51 4NB</span></font></b></p>
+			<p align="left"><font size="+1"></font></p>
+<p><iframe src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=All+Saints+Church,+Fleet,+Church+Road,+Fleet,+Fleet,+UK&amp;aq=1&amp;oq=all+&amp;sll=37.0625,-95.677068&amp;sspn=39.371738,86.572266&amp;t=h&amp;ie=UTF8&amp;hq=All+Saints+Church,+Fleet,+Church+Road,+Fleet,+Fleet,+UK&amp;ll=51.283854,-0.842905&amp;spn=0.013958,0.032015&amp;output=embed" height="350" width="100%" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe><br>
+<small><a style="color: #0000ff; text-align: left;" href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=All+Saints+Church,+Fleet,+Church+Road,+Fleet,+Fleet,+UK&amp;aq=1&amp;oq=all+&amp;sll=37.0625,-95.677068&amp;sspn=39.371738,86.572266&amp;t=h&amp;ie=UTF8&amp;hq=All+Saints+Church,+Fleet,+Church+Road,+Fleet,+Fleet,+UK&amp;ll=51.283854,-0.842905&amp;spn=0.013958,0.032015">View Larger Map</a></small></p>
 
-<input type="submit" value="Go" />
-<input type="hidden" name="daddr" value="CB25 9HT" />
-<input type="hidden" name="hl" value="en" />
-</form>
 			<p align="left"><font size="+1"><b><u>By Train</u></b> <br />
-			Waterbeach has it's own train station, although at weekends trains
-			are only once an hour.<br>
-			If travelling from the North, you can change at Peterborough and Ely
-			to get to Waterbeach.<br>
-			From the south, direct trains are available from London Kings Cross,
-			or from London Liverpool street, changing at Cambridge.<br>
-			<br>
+			All Saints church is just under a mile from Fleet railway station.
 			Train times are usually published three months in advance, and can be
 			found on the <a href="http://www.nationalrail.co.uk/">National
 			Rail website</a>.<br>
-			Trains to Waterbeach are operated by <a
-				href="http://www.firstcapitalconnect.co.uk">First Capital
-			Connect</a> or <a href="http://www.nationalexpresseastanglia.com/">National
-			Express East Anglia</a>.</font></p>
+			Trains to Fleet go from Basingstoke to London Waterloo and are operated by <a
+				href="http://www.southwesttrains.co.uk">South West Trains</a>.</font></p>
 			<p align="left"></p>
 			<p align="center"><b><font size="+2"></font></b></p>
 			<br />	
-			<p align="center"><b><font size="+2">Getting from the Church to Downing College</font></b></p>
+			<p align="center"><b><font size="+2">Getting from the Church to Farnham Castle</font></b></p>
 			<p align="left"><font size="+1">
-			<b>N.B.</b> - We would like to advise our guests who are driving from the Church to the Reception to take the route via the A10 and <b>NOT</b> through Horningsea and Fen Ditton.
-			Most sat-navs will attempt to take you via Horningsea.  However,  as Cambridge United are playing on our wedding day at 3pm, you are very likely to get stuck in match-day traffic.
-			We would therefore advise guests to travel via the A10 as described below:
-			</font></p>
-			<ul>
-			<li ><p align="left"> On leaving the lane from the car park bear left in to Chapel street</p></li>
-<li><p align="left">Follow the road round to the left (passing the village green on the right), it becomes Cambridge road and then Car Dyke road</p></li>
-<li><p align="left">Turn left on to the A10 (Ely road), pass through 2 sets of traffic lights</p></li>
-<li><p align="left">At the roundabout take the middle lane signposted "city", take the 3rd exit on to the A1304/Milton road towards Cambridge</p></li>
-<li><p align="left">Stay in the left lane signposted city (the 2 right-hand lanes are for the science park)</p></li>
-<li><p align="left">At the traffic lights on the crossroads (Golden Hind pub on your right) go straight on</p></li>
-<li><p align="left">At the roundabout, take the 1st exit onto A1134/Elizabeth Way</p></li>
-<li><p align="left">At the roundabout go straight on (2nd exit) staying on the A1134/Elizabeth Way and crossing the river</p></li>
-<li><p align="left">At the roundabout, take the 2nd exit onto East Rd (A603), continue forward (the Grafton Centre will be on your right)</p></li>
-<li><p align="left">At the traffic lights on the crossroad go straight on (becomes Gonville Place), Queen Anne car park will be on your left and Parker's Piece (green space) on your right</p></li>
-<li><p align="left">At the traffic lights turn right in to Regent street, travel 0.2 miles</p></li>
-<li><p align="left">Look for the black old fashioned lanterns on the left then turn left in to Downing college (opposite Pizza Hut).  You may need to go in to the porter's lodge (building on the left by the entrance) to get a token to access the car park</p></li>
-</ul>		
+			<b>Directions to go here</b></ul>		
 			
 				
 <%} if (guest.isEveningGuest()){ %>
-			<p align="center"><b><font size="+2">Downing College</font><br>
-			<font size="+1">Regent Street, Cambridge, CB2 1DQ </font></b></p>
-			<p align="left"><font size="+1">Our reception takes place in
-			the main hall at Downing College.<br />Downing College is located
-			in the heart of Cambridge, and is shown on the map below.</font></p>
-			<iframe src="http://www.tinymap.net/embedded/UJkHFFErsle?w=700&h=400&clat=52.1954&clng=0.1135&z=14&v=h&c=1&d=1"
-frameborder="0" scrolling="no" width="700" height="400" marginwidth="0" marginheight="0"></iframe>		
-			<p align="left"><font size="+1"><b><u>By Car</u></b> <br>
-			<b></b>Cambridge is connected to the North via the A1(M), East and
-			West via the A14, and South via the M11.<br>
-			The College does have limited parking available, however cars can only be left overnight if you are staying at the College.<br>
-			With the College being in the heart of Cambridge, street parking on a
-			Saturday is virtually impossible, although there are various car
-			parks available.  Full details of car-parks can be found on the <a
-				href="http://www.cambridge.gov.uk/parking">Cambridge City
-			Council website</a>.</font><b></b></p>
-			<form action="http://maps.google.com/maps" method="get"
-				target="googleMaps"><b>Get driving directions to Downing College, please enter your postcode:</b> <input type="text" name="saddr"
-				id="saddr" value=""> <input type="submit" value="Go">
-			<input type="hidden" name="daddr" value="CB2 1DQ"> <input
-				type="hidden" name="hl0" value="en"></form>
+			<p align="center"><b><font size="+2">Farnham Castle</font><br>
+			<font size="+1">Castle Street, Farnham, Surrey, GU9 0AG </font></b></p>
+			
+			<iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.uk/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Farnham+Castle,+Castle+Street,+Farnham&amp;aq=0&amp;oq=Farnham+Castle,&amp;sll=52.8382,-2.327815&amp;sspn=14.413765,22.346191&amp;ie=UTF8&amp;hq=Farnham+Castle,+Castle+Street,+Farnham&amp;t=m&amp;ll=51.217314,-0.799856&amp;spn=0.018817,0.036478&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
+			
+			
+			<p align="left"><font size="+1"><b><u>By Car</u></b> <br />
+			Approaching from Guildford (A31) arriving at the ‘Shepherd & Flock’ roundabout follow directions to Central Farnham. At traffic lights (next to Fire Station), follow road and enter one way system to left past Leisure Centre and left again. At traffic lights turn left into South Street & then first available right into Union Road. Follow one-way system straight on (past Police Station on left hand side) and turn right into Downing Street. At T-junction turn right into The Borough (main street in town centre) and first left into Castle Street (which becomes Castle Hill). The entrance to the Castle is 400 metres up on the right hand side.
 			<p align="left"><font size="+1"><b><u>By Train</u></b> <br>
-			Cambridge station is actaully about a mile outside of the city
-			centre, and is roughly a 20 minute walk to the reception, although
-			there are always plenty of taxis outside.<br>
+			Farnham station is about a mile from Farnham Castle.
 			<br>
-			Cambridge is well connected, and direct trains are available from
-			Peterborough, London Kings Cross, London Liverpool Street, Norwich,
-			Stansted Airport, Birmingham, and occasionally Manchester and
-			Liverpool.<br>
-			<br>
-			Train times are usually published three months in advance, and can be
-			found on the <a href="http://www.nationalrail.co.uk/">National
-			Rail website</a>.<br>
-			Trains to Cambridge are operated by <a
-				href="http://www.firstcapitalconnect.co.uk">First Capital
-			Connect</a> , <a href="http://www.nationalexpresseastanglia.com/">National
-			Express East Anglia</a> and <a
-				href="http://www.crosscountrytrains.co.uk/">CrossCountry</a>.</font></p>
-			<p align="left">
-				<font size="+1"><b><u>Map of Downing College grounds</u></b></font>
-				<br /><img border="0" src="/MenaceF1/images/pdf.gif" /><a href="/MenaceF1/wedding/images/Downingcollegemap.pdf">Download map as a PDF</a>
-				</p>
-			<p align="left"><img border="0" src="/MenaceF1/images/downingCollegeMap.jpg"
-				width="898" height="632"></p>
+			Trains to Farnham go from Basingstoke to London Waterloo and are operated by <a
+				href="http://www.southwesttrains.co.uk">South West Trains</a>.</font></p>
+			<p align="left"></p>
+			<p align="center"><b><font size="+2"></font></font></p>
+		
 			<%} %>	
 			</td>
 		</tr>
