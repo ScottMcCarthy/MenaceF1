@@ -78,9 +78,11 @@
 			<font size="+1"><br>
 
 			<u>MENU<br>
-			<br>
+			<br />
 			</u>
-			Menu to go here.
+We have a tasting date scheduled for early 2015.  We will decide on the menu after this has taken place.  
+<br /><br />
+Please check back closer to the time of the wedding to choose your menu options.
 			</font>
 			</td>
 		</tr>
