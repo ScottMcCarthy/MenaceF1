@@ -73,10 +73,36 @@
 				<b><u><font size="+3">Order of the Day</font></u></b><br />
 			<font size="+1"><br />
 			<% if (guest.isFullGuest()){ %>
-			Full Day Guest timetable goes here. <br />
+			<table>
+				<tr><td>1:15pm</td><td width="5"></td><td>Arrive at All Saints Church Fleet</td></tr>
+				<tr><td>1:30pm</td><td width="5"></td><td>Wedding Ceremony</td></tr>
+				<tr><td>2.15pm</td><td width="5"></td><td>Photo's at the Church</td></tr>
+				<tr><td>2.45pm</td><td width="5"></td><td>Make your way to Farnham Castle</td></tr>
+				<tr><td>3pm</td><td width="5"></td><td>Reception drinks, canape's and photos at the Castle</td></tr>
+				<tr><td>4.30pm</td><td width="5"></td><td>Wedding Breakfast and speeches</td></tr>
+				<tr><td>7pm</td><td width="5"></td><td>Evening guests arrive</td></tr>
+				<tr><td>9pm</td><td width="5"></td><td>Wedding Cake, Welsh Cakes, tea and coffee</td></tr>
+				<tr><td>11.30pm</td><td width="5"></td><td>Music stops</td></tr>
+				<tr><td>11.45pm</td><td width="5"></td><td>Bar closes</td></tr>
+				<tr><td>midnight</td><td width="5"></td><td>The venue requests that guests have departed by midnight please</td></tr>
+			</table>			
+			<br />
 			<% } %>
 			<% if (!guest.isFullGuest() ){ %>
-			Evening Guest timetable goes here. <br />
+			<table>
+				<tr><td>1:15pm</td><td width="5"></td><td>Arrive at All Saints Church Fleet</td></tr>
+				<tr><td>1:30pm</td><td width="5"></td><td>Wedding Ceremony</td></tr>
+				<tr><td>2.15pm</td><td width="5"></td><td>Photo's at the Church</td></tr>
+				<tr><td>2.45pm</td><td width="5"></td><td>Make your way to Farnham Castle</td></tr>
+				<tr><td>3pm</td><td width="5"></td><td>Reception drinks, canape's and photos at the Castle</td></tr>
+				<tr><td>4.30pm</td><td width="5"></td><td>Wedding Breakfast and speeches</td></tr>
+				<tr><td>7pm</td><td width="5"></td><td>Evening guests arrive</td></tr>
+				<tr><td>9pm</td><td width="5"></td><td>Wedding Cake, Welsh Cakes, tea and coffee</td></tr>
+				<tr><td>11.30pm</td><td width="5"></td><td>Music stops</td></tr>
+				<tr><td>11.45pm</td><td width="5"></td><td>Bar closes</td></tr>
+				<tr><td>midnight</td><td width="5"></td><td>The venue requests that guests have departed by midnight please</td></tr>
+			</table>			
+			<br />
 			<% } %>
 			
 			
