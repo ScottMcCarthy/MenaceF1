@@ -1,7 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-<title>The Wedding of Sharon and Richard</title>
+<title>The Wedding of Richard and Sharon</title>
 <%@ page language="java" import="menaceF1.wedding.*"
 	contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="/WEB-INF/struts-html.tld" prefix="html" %>
@@ -70,7 +70,7 @@
 			</table>
 			</td>
 
-			<td valign="top" align="center"><b><u><font size="+3">The Wedding of Sharon McCarthy &amp; Richard Fuller</font></u></b>
+			<td valign="top" align="center"><b><u><font size="+3">The Wedding of Richard John Fuller &amp; Sharon McCarthy</font></u></b>
 			<p align="left">
 			<font size="+1">Welcome to our wedding website. </font></p>
 			<p align="left"><font size="+1">We hope you will be able to
