@@ -76,6 +76,10 @@
 			<p align="left"><font size="+1">We hope you will be able to
 			join us to celebrate our special day on Saturday 9th May 2015.<br />
 			<br />
+			We have made the decision to only ask children that are in the wedding party or extended family . If your child or children are invited their names will be included on the invitation.
+			<br /><br />
+			Ladies, hats and fascinators would be welcomed but are by no means required.
+			<br /><br />
 			This website is designed to help you find all the information you
 			need for the day, including accommodation, maps and some fun elements
 			to help make the day as memorable for you as I'm sure it will be for
@@ -89,7 +93,7 @@
 			<br />
 			<br />
 			If you need to contact us for any reason, please e-mail us at <a
-				href="mailto:ScottandClaire@claireandscottwedding.co.uk?Subject=Wedding">ScottandClaire@claireandscottwedding.co.uk</a>
+				href="mailto:SharonAndRichard@richardandsharonwedding.co.uk?Subject=Wedding">SharonAndRichard@richardandsharonwedding.co.uk</a>
 			
 			</font></p>
 			</td>
