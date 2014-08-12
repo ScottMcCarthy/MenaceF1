@@ -3,7 +3,7 @@
 <head>
 <title>The Wedding of Sharon and Richard</title>
 <%@ page language="java" import="menaceF1.wedding.*"
-	contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+	contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="/WEB-INF/struts-html.tld" prefix="html" %>
 <% response.addHeader("P3P", "CP=\"CAO DSP COR CURa ADMa DEVa OUR IND PHY ONL UNI COM NAV INT DEM PRE\""); %>
 
@@ -71,7 +71,10 @@
 			</td>
 
 			<td valign="top" align="center">
-				<b><u><font size="+3">Farnham Castle</font></u></b><br>
+				<b><u><font size="+3">Farnham Castle</font></u></b>
+				
+				<iframe width="905" height="509" frameborder="0" allowfullscreen="" mozallowfullscreen="" webkitallowfullscreen="" src="//player.vimeo.com/video/94992852?title=0&amp;byline=0&amp;portrait=0&amp;color=c8df8d"></iframe>
+				
 			<strong><br>
 			</strong><font size="+1">Farnham Castle overlooks the historic town of Farnham on the western border of Surrey.
 
@@ -91,7 +94,7 @@ From the times of the Norman Conquest until the Tudors, the all-powerful Bishops
 			<tr>
 			<td>
 			</td><td>
-			<p align="left"><font size="+1"><p>Farnham Castle overlooks the historic town of Farnham on the western border of Surrey.<br />
+			<p align="left"><font size="+1"><p>
 Playing an important part in the life of the town, the Keep and the Bishop&#8217;s Palace are popular tourist attractions. Historical associations and nearly continuous occupancy make the Castle one of the most important historical buildings in the south of England.</p>
 <p>For 800 years, the Bishops of Winchester used the Castle as a home and administrative centre. Powerful men from the Norman Conquest until the Tudors, the bishops often shaped English politics. Nine were Lord Chancellors. Most of the monarchs of England from King John to Queen Victoria visited or stayed at the castle.</p>
 <p>The Castle consists of two parts:</p>
@@ -100,7 +103,15 @@ Playing an important part in the life of the town, the Keep and the Bishop&#8217
 <li>The Bishop&#8217;s Palace, a complex of Grade I and II listed buildings.</li>
 </ul>
 <p>Permanently lived in for almost 900 years, the buildings reflect changing architectural styles through the centuries. Though sometimes neglected in the past, the buildings are now well maintained. Recent HLF grants have allowed the undertaking of extensive repairs and restoration work to both the Palace and the Keep.</p></font></p>
-			For more details, please go to the <a href="http://www.farnhamcastle.com">Farnham Castle Website</a></td></tr></table>
+<br />
+			<img border="0" src="/MenaceF1/images/farnham/chairs.png" /><br /><br />	
+			<img border="0" src="/MenaceF1/images/farnham/night.png" /><br /><br />
+			<img border="0" src="/MenaceF1/images/farnham/outside.png" /><br /><br />
+			<img border="0" src="/MenaceF1/images/farnham/tables.png" /><br /><br />
+			<img border="0" src="/MenaceF1/images/farnham/topshot.png" /><br /><br />
+
+
+			<br />For more details, please go to the <a href="http://www.farnhamcastle.com">Farnham Castle Website</a></td></tr></table>
 			<br />
 			</td>
 		</tr>
