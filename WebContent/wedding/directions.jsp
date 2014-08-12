@@ -83,9 +83,9 @@
 <small><a style="color: #0000ff; text-align: left;" href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=All+Saints+Church,+Fleet,+Church+Road,+Fleet,+Fleet,+UK&amp;aq=1&amp;oq=all+&amp;sll=37.0625,-95.677068&amp;sspn=39.371738,86.572266&amp;t=h&amp;ie=UTF8&amp;hq=All+Saints+Church,+Fleet,+Church+Road,+Fleet,+Fleet,+UK&amp;ll=51.283854,-0.842905&amp;spn=0.013958,0.032015">View Larger Map</a></small></p>
 
 			<p align="left"><font size="+1"><b><u>By Car</u></b> <br />
-			From the M3 exit 4a, follow signs to central Fleet. Go over the railway bridge passing the railway station on your left hand side. Continue straight on through the roundabout and up the high street on Fleet Road (A3013).  <br />
+			From the M3 exit 4a, follow signs to Fleet. You'll pass the Heron on the Lake pub on your left before getting to a roundabout where you'll turn left.  Go over the railway bridge passing the railway station on your left hand side. Continue straight on through the roundabout and up the high street on Fleet Road, signposted Aldershot and Town Centre A3013. <br />
 <br />
-Turn right at Waterfords and McCarthy Holden Estate Agents onto Church Road. Signposted All Saints Church, Fleet Hospital and Lismoyne Hotel. The Church will be on the right hand side. Park in the pay and display Sainsbury's car park opposite Sunrise Senior Living homes. Parking is unfortunately not free and is £1 for an hr. The church will be visible from the entrance to the car park. The service should last around 45 minutes and we've allowed up to 30 minutes for photos before leaving for the Castle. <br />
+Turn right just after the 3rd set of traffic lights, between Waterfords and McCarthy Holden Estate Agents, onto Church Road. Signposted All Saints Church, Fleet Hospital and Lismoyne Hotel. The Church will be on the right hand side. Park in the pay and display Sainsbury's car park opposite Sunrise Senior Living homes. The cost of the car park is £0.80 for up to1 hour and £1.60 for up to 2 hours. The church will be visible from the entrance to the car park. The service should last around 45 minutes and we've allowed up to 30 minutes for photos before leaving for the Castle. <br />
 <br />
 Directions from the Church to the castle:<br />
 <br />
