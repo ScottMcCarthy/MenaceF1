@@ -3,7 +3,7 @@
 <head>
 <title>The Wedding of Sharon and Richard</title>
 <%@ page language="java" import="menaceF1.wedding.*"
-	contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+	contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="/WEB-INF/struts-html.tld" prefix="html" %>
 <% response.addHeader("P3P", "CP=\"CAO DSP COR CURa ADMa DEVa OUR IND PHY ONL UNI COM NAV INT DEM PRE\""); %>
 
@@ -79,9 +79,30 @@
 				class="street-address">Church Road</span>, Fleet, Hampshire,
 			<span class="postal-code">GU51 4NB</span></font></b></p>
 			<p align="left"><font size="+1"></font></p>
-<p><iframe src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=All+Saints+Church,+Fleet,+Church+Road,+Fleet,+Fleet,+UK&amp;aq=1&amp;oq=all+&amp;sll=37.0625,-95.677068&amp;sspn=39.371738,86.572266&amp;t=h&amp;ie=UTF8&amp;hq=All+Saints+Church,+Fleet,+Church+Road,+Fleet,+Fleet,+UK&amp;ll=51.283854,-0.842905&amp;spn=0.013958,0.032015&amp;output=embed" height="350" width="100%" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe><br>
+<p><iframe src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=All+Saints+Church,+Fleet,+Church+Road,+Fleet,+Fleet,+UK&amp;aq=1&amp;oq=all+&amp;sll=37.0625,-95.677068&amp;sspn=39.371738,86.572266&amp;t=m&amp;ie=UTF8&amp;hq=All+Saints+Church,+Fleet,+Church+Road,+Fleet,+Fleet,+UK&amp;ll=51.283854,-0.842905&amp;spn=0.013958,0.032015&amp;output=embed" height="350" width="100%" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe><br>
 <small><a style="color: #0000ff; text-align: left;" href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=All+Saints+Church,+Fleet,+Church+Road,+Fleet,+Fleet,+UK&amp;aq=1&amp;oq=all+&amp;sll=37.0625,-95.677068&amp;sspn=39.371738,86.572266&amp;t=h&amp;ie=UTF8&amp;hq=All+Saints+Church,+Fleet,+Church+Road,+Fleet,+Fleet,+UK&amp;ll=51.283854,-0.842905&amp;spn=0.013958,0.032015">View Larger Map</a></small></p>
 
+			<p align="left"><font size="+1"><b><u>By Car</u></b> <br />
+			From the M3 exit 4a, follow signs to central Fleet. Go over the railway bridge passing the railway station on your left hand side. Continue straight on through the roundabout and up the high street on Fleet Road (A3013).  <br />
+<br />
+Turn right at Waterfords and McCarthy Holden Estate Agents onto Church Road. Signposted All Saints Church, Fleet Hospital and Lismoyne Hotel. The Church will be on the right hand side. Park in the pay and display Sainsbury's car park opposite Sunrise Senior Living homes. Parking is unfortunately not free and is £1 for an hr. The church will be visible from the entrance to the car park. The service should last around 45 minutes and we've allowed up to 30 minutes for photos before leaving for the Castle. <br />
+<br />
+Directions from the Church to the castle:<br />
+<br />
+From leaving Sainsbury's car park, turn right back onto Church Road. At the T junction turn right back onto Fleet Road heading into Central Fleet. Go through the Town and at the crossroads with The Oat Sheaf pub, turn left onto Reading Road South (A323). At the traffic lights go straight on towards Church Crookham. <br />
+<br />
+Continue straight through the roundabout near Tesco Express. Up Beacon Hill Road (B3013) and straight through the next two roundabouts. At the top of Beacon Hill Road, take the first exit at the Roundabout onto Odiham Road, signposted Farnham A287.  <br />
+<br />
+At the traffic lights just after the Shell Garage, turn right onto Folly Hill. You'll see a brown sign for Farnham Castle. <br />
+<br />
+As you go down the hill, Folly Hill will become Castle Street. The castle is on the left a little way down the hill, after Farnham Park Golf Course. Just after the Cricket Club look out for the brown Farnham Castle sign on the left, the next left is the Castle Entrance. The Car Park is at the top of the hill. <br />
+<br />
+This should take less than 15 mins from the Church. <br />
+<br />
+We'll see you there for drinks and canapés. 
+			
+			</font></p>
+			
 			<p align="left"><font size="+1"><b><u>By Train</u></b> <br />
 			All Saints church is just under a mile from Fleet railway station.
 			Train times are usually published three months in advance, and can be
