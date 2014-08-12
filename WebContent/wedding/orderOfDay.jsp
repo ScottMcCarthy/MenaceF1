@@ -86,7 +86,6 @@
 				<tr><td>11.45pm</td><td width="5"></td><td>Bar closes</td></tr>
 				<tr><td>midnight</td><td width="5"></td><td>The venue requests that guests have departed by midnight please</td></tr>
 			</table>			
-			<br />
 			<% } %>
 			<% if (!guest.isFullGuest() ){ %>
 			<table>
@@ -102,10 +101,13 @@
 				<tr><td>11.45pm</td><td width="5"></td><td>Bar closes</td></tr>
 				<tr><td>midnight</td><td width="5"></td><td>The venue requests that guests have departed by midnight please</td></tr>
 			</table>			
-			<br />
 			<% } %>
-			
-			
+			<p align="left">
+Please note, there is another wedding at All Saints Church before ours.  Their service should be finished by 12.15 and the church has allowed an hour for their guests to depart.
+<br /><br />
+
+The above is all currently estimates, so may have to update that once we have out meeting with the venue to finalise timings etc.  But will do as a rough guide for now.			
+			</p>
 			</font>
 			</td>
 		</tr>
