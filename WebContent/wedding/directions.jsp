@@ -86,21 +86,7 @@
 			From the M3 exit 4a, follow signs to Fleet. You'll pass the Heron on the Lake pub on your left before getting to a roundabout where you'll turn left.  Go over the railway bridge passing the railway station on your left hand side. Continue straight on through the roundabout and up the high street on Fleet Road, signposted Aldershot and Town Centre A3013. <br />
 <br />
 Turn right just after the 3rd set of traffic lights, between Waterfords and McCarthy Holden Estate Agents, onto Church Road. Signposted All Saints Church, Fleet Hospital and Lismoyne Hotel. The Church will be on the right hand side. Park in the pay and display Sainsbury's car park opposite Sunrise Senior Living homes. The cost of the car park is £0.80 for up to1 hour and £1.60 for up to 2 hours. The church will be visible from the entrance to the car park. The service should last around 45 minutes and we've allowed up to 30 minutes for photos before leaving for the Castle. <br />
-<br />
-Directions from the Church to the castle:<br />
-<br />
-From leaving Sainsbury's car park, turn right back onto Church Road. At the T junction turn right back onto Fleet Road heading into Central Fleet. Go through the Town and at the crossroads with The Oat Sheaf pub, turn left onto Reading Road South (A323). At the traffic lights go straight on towards Church Crookham. <br />
-<br />
-Continue straight through the roundabout near Tesco Express. Up Beacon Hill Road (B3013) and straight through the next two roundabouts. At the top of Beacon Hill Road, take the first exit at the Roundabout onto Odiham Road, signposted Farnham A287.  <br />
-<br />
-At the traffic lights just after the Shell Garage, turn right onto Folly Hill. You'll see a brown sign for Farnham Castle. <br />
-<br />
-As you go down the hill, Folly Hill will become Castle Street. The castle is on the left a little way down the hill, after Farnham Park Golf Course. Just after the Cricket Club look out for the brown Farnham Castle sign on the left, the next left is the Castle Entrance. The Car Park is at the top of the hill. <br />
-<br />
-This should take less than 15 mins from the Church. <br />
-<br />
-We'll see you there for drinks and canapés. 
-			
+
 			</font></p>
 			
 			<p align="left"><font size="+1"><b><u>By Train</u></b> <br />
@@ -115,7 +101,19 @@ We'll see you there for drinks and canapés.
 			<br />	
 			<p align="center"><b><font size="+2">Getting from the Church to Farnham Castle</font></b></p>
 			<p align="left"><font size="+1">
-			<b>Directions to go here</b></ul>		
+From leaving Sainsbury's car park, turn right back onto Church Road. At the T junction turn right back onto Fleet Road heading into Central Fleet. Go through the Town and at the crossroads with The Oat Sheaf pub, turn left onto Reading Road South (A323). At the traffic lights go straight on towards Church Crookham. <br />
+<br />
+Continue straight through the roundabout near Tesco Express. Up Beacon Hill Road (B3013) and straight through the next two roundabouts. At the top of Beacon Hill Road, take the first exit at the Roundabout onto Odiham Road, signposted Farnham A287.  <br />
+<br />
+At the traffic lights just after the Shell Garage, turn right onto Folly Hill. You'll see a brown sign for Farnham Castle. <br />
+<br />
+As you go down the hill, Folly Hill will become Castle Street. The castle is on the left a little way down the hill, after Farnham Park Golf Course. Just after the Cricket Club look out for the brown Farnham Castle sign on the left, the next left is the Castle Entrance. The Car Park is at the top of the hill. <br />
+<br />
+This should take less than 15 mins from the Church. <br />
+<br />
+We'll see you there for drinks and canapés. 
+			
+			</ul>		
 			
 				
 <%} if (guest.isEveningGuest()){ %>
