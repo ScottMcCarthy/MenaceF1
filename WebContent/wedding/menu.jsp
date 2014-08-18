@@ -80,9 +80,6 @@
 			<font size="+1">Welcome to our wedding website. </font></p>
 			<p align="left"><font size="+1">We hope you will be able to
 			join us to celebrate our special day on Saturday 9th May 2015.<br />
-			<br />
-			We have made the decision to only ask children that are in the wedding party or extended family . If your child or children are invited their names will be included on the invitation.
-			<br /><br />
 			Ladies, hats and fascinators would be welcomed but are by no means required.
 			<br /><br />
 			This website is designed to help you find all the information you

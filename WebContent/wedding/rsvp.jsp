@@ -104,7 +104,8 @@
 			<html:errors />
 			<html:form action="submitRSVP"  >
 				<html:radio property="canAttend" value="yes" onclick="changeRSVPForm(this)" /> Yes, I/we can attend your wedding. <br />
-				<html:radio property="canAttend" value="no" onclick="changeRSVPForm(this)" /> Sorry, I/we are unable to attend your wedding. <br />
+				<html:radio property="canAttend" value="no" onclick="changeRSVPForm(this)" /> Sorry, I/we are unable to attend your wedding. <br /><br />
+				We have made the decision to only ask children that are in the wedding party or extended family.<br />If your child or children are invited their names will be included on the invitation.
 				<div id="cannotAttendDiv" style="display:none">
 					<br />
 					We're sorry to hear that you cannot attend our wedding. <br />
