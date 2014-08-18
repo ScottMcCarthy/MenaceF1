@@ -14,6 +14,7 @@ import org.apache.commons.io.FileUtils;
 public class CrawlTest {
 	
 	private static final String crawlURL = "http://10.241.16.212:4200/tdm/sm/37CF5C5524E0EC0FDB60924B2DAE941B/sitemap.index";
+	private static final String destinationDirectory = "/Users/ScottMcCarthy/crawl/";
 	private static final String locationTag = "loc";
 
 	private static String readExternalFile(URL url){
@@ -139,7 +140,7 @@ public class CrawlTest {
 					    			}
 					    			
 					    		} else {
-					    			FileUtils.copyURLToFile(new URL(threadURL), new File("/Users/ScottMcCarthy/crawl/"+threadFileNumber+".xml"));
+					    			FileUtils.copyURLToFile(new URL(threadURL), new File(destinationDirectory+threadFileNumber+".xml"));
 					    		}
 							} catch (MalformedURLException e) {
 								e.printStackTrace();
