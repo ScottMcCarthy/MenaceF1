@@ -432,15 +432,6 @@
 					</tr>
 					<% } %>
 					<tr>
-						<td valign="top" width="285"><b>Will you need to park your car at Downing College?</b><br /> Please note that only guests who have accomodation at Downing College may leave their car there overnight.</td>
-						<td width="424">
-							<html:select property="car">
-								<html:option value ="N">No</html:option>
-								<html:option value ="Y">Yes</html:option>
-							</html:select>
-						</td>
-					</tr>
-					<tr>
 						<td valign="top" width="285"><b>Any other comments:</b><br /> Finally, if you have any other comments, or would like to send a personal message, please use this box.</td>
 						<td width="424">
 							<html:textarea cols="50" rows="10" property="comments"></html:textarea>

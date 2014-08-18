@@ -40,7 +40,7 @@ public class GuestUtils {
 				statement.setString(13, rsvp.getYourspecial());
 				statement.setString(14, rsvp.getPartnerspecial());
 				statement.setString(15, rsvp.getComments());
-				statement.setString(16, rsvp.getCar());
+				statement.setString(16, "N");
 				
 	            statement.execute();
 
