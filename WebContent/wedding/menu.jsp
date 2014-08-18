@@ -75,7 +75,7 @@
 			</table>
 			</td>
 
-			<td valign="top" align="center"><b><u><font size="+3">The Wedding of Richard John Fuller &amp; Sharon McCarthy</font></u></b>
+			<td valign="top" align="center"><b><font size="+2">The Wedding of</font><br /><font size="+3">Richard John Fuller &amp; Sharon McCarthy</font></b>
 			<p align="left">
 			<font size="+1">Welcome to our wedding website. </font></p>
 			<p align="left"><font size="+1">We hope you will be able to
