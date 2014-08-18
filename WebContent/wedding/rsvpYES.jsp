@@ -81,14 +81,12 @@
 			<p align="left"></p>
 			<p align="left"><font size="+1">We are delighted to hear
 			that you can make it to our wedding! <br /><br />
-			If you've not yet booked your accommodation, we recommend that you do
-			so soon, as bank-holidays in Cambridge tend to get booked up very
-			quickly. We have a list of hotels on the <a href="/MenaceF1/accomodation.do">accommodation</a> section of this
-			site.<br><br />We look forward to seeing you on August 29th!<br />
+			If you've not yet booked your accommodation, we have a list of hotels on the <a href="/MenaceF1/accomodation.do">accommodation</a> section of this
+			site.<br><br />We look forward to seeing you on May 9th!<br />
 			<br>
 			Best Wishes<br>
 			<br>
-			Scott &amp; Claire</font></p>
+			Richard &amp; Sharon</font></p>
 			</td>
 		</tr>
 </tbody>

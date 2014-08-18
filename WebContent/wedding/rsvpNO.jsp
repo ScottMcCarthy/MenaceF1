@@ -78,7 +78,7 @@
 
 			<td valign="top" align="center">
 				<b><u><font size="+3">R.S.V.P.</font></u></b><br>
-			<p align="left"><font size="+1">We are sorry to hear that you cannot make it to our wedding.  <br /> We're going to be making all our photos from the day available on this site, so please check back after the wedding. <br /><br />Best Wishes<br /><br />Scott &amp; Claire</font></p>
+			<p align="left"><font size="+1">We are sorry to hear that you cannot make it to our wedding.  <br /> We're going to be making all our photos from the day available on this site, so please check back after the wedding. <br /><br />Best Wishes<br /><br />Richard &amp; Sharon</font></p>
 			</td>
 		</tr>
 </tbody>
