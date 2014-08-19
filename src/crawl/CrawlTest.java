@@ -13,9 +13,12 @@ import org.apache.commons.io.FileUtils;
 
 public class CrawlTest {
 	
-	private static final String crawlURL = "http://10.241.16.212:4200/tdm/sm/37CF5C5524E0EC0FDB60924B2DAE941B/sitemap.index";
-	private static final String destinationDirectory = "/Users/ScottMcCarthy/crawl/";
+	//private static final String defaultCrawlURL = "http://10.241.16.212:4200/tdm/sm/37CF5C5524E0EC0FDB60924B2DAE941B/sitemap.index";
+	//private static final String defaultDestinationDirectory = "/Users/ScottMcCarthy/crawl";
 	private static final String locationTag = "loc";
+	
+	private static String crawlURL = "";
+	private static String destinationDirectory = "";
 
 	private static String readExternalFile(URL url){
 		//Check if we need to do a redirect to a different URL.
@@ -105,8 +108,22 @@ public class CrawlTest {
 		List<String> siteMaps = getListOfURLs(output, locationTag);
 		return siteMaps;
 	}
-	
+
 	public static void main(String[] args) {
+				
+		if (args.length!=2) {
+			System.out.println("Usage : java -cp commons-io-2.4.jar:. crawl.CrawlTest <url-to-crawl> <directory-to-save-files-to>");
+			return;
+		}
+		
+		if (args.length == 2){
+			crawlURL = args[0];
+			destinationDirectory = args[1];
+		}
+		
+		System.out.println("URL "+crawlURL);
+		System.out.println("Directory : "+destinationDirectory);		
+		
 		//Step 1 : read the customer's Index.
 		int fileNumber = 0;
 		System.out.println("About to crawl: "+crawlURL);
@@ -132,7 +149,7 @@ public class CrawlTest {
 					    	try {
 					    		if (307 == httpReturnCode(new URL(threadURL))){
 					    			try {
-					    				FileUtils.copyURLToFile(new URL(get307RedirectURL(new URL(threadURL))), new File("/Users/ScottMcCarthy/crawl/"+threadFileNumber+".xml"));
+					    				FileUtils.copyURLToFile(new URL(get307RedirectURL(new URL(threadURL))), new File(destinationDirectory+"/"+threadFileNumber+".xml"));
 					    				return;
 
 					    			} catch (MalformedURLException e) {
@@ -140,7 +157,7 @@ public class CrawlTest {
 					    			}
 					    			
 					    		} else {
-					    			FileUtils.copyURLToFile(new URL(threadURL), new File(destinationDirectory+threadFileNumber+".xml"));
+					    			FileUtils.copyURLToFile(new URL(threadURL), new File(destinationDirectory+"/"+threadFileNumber+".xml"));
 					    		}
 							} catch (MalformedURLException e) {
 								e.printStackTrace();
