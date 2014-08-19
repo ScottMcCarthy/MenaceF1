@@ -75,16 +75,10 @@
 			</table>
 			</td>
 
-			<td valign="top" align="center" width="780"><b><u><font size="+3">Local
-			Accommodation</font></u></b><br>
-			<strong><br></strong>
-		
-			<font size="+1"><a
-				href="http://www.theaa.com/travel/basicsearch/preparepoisearchstage1.do?statusstage1=new&amp;page=placesstay">The
-			AA website</a> has a list of Hotels, B&amp;Bs and guest-houses in the area.<br>
-			<br>
-			The following is a list of local hotels and
-			guest houses near to the reception venue. Please check with the hotel for parking arrangements. Overnight parking at the College is only available to guests staying at the College.</font><br>
+			<td valign="top" align="left" width="780"><b><u><font size="+3"><p align="center">Local
+			Accommodation</p></font></u></b>
+
+			The following is a list of local hotels near to the reception venue. Please check with the hotel for parking arrangements.</font><br>
 			<br />
 			<table border="1">
 				<tbody>
@@ -94,124 +88,30 @@
 					</tr>
 					<tr>
 						<td valign="top"><font size="+1"><a
-							href="https://www.travelodge.co.uk">Travelodge</a><br>
+							href="http://www.mercure.com/gb/hotel-6621-mercure-farnham-bush-hotel/index.shtml">Mercure Farnham Bush Hotel</a><br>
 						<br>
-						Cambridge Leisure Park<br>
-						Clifton Way<br>
-						Cambridge<br>
-						CB1 7DY<br>
-						<br>
-						Tel: 0871 984 6101 <br>
-						<a href="https://www.travelodge.co.uk">www.travelodge.co.uk</a><br>
-						<br>
-						<% if (guest.isFullGuest()){ %>Distance to Church: 6.9 Miles<br><%} %>
-						Distance to Reception: 1.1 Miles </font><br>
+						The Borough <br />
+						Farnham <br />
+						GU9 7NN <br /><br />
+						Tel: +44 1252 234800 <br />
 						</td>
-						<td><iframe src="http://www.tinymap.net/embedded/t1YBHLJ0rBq?w=600&h=420&clat=52.1931&clng=0.1405&z=15&v=n&c=1&d=1" frameborder="0" scrolling="no" width="600" height="420" marginwidth="0" marginheight="0"></iframe><br />
-						<small><a
-							href="http://www.google.co.uk/maps?f=q&amp;hl=en&amp;geocode=&amp;q=CB1+7DY&amp;ie=UTF8&amp;ll=52.196192,0.141191&amp;spn=0.015783,0.025749&amp;z=14&amp;iwloc=addr&amp;source=embed"
-							style="color:#0000FF;text-align:left">View larger map and
-						driving directions</a></small></td>
+						<td>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4998.413842131014!2d-0.801037463433442!3d51.21526373845667!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6e9622f851a6732d!2sMercure+Bush+Hotel+Farnham!5e0!3m2!1sen!2suk!4v1408438994387" width="600" height="420" frameborder="0" style="border:0"></iframe>
+						</td>
 					</tr>
 					<tr>
 						<td valign="top"><font size="+1"><a
-							href="http://www.devere-hotels.com/our-hotels/university-arms/the-hotel">The
-						University Arms</a><br>
+							href="http://www.farnhamhousehotel.com">Farnham House Hotel</a><br>
 						<br>
-						<span id="ctl00_ContentPlaceHolder1_HotelContact1_lblFullName"></span><span
-							id="ctl00_ContentPlaceHolder1_HotelContact1_lblAddress">Regent
-						Street<br>
-						Cambridge<br>
-						Cambridgeshire<br>
-						CB2 1DB</span> <br>
-						<br>
-						Tel: <span
-							id="ctl00_ContentPlaceHolder1_HotelContact1_lblTelephone">01223
-						273000</span><br>
-						<a
-							href="http://www.devere-hotels.com/our-hotels/university-arms/the-hotel">www.devere-hotels.com</a><br>
-						<br>
-						<% if (guest.isFullGuest()){ %>Distance to Church: 6.4 Miles<br><%} %>
-						Distance to Reception: 0.2 Miles</font></td>
-						<td><iframe src="http://www.tinymap.net/embedded/aRcqqgZrDGM?w=600&h=420&clat=52.2018&clng=0.1259&z=16&v=n&c=1&d=1"
-frameborder="0" scrolling="no" width="600" height="420" marginwidth="0" marginheight="0"></iframe><br />
-						<small><a
-							href="http://www.google.co.uk/maps?f=q&amp;hl=en&amp;geocode=&amp;q=CB2+1DB&amp;ie=UTF8&amp;ll=52.207764,0.129089&amp;spn=0.007654,0.014398&amp;z=14&amp;iwloc=addr&amp;source=embed"
-							style="color:#0000FF;text-align:left">View larger Map and
-						driving directions</a></small></td>
-					</tr>
-					<tr>
-						<td valign="top"><font size="+1"><a href="http://www.cambridgegardenhouse.com/">Doubletree
-						by Hilton<br>
-						Cambridge Garden House</a><br>
-						<br>Granta Place<br>Mill Lane<br>Cambridge<br>CB2 1RT<br>
-						<br>Tel: 01223 259 988<br>
-						<a href="http://www.cambridgegardenhouse.com/">www.cambridgegardenhouse.com</a><br>
-						<br>
-						<% if (guest.isFullGuest()){ %>Distance to Church: 7.0 Miles<br><%} %>
-						Distance to Reception: 0.6 Miles</font></td>
-						<td><iframe src="http://www.tinymap.net/embedded/CTiycLU28K3?w=600&h=420&clat=52.2005&clng=0.1196&z=16&v=n&c=0&d=0"
-frameborder="0" scrolling="no" width="600" height="420" marginwidth="0" marginheight="0"></iframe>						<small><a
-							href="http://www.google.co.uk/maps?f=q&hl=en&geocode=&q=CB2+1RT&ie=UTF8&ll=52.201321,0.116429&spn=0.017412,0.045104&t=h&z=15&iwloc=addr"
-							style="color:#0000FF;text-align:left">View larger Map and
-						driving directions</a></small></td>
-					</tr>
-					<tr>
-						<td valign="top"><font size="+1"><a href="http://www.gonvillehotel.co.uk">Best Western
-						Gonville Hotel</a><br>
-						<br>Gonville Place<br>Cambridge<br>CB1 1LY<br>
-						<br>Tel: 01223 366611
-						<br>
-						<a href="http://www.gonvillehotel.co.uk">www.gonvillehotel.co.uk</a><br>
-						<br>
-						<% if (guest.isFullGuest()){ %>Distance to Church: 6.1 Miles<br><%} %>
-						Distance to Reception: 0.2 Miles</font>
+						Alton Road<br />
+						Farnham<br />
+						Surrey<br />
+						GU10 5ER<br />
+						<br />
+						Tel: +44 1252 716908<br />
+
+						<td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10000.454572180279!2d-0.8375793312103481!3d51.19855761397681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48742dac267e6393%3A0x5ae0745b888740bb!2sFarnham+House+Hotel!5e0!3m2!1sen!2suk!4v1408439299391" width="600" height="420" frameborder="0" style="border:0"></iframe>
 						</td>
-						<td><iframe src="http://www.tinymap.net/embedded/YK4R5rIMtSa?w=600&h=420&clat=52.2007&clng=0.1252&z=16&v=n&c=0&d=0"
-frameborder="0" scrolling="no" width="600" height="420" marginwidth="0" marginheight="0"></iframe>						<small><a
-							href="http://www.google.co.uk/maps?f=q&hl=en&geocode=&q=CB1+1LY&ie=UTF8&ll=52.200769,0.128767&spn=0.008706,0.022552&t=h&z=16&iwloc=addr"
-							style="color:#0000FF;text-align:left">View larger Map and
-						driving directions</a></small></td>
-					</tr>
-					<tr>
-						<td valign="top"><font size="+1"><a
-							href="http://www.regenthotel.co.uk/">Regency  Hotel</a><br>
-						<br>
-						41 Regent Street<br>
-						Cambridge<br>
-						CB2 1AB<br>
-						<br>
-						Tel: 01223 351470&nbsp; <br>
-						<a href="http://www.regenthotel.co.uk/">www.regenthotel.co.uk</a><br>
-						<br>
-						<% if (guest.isFullGuest()){ %>Distance to Church: 6.6 Miles<br>
-						<%} %> Distance to Reception: 0.1 Miles</font>
-						</td>
-						<td><iframe src="http://www.tinymap.net/embedded/I8UKOFQnT3L?w=600&h=420&clat=52.2008&clng=0.1274&z=16&v=n&c=1&d=1"
-frameborder="0" scrolling="no" width="600" height="420" marginwidth="0" marginheight="0"></iframe>						<small><a
-							href="http://www.google.co.uk/maps?f=q&amp;hl=en&amp;geocode=&amp;q=CB2+1AB&amp;ie=UTF8&amp;ll=52.200769,0.128767&amp;spn=0.008706,0.022552&amp;t=h&amp;z=16&amp;iwloc=addr"
-							style="color:#0000FF;text-align:left">View larger Map and
-						driving directions</a></small></td>
-					</tr>
-					<tr>
-						<td valign="top"><font size="+1"><a
-							href="http://www.ichotelsgroup.com/h/d/cp/925/en/hd/cbguk?sicreative=450913631&amp;sitrackingid=31870643&amp;sicontent=0&amp;siclientid=1931&amp;cm_mmc=Google-PS-CrownePlaza_UK-_-G%20BN-EMEA-_-GBR-Cambridge-_-cambridge%20hotel">Crowne Plaza</a><br>
-						<br>
-						Downing Street<br>
-						Cambridge<br>
-						CB2 3DT<br>
-						<br>
-						Tel: 01223 351470&nbsp; <br>
-						<a href="http://www.ichotelsgroup.com/h/d/cp/925/en/hd/cbguk?sicreative=450913631&amp;sitrackingid=31870643&amp;sicontent=0&amp;siclientid=1931&amp;cm_mmc=Google-PS-CrownePlaza_UK-_-G%20BN-EMEA-_-GBR-Cambridge-_-cambridge%20hotel">www.crowneplaza.co.uk</a><br>
-						<br>
-						<% if (guest.isFullGuest()){ %>Distance to Church: 6.9 Miles<br>
-						<%} %> Distance to Reception: 0.3 Miles</font>
-						</td>
-						<td><iframe src="http://www.tinymap.net/embedded/U1yiN9sNOA5?w=600&h=420&clat=52.2015&clng=0.1229&z=15&v=n&c=1&d=1"
-frameborder="0" scrolling="no" width="600" height="420" marginwidth="0" marginheight="0"></iframe>						<small><a
-							href="http://www.google.co.uk/maps?f=q&amp;hl=en&amp;geocode=&amp;q=CB2+3DT&amp;ie=UTF8&amp;ll=52.200769,0.128767&amp;spn=0.008706,0.022552&amp;t=h&amp;z=16&amp;iwloc=addr"
-							style="color:#0000FF;text-align:left">View larger Map and
-						driving directions</a></small></td>
 					</tr>
 				</tbody>
 			</table>
