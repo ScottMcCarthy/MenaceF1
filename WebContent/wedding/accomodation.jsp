@@ -94,6 +94,8 @@
 						Farnham <br />
 						GU9 7NN <br /><br />
 						Tel: +44 1252 234800 <br />
+						<br />
+						Distance from Church : 6.1 miles<br />Distance from Castle : 0.3 miles
 						</td>
 						<td>
 						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4998.413842131014!2d-0.801037463433442!3d51.21526373845667!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6e9622f851a6732d!2sMercure+Bush+Hotel+Farnham!5e0!3m2!1sen!2suk!4v1408438994387" width="600" height="420" frameborder="0" style="border:0"></iframe>
@@ -109,6 +111,8 @@
 						GU10 5ER<br />
 						<br />
 						Tel: +44 1252 716908<br />
+						<br />
+						Distance from Church : 7.7 miles<br />Distance from Castle : 2.3 miles
 
 						<td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10000.454572180279!2d-0.8375793312103481!3d51.19855761397681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48742dac267e6393%3A0x5ae0745b888740bb!2sFarnham+House+Hotel!5e0!3m2!1sen!2suk!4v1408439299391" width="600" height="420" frameborder="0" style="border:0"></iframe>
 						</td>
