@@ -101,7 +101,6 @@ From the times of the Norman Conquest until the Tudors, the all-powerful Bishops
 			</td><td>
 			<p align="left"><font size="+1"><p>
 Playing an important part in the life of the town, the Keep and the Bishop&#8217;s Palace are popular tourist attractions. Historical associations and nearly continuous occupancy make the Castle one of the most important historical buildings in the south of England.</p>
-<p>For 800 years, the Bishops of Winchester used the Castle as a home and administrative centre. Powerful men from the Norman Conquest until the Tudors, the bishops often shaped English politics. Nine were Lord Chancellors. Most of the monarchs of England from King John to Queen Victoria visited or stayed at the castle.</p>
 <p>The Castle consists of two parts:</p>
 <ul>
 <li>The Keep, a Scheduled Ancient Monument. Put in the guardianship of the State in 1933, the Keep has been placed under the management of Farnham Castle on behalf of English Heritage.</li>
