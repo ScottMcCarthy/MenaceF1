@@ -80,17 +80,15 @@
 				<b><u><font size="+3">Wedding Breakfast Menu</font></u></b><br>
 			<br>
 			
-			<font size="+1"><br>
+			<font size="+1"><br />
 
-			<u>MENU<br>
-			<br />
 			</u>
 We have a tasting evening scheduled for the 11th November.  We will confirm our menu decisions after this time.
 <br /><br />
-Please check back closer to the time of the wedding to choose your menu options.
+Please check back after this date to see our confirmed menu.
 <br /><br />
-If after seeing our chosen menu, you would like to change your menu option, please email us at <a
-				href="mailto:SharonAndRichard@richardandsharonwedding.co.uk?Subject=Menu">SharonAndRichard@richardandsharonwedding.co.uk</a>
+If after seeing our choices you wish to change your preferred menu from your earlier RSVP choice, please email us at <a
+				href="mailto:SharonAndRichard@richardandsharonwedding.co.uk?Subject=Menu">SharonAndRichard@richardandsharonwedding.co.uk</a> prior to 28th February 2015.
 			</font>
 			</td>
 		</tr>
