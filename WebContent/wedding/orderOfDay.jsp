@@ -8,7 +8,7 @@
 <meta http-equiv="pragma" content="no-cache" />
 <title>The Wedding of Richard and Sharon</title>
 <%@ page language="java" import="menaceF1.wedding.*"
-	contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+	contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="/WEB-INF/struts-html.tld" prefix="html" %>
 <% response.addHeader("P3P", "CP=\"CAO DSP COR CURa ADMa DEVa OUR IND PHY ONL UNI COM NAV INT DEM PRE\""); %>
 
@@ -83,7 +83,7 @@
 				<tr><td>1:30pm</td><td width="5"></td><td>Wedding Ceremony</td></tr>
 				<tr><td>2.15pm</td><td width="5"></td><td>Photo's at the Church</td></tr>
 				<tr><td>2.45pm</td><td width="5"></td><td>Make your way to Farnham Castle</td></tr>
-				<tr><td>3pm</td><td width="5"></td><td>Reception drinks, canape's and photos at the Castle</td></tr>
+				<tr><td>3pm</td><td width="5"></td><td>Reception drinks, canapés and photos at the Castle</td></tr>
 				<tr><td>4.30pm</td><td width="5"></td><td>Wedding Breakfast and speeches</td></tr>
 				<tr><td>7pm</td><td width="5"></td><td>Evening guests arrive</td></tr>
 				<tr><td>9pm</td><td width="5"></td><td>Wedding Cake, Welsh Cakes, tea and coffee</td></tr>
