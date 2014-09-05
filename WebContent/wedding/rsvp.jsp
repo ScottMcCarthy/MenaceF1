@@ -402,7 +402,7 @@
 					</tr>	
 					<% if (guest.isFullGuest()){ %>				
 					<tr>
-						<td width="285">Your menu choice:</td>
+						<td width="285">Your menu choice:*</td>
 						<td width="424">
 							<html:select property="yourmenu">
 								<html:option value ="M">Meat</html:option>
@@ -412,7 +412,7 @@
 						</td>
 					</tr>
 					<tr>
-						<td width="285">Your partner's menu choice:</td>
+						<td width="285">Your partner's menu choice:*</td>
 						<td width="424">
 							<html:select property="partnermenu">
 								<html:option value ="M">Meat</html:option>
@@ -441,7 +441,7 @@
 						</td>
 					</tr>
 				</table>
-				</div>
+				*Once we have confirmed with our caterers in November, we will publish our chosen menus on the Wedding Breakfast page.  If after seeing the menu you would like to alter your food choice please email us via the Wedding Breakfast page prior to the 28th February 2015.				</div>
 				<div id="canAttendbutton" style="display:none"><p align="center"><html:submit value="Yes, I/we can attend your wedding." /></p></div>
 				<div id="cannotAttendbutton" style="display:none"><p align="center"><html:submit value="Sorry, I/we are unable to attend your wedding." /></p></div>
 			</html:form>
