@@ -131,7 +131,8 @@
 				<div id="RSVPFormYES" style="display:none">		
 				<b>NB</b> - If your partner is unable to join you, please leave the above field blank.
 				<br /><br />
-				<table border="1" cellpadding="0" cellspacing="0">			
+				<table border="1" cellpadding="0" cellspacing="0">	
+				<% if (guest.isFullGuest()){ %>			
 					<tr>
 						<td width="285">Address 1:</td>
 						<td width="424"><html:text size="50" property="address1" /></td>
@@ -390,6 +391,7 @@
 </html:select>							
 						</td>
 					</tr>
+					<% } %>
 					<tr>
 						<td width="285">Mobile Telephone Number:</td>
 						<td width="424"><html:text size="15" property="telephone" /></td>

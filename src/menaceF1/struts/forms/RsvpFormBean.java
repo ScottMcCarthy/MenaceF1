@@ -1,6 +1,9 @@
 package menaceF1.struts.forms;
 
 import javax.servlet.http.HttpServletRequest;
+
+import menaceF1.wedding.WeddingGuest;
+
 import org.apache.struts.action.ActionErrors;
 import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionMapping;
@@ -135,9 +138,14 @@ public class RsvpFormBean extends ActionForm
 			sb.append("document.getElementById('canAttendbutton').style.display= 'block';");
 			sb.append("document.getElementById('cannotAttendbutton').style.display= 'none';");
 			
+			WeddingGuest guest = (WeddingGuest) request.getSession().getAttribute("WEDDINGGUEST");
+			
     		if ((name == null) || (name.length() == 0)) {
      		   errors.add("blankName", new org.apache.struts.action.ActionError("errors.blankName"));
      		 }
+    		
+    		if (guest.isFullGuest()) {
+    		
     		 if ((address1 == null) || (address1.length() == 0)) {
     			   errors.add("blankAddress", new org.apache.struts.action.ActionError("errors.blankAddress"));
     			 }
@@ -147,6 +155,7 @@ public class RsvpFormBean extends ActionForm
     		 if ((postcode == null) || (postcode.length() == 0)) {
     			   errors.add("blankPostcode", new org.apache.struts.action.ActionError("errors.blankPostcode"));
     			 }
+    		}
     		 if ((telephone == null) || (telephone.length() == 0)) {
     			   errors.add("blankTelephone", new org.apache.struts.action.ActionError("errors.blankTelephone"));
     			 }
