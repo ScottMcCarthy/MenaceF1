@@ -85,11 +85,11 @@
 			<u>MENU<br>
 			<br />
 			</u>
-We have a tasting date scheduled for early 2015.  We will decide on the menu after this has taken place.  
+We have a tasting evening scheduled for the 11th November.  We will confirm our menu decisions after this time.
 <br /><br />
 Please check back closer to the time of the wedding to choose your menu options.
 <br /><br />
-If your selection changes from when you confirmed your invitation, please email us at <a
+If after seeing our chosen menu, you would like to change your menu option, please email us at <a
 				href="mailto:SharonAndRichard@richardandsharonwedding.co.uk?Subject=Menu">SharonAndRichard@richardandsharonwedding.co.uk</a>
 			</font>
 			</td>
