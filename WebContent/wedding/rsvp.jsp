@@ -99,7 +99,7 @@
 
 			<td valign="top" align="center">
 				<b><u><font size="+3">R.S.V.P.</font></u></b><br>
-			<p align="left"><font size="+1">We hope you can join us to celebrate our big day. Please use the form below to let us know if you can attend.</font></p>
+			<p align="center"><font size="+1">We hope you can join us to celebrate our big day. Please use the form below to let us know if you can attend.</font></p>
 			<p align="left">
 			<html:errors />
 			<html:form action="submitRSVP"  >
