@@ -100,7 +100,11 @@ Lefroy did not live to complete the design. It was completed by James Walker, Ja
 
 lefroy
 
-A memorial to Charles Lefroy, probably by Thomas Nicholls, is now in the north west of the church beside his wife, and with their dogs at their feet.</font></p>
+A memorial to Charles Lefroy, probably by Thomas Nicholls, is now in the north west of the church beside his wife, and with their dogs at their feet.
+<br /> <br />
+The church requests that confetti may only be thrown outside the church, provided it is natural petals.
+</font></p>
+
 					</td></tr></table>
 			<p align="left"></p><br><br />
 			</td>
