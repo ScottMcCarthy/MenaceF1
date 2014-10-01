@@ -197,7 +197,7 @@ public class CrawlTest {
 			sitemapCount++;
 			List<String> dataFileList = covertURLsForDevSystem(getURLsFromHyperLink(siteMap));
 			System.out.println("Sitemap "+sitemapCount+ "contains "+dataFileList.size()+ "files");
-			int outputProgressEveryXfiles = 10;
+			int outputProgressEveryXfiles = 100;
 			int progress = 0;
 			
 			
@@ -207,6 +207,7 @@ public class CrawlTest {
 				progress++;
 				if (progress == outputProgressEveryXfiles) {
 					System.out.println("Downloaded "+fileNumber+ "files");
+					progress = 0;
 				}
 				final String threadURL = fileURL;
 				final int threadFileNumber = fileNumber;
@@ -218,8 +219,10 @@ public class CrawlTest {
 				    		copyURLToFile(new URL(threadURL), new File(destinationDirectory+"/"+threadFileNumber+".xml"));
 				    		CrawlTest.incrementFilesDownloaded();
 						} catch (MalformedURLException e) {
+							System.out.println("URL not valid: "+threadURL);
 							e.printStackTrace();
 						} catch (IOException e) {
+							System.out.println("Error occured downloading: "+threadURL);
 							e.printStackTrace();
 						}
 				    }
