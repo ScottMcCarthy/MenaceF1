@@ -34,6 +34,7 @@ public class CrawlTest {
 	private static String crawlURL = "";
 	private static String destinationDirectory = "";
 	private static int successfullDownloads = 0;
+	private static int failedDownloads = 0;
 	
 	private static final ExecutorService executor = Executors.newFixedThreadPool(20);
 	private static final long SHUTDOWN_TIME_SECONDS = 2;
@@ -65,6 +66,10 @@ public class CrawlTest {
 	
 	public static void incrementFilesDownloaded() {
 		successfullDownloads++;
+	}
+	
+	public static void incrementFailedDownloadCount() {
+		failedDownloads++;
 	}
 	
 	private static String get307RedirectURL(URL url){
@@ -223,20 +228,22 @@ public class CrawlTest {
 							e.printStackTrace();
 						} catch (IOException e) {
 							System.out.println("Error occured downloading: "+threadURL);
+							CrawlTest.incrementFailedDownloadCount();
 							e.printStackTrace();
 						}
 				    }
 				});
 
 			}
-			
-			//Output Summary
-			System.out.println();
-			System.out.println("CRAWL COMPLETE");
-			System.out.println("--------------");
-			System.out.println(successfullDownloads + " files downloaded");
 		}
 		shutdownExecutor();
+		
+		//Output Summary
+		System.out.println();
+		System.out.println("CRAWL COMPLETE");
+		System.out.println("--------------");
+		System.out.println(failedDownloads + " failed downloads");
+		System.out.println(successfullDownloads + " files downloaded");
 	}
 
 }
