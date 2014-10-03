@@ -33,11 +33,11 @@ public class CrawlTest {
 	
 	private static String crawlURL = "";
 	private static String destinationDirectory = "";
-	private static int successfullDownloads = 0;
+	private static int totalDownloads = 0;
 	private static int failedDownloads = 0;
 	
-	private static final ExecutorService executor = Executors.newFixedThreadPool(20);
-	private static final long SHUTDOWN_TIME_SECONDS = 2;
+	private static final ExecutorService executor = Executors.newFixedThreadPool(100);
+	private static final long SHUTDOWN_TIME_MINUTES = 10;
 
 	private static String readExternalFile(URL url){
 		//Check if we need to do a redirect to a different URL.
@@ -64,8 +64,12 @@ public class CrawlTest {
 		return urlOutput;
 	}
 	
-	public static void incrementFilesDownloaded() {
-		successfullDownloads++;
+	public static int successfulDownloads(){
+		return totalDownloads - failedDownloads;
+	}
+	
+	public static void addToDownloads(int files) {
+		totalDownloads = totalDownloads+files;
 	}
 	
 	public static void incrementFailedDownloadCount() {
@@ -132,6 +136,7 @@ public class CrawlTest {
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
 		}
+		System.out.println("File size is "+output.length()+ " bytes");
 		List<String> siteMaps = getListOfURLs(output, locationTag);
 		return siteMaps;
 	}
@@ -157,11 +162,11 @@ public class CrawlTest {
 		executor.shutdown(); // Disable new tasks from being submitted
 		try {
 			// Wait a while for existing tasks to terminate
-			if (!executor.awaitTermination(SHUTDOWN_TIME_SECONDS, TimeUnit.SECONDS)) {
+			if (!executor.awaitTermination(SHUTDOWN_TIME_MINUTES, TimeUnit.MINUTES)) {
 				executor.shutdownNow(); // Cancel currently executing tasks
 				// Wait a while for tasks to respond to being cancelled
-				if (!executor.awaitTermination(SHUTDOWN_TIME_SECONDS, TimeUnit.SECONDS)) {
-					System.err.println("The executor did not terminate after " + SHUTDOWN_TIME_SECONDS + TimeUnit.SECONDS);
+				if (!executor.awaitTermination(SHUTDOWN_TIME_MINUTES, TimeUnit.MINUTES)) {
+					System.err.println("The executor did not terminate after " + SHUTDOWN_TIME_MINUTES + TimeUnit.MINUTES);
 				}
 			}
 		} catch (InterruptedException e) {
@@ -200,20 +205,15 @@ public class CrawlTest {
 		int sitemapCount = 0;
 		for (String siteMap : siteMaps){
 			sitemapCount++;
+			System.out.println("Reading sitemap: "+sitemapCount+ " "+siteMap);
 			List<String> dataFileList = covertURLsForDevSystem(getURLsFromHyperLink(siteMap));
-			System.out.println("Sitemap "+sitemapCount+ "contains "+dataFileList.size()+ "files");
-			int outputProgressEveryXfiles = 100;
-			int progress = 0;
+			System.out.println("Sitemap "+sitemapCount+ " contains "+dataFileList.size()+ " files");
+			CrawlTest.addToDownloads(dataFileList.size());
 			
 			
 			//Step 3 : download the files
 			for (String fileURL : dataFileList) {
 				fileNumber++;
-				progress++;
-				if (progress == outputProgressEveryXfiles) {
-					System.out.println("Downloaded "+fileNumber+ "files");
-					progress = 0;
-				}
 				final String threadURL = fileURL;
 				final int threadFileNumber = fileNumber;
 					
@@ -222,7 +222,6 @@ public class CrawlTest {
 					public void run() {
 				    	try {
 				    		copyURLToFile(new URL(threadURL), new File(destinationDirectory+"/"+threadFileNumber+".xml"));
-				    		CrawlTest.incrementFilesDownloaded();
 						} catch (MalformedURLException e) {
 							System.out.println("URL not valid: "+threadURL);
 							e.printStackTrace();
@@ -243,7 +242,7 @@ public class CrawlTest {
 		System.out.println("CRAWL COMPLETE");
 		System.out.println("--------------");
 		System.out.println(failedDownloads + " failed downloads");
-		System.out.println(successfullDownloads + " files downloaded");
+		System.out.println(CrawlTest.successfulDownloads() + " files downloaded");
 	}
 
 }
