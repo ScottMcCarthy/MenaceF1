@@ -82,10 +82,7 @@
 			join us to celebrate our special day on Saturday 9th May 2015.<br />
 			Ladies, hats and fascinators would be welcomed but are by no means required.
 			<br /><br />
-			This website is designed to help you find all the information you
-			need for the day, including accommodation, maps and some fun elements
-			to help make the day as memorable for you as I'm sure it will be for
-			us.<br />
+			We hope this website helps you find everything you'll need for the day.<br />
 			<br />
 			Please check back from time to time, as we'll try to keep this up to
 			date with the latest information you need and new features as the
