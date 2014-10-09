@@ -77,11 +77,7 @@
 
 			<td valign="top" align="center">
 				<b><u><font size="+3">Music Requests</font></u></b><br>
-			<p align="left"><font size="+1">We want to be sure that
-			everyone has a good time at the disco, therefore
-			we would like to give our DJ a list of songs to play to get you all on the
-			dance-floor!  Please use the form below to let us know your favourite
-			songs.</font></p>
+			<p align="left"><font size="+1">A live band will be entertaining us in the evening. Please use the form below to let us know your favourite songs and we'll get this to the them in advance. We'll see you on the dance floor.</font></p>
 			<p align="left">
 			<html:errors />
 			<html:form action="submitMusicRequest"  >
