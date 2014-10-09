@@ -99,7 +99,14 @@
 
 			<td valign="top" align="center">
 				<b><u><font size="+3">R.S.V.P.</font></u></b><br>
-			<p align="center"><font size="+1">We hope you can join us to celebrate our big day. Please use the form below to let us know if you can attend.</font></p>
+				
+			<p align="center"><font size="+1">
+			<% if (!guest.isFullGuest() ){ %>
+				We hope you can join us for our evening reception. Please use the form below to let us know if you can attend.
+			<% }else { %>
+				We hope you can join us to celebrate our big day. Please use the form below to let us know if you can attend.
+			<% } %>
+			</font></p>
 			<p align="left">
 			<html:errors />
 			<html:form action="submitRSVP"  >
@@ -441,7 +448,9 @@
 						</td>
 					</tr>
 				</table>
+				<% if (guest.isFullGuest() ){ %>
 				*Once we have confirmed with our caterers in November, we will publish our chosen menus on the Wedding Breakfast page.  If after seeing the menu you would like to alter your food choice please email us prior to the 28th February 2015.				</div>
+				<% } %>
 				<div id="canAttendbutton" style="display:none"><p align="center"><html:submit value="Confirm" /></p></div>
 				<div id="cannotAttendbutton" style="display:none"><p align="center"><html:submit value="Confirm" /></p></div>
 			</html:form>

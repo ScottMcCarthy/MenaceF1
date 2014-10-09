@@ -80,9 +80,15 @@
 			<font size="+1">Welcome to our wedding website. </font></p>
 			<p align="left"><font size="+1">We hope you will be able to
 			join us to celebrate our special day on Saturday 9th May 2015.<br />
-			Ladies, hats and fascinators would be welcomed but are by no means required.
-			<br /><br />
-			We hope this website helps you find everything you'll need for the day.<br />
+			<% if (guest.isFullGuest() ){ %>
+				Ladies, hats and fascinators would be welcomed but are by no means required.
+				<br /><br />
+			<% } %>
+			<% if (!guest.isFullGuest() ){ %>
+				We hope this website helps you find everything you'll need for the evening.<br />
+			<% } else { %>
+				We hope this website helps you find everything you'll need for the day.<br />
+			<% } %>
 			<br />
 			Please check back from time to time as we'll update information closer to the date, such as the menu and entertainment.</font></p>
 			<p align="left"><font size="+1">To explore the site, please
