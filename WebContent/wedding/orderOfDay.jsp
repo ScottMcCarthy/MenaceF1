@@ -85,10 +85,11 @@
 				<tr><td>2.45pm</td><td width="5"></td><td>Make your way to Farnham Castle</td></tr>
 				<tr><td>3pm</td><td width="5"></td><td>Reception drinks, canapés and photos at the Castle</td></tr>
 				<tr><td>4.30pm</td><td width="5"></td><td>Wedding Breakfast and speeches</td></tr>
-				<tr><td>7pm</td><td width="5"></td><td>Evening guests arrive</td></tr>
-				<tr><td>9pm</td><td width="5"></td><td>Wedding Cake, Welsh Cakes, tea and coffee</td></tr>
-				<tr><td>11.30pm</td><td width="5"></td><td>Music stops</td></tr>
-				<tr><td>11.45pm</td><td width="5"></td><td>Bar closes</td></tr>
+				<tr><td>8pm</td><td width="5"></td><td>Evening guests arrive</td></tr>
+				<tr><td>8:30pm</td><td width="5"></td><td>First Dance</td></tr>
+				<tr><td>9:30pm</td><td width="5"></td><td>Wedding Cake, Welsh Cakes, tea &amp; coffee</td></tr>
+				<tr><td>11:15pm</td><td width="5"></td><td>Last orders at the bar</td></tr>
+				<tr><td>11.30pm</td><td width="5"></td><td>Bar closes and music finishes</td></tr>
 				<tr><td>midnight</td><td width="5"></td><td>The venue requests that guests have departed by midnight please</td></tr>
 			</table>	
 			<p align="left">
@@ -97,10 +98,11 @@
 			<% } %>
 			<% if (!guest.isFullGuest() ){ %>
 			<table>
-				<tr><td>7pm</td><td width="5"></td><td>Evening guests arrive</td></tr>
-				<tr><td>9pm</td><td width="5"></td><td>Wedding Cake, Welsh Cakes, tea and coffee</td></tr>
-				<tr><td>11.30pm</td><td width="5"></td><td>Music stops</td></tr>
-				<tr><td>11.45pm</td><td width="5"></td><td>Bar closes</td></tr>
+				<tr><td>8pm</td><td width="5"></td><td>Evening guests arrive</td></tr>
+				<tr><td>8:30pm</td><td width="5"></td><td>First Dance</td></tr>
+				<tr><td>9:30pm</td><td width="5"></td><td>Wedding Cake, Welsh Cakes, tea &amp; coffee</td></tr>
+				<tr><td>11:15pm</td><td width="5"></td><td>Last orders at the bar</td></tr>
+				<tr><td>11.30pm</td><td width="5"></td><td>Bar closes and music finishes</td></tr>
 				<tr><td>midnight</td><td width="5"></td><td>The venue requests that guests have departed by midnight please</td></tr>
 			</table>			
 			<% } %>
