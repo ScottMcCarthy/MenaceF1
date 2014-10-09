@@ -6,9 +6,9 @@ pageEncoding="UTF-8"
 <table border="0" bgcolor="silver" width="100%" height="80">
 	<tbody>
 		<tr>
-			<td width="100%" align="center" bgcolor="#e9eaee" >
+			<td width="100%" align="center" bgcolor="white" >
 				
-			<img border="0" src="/MenaceF1/wedding/images/CastleScaled.jpg" ></td>
+			<img border="0" src="/MenaceF1/wedding/images/castleDrawing.jpeg" ></td>
 		</tr>
 	</tbody>
 </table>
