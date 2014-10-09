@@ -85,7 +85,9 @@
 			It is easily accessible by both train and car. <br>
 			Please see the <a
 				href="/MenaceF1/directions.do">Map &amp; Directions</a> page for details of
-			how to get here. </font></b></strong><br>
+			how to get here. </font></b></strong>
+			<br /> <br />
+The church requests that confetti may only be thrown outside the church, provided it is natural petals.<br /><br />
 			<table CELLSPACING = "2" cellpadding="10">
 			<tr>
 			<td valign="top">
@@ -101,8 +103,6 @@ Lefroy did not live to complete the design. It was completed by James Walker, Ja
 lefroy
 
 A memorial to Charles Lefroy, probably by Thomas Nicholls, is now in the north west of the church beside his wife, and with their dogs at their feet.
-<br /> <br />
-The church requests that confetti may only be thrown outside the church, provided it is natural petals.
 </font></p>
 
 					</td></tr></table>
