@@ -8,7 +8,7 @@ pageEncoding="UTF-8"
 		<tr>
 			<td width="100%" align="center" bgcolor="white" >
 				
-			<img border="0" src="/MenaceF1/wedding/images/castleDrawing.jpeg" ></td>
+			<img border="0" src="/MenaceF1/wedding/images/CastleStyle3.jpg" ></td>
 		</tr>
 	</tbody>
 </table>
