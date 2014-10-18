@@ -87,7 +87,7 @@
 				href="/MenaceF1/directions.do">Map &amp; Directions</a> page for details of
 			how to get here. </font></b></strong>
 			<br /> <br />
-The church requests that confetti may only be thrown outside the church, provided it is natural petals.<br /><br />
+<font size="5">The church requests that confetti may only be thrown outside the church, provided it is natural petals.<br /><br /></font>
 			<table CELLSPACING = "2" cellpadding="10">
 			<tr>
 			<td valign="top">

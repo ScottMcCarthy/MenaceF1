@@ -76,7 +76,7 @@
 			</td>
 			<td>
 				
-				<br /><b><u><font size="+3">Upload your photos</font></u></b><br />
+				<br /><b><u><font size="+3">Share your photos</font></u></b><br />
 				<br />We would love you to share any photos you took during our wedding with us and our other guests.<br />
 				You can upload multiple photos in one go providing you are using a modern browser / phone.<br />
 
