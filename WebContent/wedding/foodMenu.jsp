@@ -82,13 +82,17 @@
 			
 			<font size="+1"><br />
 
-			</u>
-We have a tasting evening scheduled for the 11th November.  We will confirm our menu decisions after this time.
-<br /><br />
-Please check back after this date to see our confirmed menu.
-<br /><br />
-If after seeing our choices you wish to change your preferred menu from your earlier RSVP choice, please email us at <a
-				href="mailto:SharonAndRichard@richardandsharonwedding.co.uk?Subject=Menu">SharonAndRichard@richardandsharonwedding.co.uk</a> prior to 28th February 2015.
+<b>Starter</b><br />
+Grilled crottin goat's cheese crostini, aged balsamic vinaigrette<br />
+<br />
+<b>Main course</b><br />
+Fillet of beef, Dauphinois potato, green peppercorn sauce<br />
+Or<br />
+Caerphilly cheese and leek sausage, watercress and sun blushed tomato chutney - Vegetarian <br />
+<br />
+<b>Dessert</b><br />
+Glazed lemon tart with raspberry coulis<br />
+<br />
 			</font>
 			</td>
 		</tr>
