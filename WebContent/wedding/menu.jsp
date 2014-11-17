@@ -90,7 +90,7 @@
 				We hope this website helps you find everything you'll need for the day.<br />
 			<% } %>
 			<br />
-			Please check back from time to time as we'll update information closer to the date, such as the menu and entertainment.</font></p>
+			Please check back from time to time as we'll update information closer to the date, such as the order of the day in case of changes and the entertainment.</font></p>
 			<p align="left"><font size="+1">To explore the site, please
 			select an item from the left-hand navigation bar.
 			<br />
