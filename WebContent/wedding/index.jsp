@@ -22,7 +22,7 @@
 		<tr>
 			<td align="center">
 			
-			<img border="1" src="/MenaceF1/wedding/images/sharonAndRichardSmall.jpg" >
+			<img border="1" src="/MenaceF1/wedding/images/sharonAndRichardSmall2.jpg" >
 						
 			<html:errors /><br />
 			<br /><font size="4"><i>Welcome to our wedding website<br>
