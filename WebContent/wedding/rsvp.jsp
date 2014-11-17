@@ -449,7 +449,7 @@
 					</tr>
 				</table>
 				<% if (guest.isFullGuest() ){ %>
-				*Once we have confirmed with our caterers in November, we will publish our chosen menus on the Wedding Breakfast page.  If after seeing the menu you would like to alter your food choice please email us prior to the 28th February 2015.				</div>
+				*The menu options are displayed on the wedding breakfast page.</div>
 				<% } %>
 				<div id="canAttendbutton" style="display:none"><p align="center"><html:submit value="Confirm" /></p></div>
 				<div id="cannotAttendbutton" style="display:none"><p align="center"><html:submit value="Confirm" /></p></div>
