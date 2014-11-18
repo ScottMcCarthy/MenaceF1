@@ -78,7 +78,8 @@
 			<td valign="top" align="left" width="780"><b><u><font size="+3"><p align="center">Local
 			Accommodation</p></font></u></b>
 
-			The following is a list of local hotels near to the reception venue. Please check with the hotel for parking arrangements.</font><br>
+			Here are the two hotels nearest to the Castle. There are other hotels in the local area but these may require a short taxi ride.<br />
+			Please check <a href="http://www.bookings.com">Bookings.com</a> as we've found this to be offering cheaper rates than the hotels at present. <br />
 			<br />
 			<table border="1">
 				<tbody>
