@@ -18,10 +18,6 @@
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/dbbeans.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/tomcat-coyote.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/commons-io-2.4.jar"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.8.0_11">
-		<attributes>
-			<attribute name="owner.project.facets" value="java"/>
-		</attributes>
-	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="build"/>
 </classpath>

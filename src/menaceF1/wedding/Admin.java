@@ -16,6 +16,7 @@ public class Admin {
 	private int onlineRSVPNeedingChecking = 0;
 	private int eveningGuestsNotConfirmed = 0;
 	private String rsvpEntriesHTML = "";
+	private String rsvpEntriesCompleteHTML = "";
 	private String dayGuestTableHTML = "";
 	private String eveningGuestTableHTML = "";
 	private Map<String,String> paymentTypeMap;
@@ -47,7 +48,8 @@ public class Admin {
 		paymentReceived = new HashMap<String,String>();
 		paymentReceived.put("N", "<b>Payment not yet received</b>");
 		paymentReceived.put("Y", "Payment Received");
-		loadRSVPHTML();
+		rsvpEntriesHTML = loadRSVPHTML();
+		rsvpEntriesCompleteHTML = loadRSVPCompleteHTML();
 		calculatePlacesRemaining();
 		calculateRSVPStatus();
 		calculateRSVPRequests();
@@ -71,7 +73,7 @@ public class Admin {
 		return guestsLeftToInvite;
 	}	
 
-	private void loadRSVPHTML() throws Exception{
+	private String loadRSVPHTML() throws Exception{
 		StringBuffer sbuf = new StringBuffer();
 		sbuf.append("<table width=\"100%\" border=\"1\" cellpadding=\"0\" cellspacing=\"0\">");
 		sbuf.append("<tbody>");
@@ -120,8 +122,58 @@ public class Admin {
 		}
 		sbuf.append("	</tbody>");
 		sbuf.append("</table>");		
-		rsvpEntriesHTML = sbuf.toString();
+		return sbuf.toString();
 	}
+
+	private String loadRSVPCompleteHTML() throws Exception{
+		StringBuffer sbuf = new StringBuffer();
+		sbuf.append("<table width=\"100%\" border=\"1\" cellpadding=\"0\" cellspacing=\"0\">");
+		sbuf.append("<tbody>");
+		sbuf.append("	<tr>");
+		sbuf.append("		<td><b><small>Name</small></b></td>");
+		sbuf.append("		<td><b><small>Partner Name</small></b></td>");
+		sbuf.append("		<td><b><small>Address</small></b></td>");
+		sbuf.append("		<td><b><small>Menu Choice</small></b></td>");
+		sbuf.append("		<td><b><small>Partner's menu choice</small></b></td>");
+		sbuf.append("		<td><b><small>Comment</small></b></td>");
+		sbuf.append("  </tr>");
+
+		
+		try {
+			String sql = "select ID,name,partnername,address1,address2,county,postcode,country,telephone,email,menuchoice,partnermenuchoice,specialrequirements,partnerspecialrequirements,comments  from rsvp where checked = 'Y' order by ID";
+			
+			Connection conn = DatabaseUtils.getConnection();
+			Statement stmt = conn.createStatement();
+			ResultSet rs = stmt.executeQuery(sql);
+			
+			while (rs.next()){
+					String guestSpecialRequirements = rs.getString(13);
+					String partnerSpecialRequirements = rs.getString(14);
+					if (guestSpecialRequirements == null) guestSpecialRequirements = "";
+					if (partnerSpecialRequirements == null) partnerSpecialRequirements = "";
+					
+					sbuf.append("<form onsubmit=\"return confirmRSVP(this)\" method=\"post\" name=\"booking"+rs.getString(1)+"\" action=\"/MenaceF1/rsvpMapping.do\" >");
+					sbuf.append("<input type=\"hidden\" name=\"RSVPID\" value=\""+rs.getString(1)+"\" >");
+					sbuf.append("	<tr>");
+					sbuf.append("		<td align=\"center\">"+rs.getString(2)+"</td>");
+					sbuf.append("		<td align=\"center\">"+rs.getString(3)+"</td>");
+					sbuf.append("		<td><small><a href=\"mailto:"+rs.getString(10)+"\">"+rs.getString(2)+"</a><br />"+rs.getString(4)+"<br />"+rs.getString(5)+"<br />"+rs.getString(6)+"<br />"+rs.getString(7)+"<br />"+rs.getString(8)+"<br />"+rs.getString(9)+"<br /></small></td>");
+					sbuf.append("		<td align=\"center\">"+menuChoiceMap.get(rs.getString(11).trim())+"<br />"+guestSpecialRequirements+"</td>");
+					sbuf.append("		<td align=\"center\">"+menuChoiceMap.get(rs.getString(12).trim())+"<br />"+partnerSpecialRequirements+"</td>");
+					sbuf.append("		<td align=\"center\">"+rs.getString(15)+"</td>");
+					sbuf.append("  </tr>");
+					sbuf.append("</form>");
+				} 
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+			throw (e);
+		}
+		sbuf.append("	</tbody>");
+		sbuf.append("</table>");		
+		return sbuf.toString();
+	}
+	
 	
 public static String getUnconfirmedGuestsListbox() throws Exception{
 	StringBuffer sbuf = new StringBuffer();
@@ -293,5 +345,9 @@ public static String getUnconfirmedGuestsListbox() throws Exception{
 	public String getRsvpEntriesHTML() {
 		return rsvpEntriesHTML;
 	}
+
+	public String getRsvpEntriesCompleteHTML() {
+		return rsvpEntriesCompleteHTML;
+	}	
 	
 }

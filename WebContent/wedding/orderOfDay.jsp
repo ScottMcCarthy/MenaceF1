@@ -98,7 +98,7 @@
 			<% } %>
 			<% if (!guest.isFullGuest() ){ %>
 			<table>
-				<tr><td>8pm</td><td width="5"></td><td>Evening guests arrive</td></tr>
+				<tr><td>8pm</td><td width="5"></td><td>Arrive at the castle</td></tr>
 				<tr><td>8:30pm</td><td width="5"></td><td>First Dance</td></tr>
 				<tr><td>9:30pm</td><td width="5"></td><td>Wedding Cake, Welsh Cakes, tea &amp; coffee</td></tr>
 				<tr><td>11:15pm</td><td width="5"></td><td>Last orders at the bar</td></tr>

@@ -115,9 +115,13 @@ function colapseSection(id)
 			<div id="rsvpShow" style="display:block">
 			<p align="left"><a href="javascript:colapseSection('rsvp')"><img alt="Click to expand section" border="0" src="/MenaceF1/wedding/images/collapse.gif" width="17" height="14"></a><b><u>RSVPs</u></b>
 			<br />
-			The following RSVPs have been received via the website:
+			The following RSVPs require confirmation:
 			<%=admin.getRsvpEntriesHTML() %>
-			</p>
+
+			<br />
+			The following RSVPs have been received via the website:
+			<%=admin.getRsvpEntriesCompleteHTML() %>
+
 			</div>
 			<div id="rsvpHide" style="display:none">
 			<p align="left"><a href="javascript:expandSection('rsvp')"><img alt="Click to expand section" border="0" src="/MenaceF1/wedding/images/expan.gif" width="17" height="14"></a><b><u>RSVPs</u></b>
