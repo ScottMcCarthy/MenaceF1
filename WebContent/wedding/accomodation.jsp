@@ -118,6 +118,22 @@
 						<td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10000.454572180279!2d-0.8375793312103481!3d51.19855761397681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48742dac267e6393%3A0x5ae0745b888740bb!2sFarnham+House+Hotel!5e0!3m2!1sen!2suk!4v1408439299391" width="600" height="420" frameborder="0" style="border:0"></iframe>
 						</td>
 					</tr>
+					<tr>
+						<td valign="top"><font size="+1"><a
+							href="http://www.premierinn.com/en/hotel/FLEWAT/fleet">Premier Inn Fleet</a><br />
+						<br />
+						<b>This hotel is very <br />close to the church.</b><br /><br />
+						7-11 Fleet Road<br />
+						Fleet<br />
+						Hampshire<br />
+						GU51 3QF<br />
+						Tel: +44 871 527 9446 <br />
+						<br />
+						Distance from Church : 0.7 miles<br />Distance from Castle : 6.1 miles
+						</td>
+						<td>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2495.238584694492!2d-0.8335542499999999!3d51.28833335!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x119b6460954365b7!2sPremier+Inn+Fleet+Hotel!5e0!3m2!1sen!2suk!4v1418159602412" width="600" height="450" frameborder="0" style="border:0"></iframe>						</td>
+					</tr>					
 				</tbody>
 			</table>
 			</td>
