@@ -23,12 +23,11 @@ import org.apache.commons.io.IOUtils;
  *  To compile:
  *  C:\Morningstar\services\Svcs-TdmCrawl\src\main\scripts\CrawlTester\crawl>javac -cp ../commons-io-2.4.jar CrawlTest.java
  *  To run:
- *  C:\Morningstar\services\Svcs-TdmCrawl\src\main\scripts\CrawlTester>java -cp commons-io-2.4.jar;. crawl.CrawlTest http://internal-tdm-devl2-1759524920.us-east-1.elb.amazonaws.com/tdm/sm/37CF5C5524E0EC0FDB60924B2DAE941B/sitemap.index C:\temp15
+ *  C:\Morningstar\services\Svcs-TdmCrawl\src\main\scripts\CrawlTester>java -cp commons-io-2.4.jar;. crawl.CrawlTest http://serverURL/tdm/sm/37CF5C5524E0EC0FDB60924B2DAE941B/sitemap.index C:\temp15
  */
 public class CrawlTest {
 	
-	//private static final String defaultCrawlURL = "http://10.241.16.212:4200/tdm/sm/37CF5C5524E0EC0FDB60924B2DAE941B/sitemap.index";
-	//private static final String defaultDestinationDirectory = "/Users/ScottMcCarthy/crawl";
+
 	private static final String locationTag = "loc";
 	
 	private static String crawlURL = "";
@@ -118,17 +117,6 @@ public class CrawlTest {
 		return URLs;
 	}
 	
-	private static List<String> covertURLsForDevSystem(List<String> urls) {
-		String beforeURL = "nightlyservices.aa1.pqe";
-		String afterURL = "10.241.16.212:4200";
-		ArrayList<String> updatedURLs = new ArrayList<String>();
-		
-		for (String s : urls){
-			updatedURLs.add(s.replaceAll(beforeURL, afterURL));
-		}
-		return updatedURLs;
-	}
-	
 	private static List<String> getURLsFromHyperLink(String url){
 		String output = "";
 		try {
@@ -197,8 +185,6 @@ public class CrawlTest {
 		System.out.println("About to crawl: "+crawlURL);
 		List<String> siteMaps = getURLsFromHyperLink(crawlURL);
 		
-		//Only run this stage to spoof URLs for testing on development system.
-		siteMaps = covertURLsForDevSystem(siteMaps);
 		System.out.println("Found "+siteMaps.size()+" site maps");
 		
 		//Step 2 : Read all the sitemaps.
@@ -206,7 +192,7 @@ public class CrawlTest {
 		for (String siteMap : siteMaps){
 			sitemapCount++;
 			System.out.println("Reading sitemap: "+sitemapCount+ " "+siteMap);
-			List<String> dataFileList = covertURLsForDevSystem(getURLsFromHyperLink(siteMap));
+			List<String> dataFileList = getURLsFromHyperLink(siteMap);
 			System.out.println("Sitemap "+sitemapCount+ " contains "+dataFileList.size()+ " files");
 			CrawlTest.addToDownloads(dataFileList.size());
 			
