@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE HTML>
 <HTML>
 <HEAD>
 <TITLE>MenaceF1.co.uk</TITLE>
@@ -52,33 +52,30 @@ pageEncoding="UTF-8"
         <div style="text-align: left">
         	<img src="images/VHS.jpg"/><img src="images/senna_williams_renault.jpg"/>
             <h1>Video 1 - The complete original BBC footage of the Race</h1>
-            <video width="640" height="480" controls>
+            <video width="640" height="480" controls preload="none">
   				<source src="/videos/SanMarino1994-Race.mp4" type="video/mp4">
 			</video>
             <h1>Video 2 - Highlights - What would have been the BBC Highlights of the race</h1>
-            <video width="640" height="480" controls>
+            <video width="640" height="480" controls preload="none">
   				<source src="/videos/SanMarino1994-Highlights.mp4" type="video/mp4">
 			</video>
             <h1>Video 3 - BBC News report</h1>
-            <video width="640" height="480" controls>
+            <video width="640" height="480" controls preload="none">
   				<source src="/videos/SanMarino1994-NewsReport.mp4" type="video/mp4">
 			</video>
             <h1>Video 4 - ITN News Report</h1>
-            <video width="640" height="480" controls>
+            <video width="640" height="480" controls preload="none">
   				<source src="/videos/SanMarino1994-ITNNews.mp4" type="video/mp4">
 			</video>
             <h1>Video 5 - Reaction to the news a few days later</h1>
-            <video width="640" height="480" controls>
+            <video width="640" height="480" controls preload="none">
   				<source src="/videos/SanMarino1994-Reaction.mp4" type="video/mp4">
 			</video>
             <h1>Video 6 - BBC Tribute to Ayrton Senna</h1>
-            <video width="640" height="480" controls>
+            <video width="640" height="480" controls preload="none">
   				<source src="/videos/SanMarino1994-BBCTribute.mp4" type="video/mp4">
 			</video>
 
         </div>
-
-
-
 </body>
 </HTML>
