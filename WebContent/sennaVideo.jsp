@@ -54,27 +54,27 @@ pageEncoding="UTF-8"
             <h1>Video 1 - The complete original BBC footage of the Race</h1>
             <video width="640" height="480" controls preload="none">
   				<source src="/videos/SanMarino1994-Race.mp4" type="video/mp4">
-			</video>
+			</video><a href="/videos/SanMarino1994-Race.mp4">Download Video - 6.3GB</a>
             <h1>Video 2 - Highlights - What would have been the BBC Highlights of the race</h1>
             <video width="640" height="480" controls preload="none">
   				<source src="/videos/SanMarino1994-Highlights.mp4" type="video/mp4">
-			</video>
+			</video><a href="/videos/SanMarino1994-Highlights.mp4">Download Video - 300MB</a>
             <h1>Video 3 - BBC News report</h1>
             <video width="640" height="480" controls preload="none">
   				<source src="/videos/SanMarino1994-NewsReport.mp4" type="video/mp4">
-			</video>
+			</video><a href="/videos/SanMarino1994-NewsReport.mp4">Download Video - 100MB</a>
             <h1>Video 4 - ITN News Report</h1>
             <video width="640" height="480" controls preload="none">
   				<source src="/videos/SanMarino1994-ITNNews.mp4" type="video/mp4">
-			</video>
+			</video><a href="/videos/SanMarino1994-ITNNews.mp4">Download Video - 107MB</a>
             <h1>Video 5 - Reaction to the news a few days later</h1>
             <video width="640" height="480" controls preload="none">
   				<source src="/videos/SanMarino1994-Reaction.mp4" type="video/mp4">
-			</video>
+			</video><a href="/videos/SanMarino1994-Reaction.mp4">Download Video - 214MB</a>
             <h1>Video 6 - BBC Tribute to Ayrton Senna</h1>
             <video width="640" height="480" controls preload="none">
   				<source src="/videos/SanMarino1994-BBCTribute.mp4" type="video/mp4">
-			</video>
+			</video><a href="/videos/SanMarino1994-BBCTribute.mp4">Download Video - 918MB</a>
 
         </div>
 </body>
