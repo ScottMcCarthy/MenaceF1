@@ -32,13 +32,15 @@
 			document.getElementById('RSVPForm').style.display= 'block';
 			document.getElementById('canAttendbutton').style.display= 'block';
 			document.getElementById('cannotAttendbutton').style.display= 'none';
+			document.getElementById('rejection').style.display= 'none';
 		} else {
 			document.getElementById('canAttendDiv').style.display= 'none';
 			document.getElementById('cannotAttendDiv').style.display= 'block';	
 			document.getElementById('RSVPFormYES').style.display= 'none';
 			document.getElementById('RSVPForm').style.display= 'block';
 			document.getElementById('canAttendbutton').style.display= 'none';
-			document.getElementById('cannotAttendbutton').style.display= 'block';			
+			document.getElementById('rejection').style.display= 'block';	
+			document.getElementById('cannotAttendbutton').style.display= 'block';
  	 	}
  	 }
  	 
@@ -133,6 +135,12 @@
 						<td>Your Partners Name:</td>
 						<td><html:text size="100" property="partnername" /></td>
 					</tr>
+				</table><br />
+				<table id="rejection" style="disply:none" border="1" cellpadding="0" cellspacing="0">
+					<tr>
+						<td>Leave a message:</td>
+						<td><html:textarea cols="50" rows="10" property="rejectionComments" /></td>
+					</tr>				
 				</table>
 				</div>
 				<div id="RSVPFormYES" style="display:none">		

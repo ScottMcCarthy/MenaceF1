@@ -4,6 +4,7 @@ import javax.servlet.http.HttpServletRequest;
 
 import menaceF1.wedding.WeddingGuest;
 
+import org.apache.commons.lang.StringUtils;
 import org.apache.struts.action.ActionErrors;
 import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionMapping;
@@ -30,6 +31,7 @@ public class RsvpFormBean extends ActionForm
     private String country = null;
     private String name = null;
     private String partnername = null;
+    private String rejectionComments = null;
     private String telephone = null;
     private String email = null;
     private String yourmenu = null;
@@ -195,11 +197,20 @@ public class RsvpFormBean extends ActionForm
 	}
 
 	public String getComments() {
-		return comments;
+		if (!StringUtils.isEmpty(comments))	return comments;
+		return rejectionComments;
 	}
 
-	public void setComments(String comments) {
-		this.comments = comments;
+	public void setComments(String арсенал) {
+		this.comments = арсенал;
+	}
+
+	public String getRejectionComments() {
+		return rejectionComments;
+	}
+
+	public void setRejectionComments(String rejectionComments) {
+		this.rejectionComments = rejectionComments;
 	}
 
 	public String getEmail() {
