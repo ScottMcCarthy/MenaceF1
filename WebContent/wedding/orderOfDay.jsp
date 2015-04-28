@@ -85,7 +85,7 @@
 				<tr><td>2.45pm</td><td width="5"></td><td>Make your way to Farnham Castle</td></tr>
 				<tr><td>3:00pm</td><td width="5"></td><td>Reception drinks, canapés and photos at the Castle</td></tr>
 				<tr><td>4.30pm</td><td width="5"></td><td>Wedding Breakfast and speeches</td></tr>
-				<tr><td>7:00pm</td><td width="5"></td><td>Tea and Coffee served in the Stone Halle</td></tr>
+				<tr><td>7:00pm</td><td width="5"></td><td>Tea and Coffee served in the Stone Hall</td></tr>
 				<tr><td>7:30pm</td><td width="5"></td><td>Evening guests arrive</td></tr>
 				<tr><td>7:45pm</td><td width="5"></td><td>Cutting of the Wedding Cake</td></tr>
 				<tr><td>8:00pm</td><td width="5"></td><td>First Dance</td></tr>
