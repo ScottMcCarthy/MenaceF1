@@ -1,5 +1,5 @@
 
-<!DOCTYPE html><!-- Open:PageLayoutSelector --><!-- Close:PageLayoutSelector -->
+<!DOCTYPE html><!-- Open:PageLayout --><!-- Close:PageLayout -->
 <html dir="ltr" lang="en" xmlns="http://www.w3.org/1999/xhtml"><!-- Open:pageLayout -->
 	<head>
 		<meta content="Apache Tapestry Framework (version 5.3.6)" name="generator" />
@@ -591,7 +591,7 @@
 							<div class="hide" id="signInLinkZone">
 								<div class="t-zone" id="linkZone">
 									<a id="signInLink"
-										href="/myresearch/signin.pagelayoutselector.pageLayout.signinoverlayux.actionlink">Sign in</a>
+										href="/myresearch/signin.PageLayout.pageLayout.signinoverlayux.actionlink">Sign in</a>
 									<span></span>
 								</div>
 							</div>
@@ -615,7 +615,7 @@
 										<div id="signInTargetMsg"></div><!-- Open:SignInForm -->
 										<form class="dynamicPreview"
 											onsubmit="javascript:return Tapestry.waitForPage(event);"
-											action="/myresearch/signin.pagelayoutselector.pageLayout.signinoverlayux.signinform.signinloginform"
+											action="/myresearch/signin.PageLayout.pageLayout.signinoverlayux.signinform.signinloginform"
 											method="post" id="signInLoginForm">
 											<div class="t-invisible">
 												<input
@@ -722,7 +722,7 @@
 														<div class="clear"></div>
 														<form class="forgottenAccountForm"
 															onsubmit="javascript:return Tapestry.waitForPage(event);"
-															action="/myresearch/signin.pagelayoutselector.pageLayout.signinoverlayux.forgottenaccountinfo.forgottenaccountform"
+															action="/myresearch/signin.PageLayout.pageLayout.signinoverlayux.forgottenaccountinfo.forgottenaccountform"
 															method="post" id="forgottenAccountForm">
 															<div class="t-invisible">
 																<input
@@ -812,11 +812,11 @@
 						</li>
 						<li alt="Search and browse full text publications" title="Search and browse full text publications">
 							<a class=""
-								href="/myresearch/signin.pagelayoutselector.pageLayout:publication">Publications</a>
+								href="/myresearch/signin.PageLayout.pageLayout:publication">Publications</a>
 						</li>
 						<li>
 							<a class=""
-								href="/myresearch/signin.pagelayoutselector.pageLayout:browse">Browse</a>
+								href="/myresearch/signin.PageLayout.pageLayout:browse">Browse</a>
 						</li>
 						<li>
 							<a title="All databases" id="databasePageLink" href="/databases/index?accountid=78789">Databases
@@ -841,75 +841,75 @@
 						<ul>
 							<li>
 								<a id="localeSwitcher_ar"
-									href="/myresearch/signin.pagelayoutselector.pageLayout.popuplocaleswitcherlistux:changelocale/ar">العربية</a>
+									href="/myresearch/signin.PageLayout.pageLayout.popuplocaleswitcherlistux:changelocale/ar">العربية</a>
 							</li>
 							<li>
 								<a id="localeSwitcher_in"
-									href="/myresearch/signin.pagelayoutselector.pageLayout.popuplocaleswitcherlistux:changelocale/in">Bahasa Indonesia</a>
+									href="/myresearch/signin.PageLayout.pageLayout.popuplocaleswitcherlistux:changelocale/in">Bahasa Indonesia</a>
 							</li>
 							<li>
 								<a id="localeSwitcher_de"
-									href="/myresearch/signin.pagelayoutselector.pageLayout.popuplocaleswitcherlistux:changelocale/de">Deutsch</a>
+									href="/myresearch/signin.PageLayout.pageLayout.popuplocaleswitcherlistux:changelocale/de">Deutsch</a>
 							</li>
 							<li>
 								<a id="localeSwitcher_es"
-									href="/myresearch/signin.pagelayoutselector.pageLayout.popuplocaleswitcherlistux:changelocale/es">Español</a>
+									href="/myresearch/signin.PageLayout.pageLayout.popuplocaleswitcherlistux:changelocale/es">Español</a>
 							</li>
 							<li>
 								<a id="localeSwitcher_fr"
-									href="/myresearch/signin.pagelayoutselector.pageLayout.popuplocaleswitcherlistux:changelocale/fr">Français</a>
+									href="/myresearch/signin.PageLayout.pageLayout.popuplocaleswitcherlistux:changelocale/fr">Français</a>
 							</li>
 							<li>
 								<a id="localeSwitcher_ko"
-									href="/myresearch/signin.pagelayoutselector.pageLayout.popuplocaleswitcherlistux:changelocale/ko">한국어</a>
+									href="/myresearch/signin.PageLayout.pageLayout.popuplocaleswitcherlistux:changelocale/ko">한국어</a>
 							</li>
 							<li>
 								<a id="localeSwitcher_it"
-									href="/myresearch/signin.pagelayoutselector.pageLayout.popuplocaleswitcherlistux:changelocale/it">Italiano</a>
+									href="/myresearch/signin.PageLayout.pageLayout.popuplocaleswitcherlistux:changelocale/it">Italiano</a>
 							</li>
 							<li>
 								<a id="localeSwitcher_hu"
-									href="/myresearch/signin.pagelayoutselector.pageLayout.popuplocaleswitcherlistux:changelocale/hu">Magyar</a>
+									href="/myresearch/signin.PageLayout.pageLayout.popuplocaleswitcherlistux:changelocale/hu">Magyar</a>
 							</li>
 							<li>
 								<a id="localeSwitcher_ja"
-									href="/myresearch/signin.pagelayoutselector.pageLayout.popuplocaleswitcherlistux:changelocale/ja">日本語</a>
+									href="/myresearch/signin.PageLayout.pageLayout.popuplocaleswitcherlistux:changelocale/ja">日本語</a>
 							</li>
 							<li>
 								<a id="localeSwitcher_no"
-									href="/myresearch/signin.pagelayoutselector.pageLayout.popuplocaleswitcherlistux:changelocale/no">Norsk</a>
+									href="/myresearch/signin.PageLayout.pageLayout.popuplocaleswitcherlistux:changelocale/no">Norsk</a>
 							</li>
 							<li>
 								<a id="localeSwitcher_pl"
-									href="/myresearch/signin.pagelayoutselector.pageLayout.popuplocaleswitcherlistux:changelocale/pl">Polski</a>
+									href="/myresearch/signin.PageLayout.pageLayout.popuplocaleswitcherlistux:changelocale/pl">Polski</a>
 							</li>
 							<li>
 								<a id="localeSwitcher_pt"
-									href="/myresearch/signin.pagelayoutselector.pageLayout.popuplocaleswitcherlistux:changelocale/pt">Português (Brasil)</a>
+									href="/myresearch/signin.PageLayout.pageLayout.popuplocaleswitcherlistux:changelocale/pt">Português (Brasil)</a>
 							</li>
 							<li>
 								<a id="localeSwitcher_pt_PT"
-									href="/myresearch/signin.pagelayoutselector.pageLayout.popuplocaleswitcherlistux:changelocale/pt_PT">Português (Portugal)</a>
+									href="/myresearch/signin.PageLayout.pageLayout.popuplocaleswitcherlistux:changelocale/pt_PT">Português (Portugal)</a>
 							</li>
 							<li>
 								<a id="localeSwitcher_ru"
-									href="/myresearch/signin.pagelayoutselector.pageLayout.popuplocaleswitcherlistux:changelocale/ru">Русский</a>
+									href="/myresearch/signin.PageLayout.pageLayout.popuplocaleswitcherlistux:changelocale/ru">Русский</a>
 							</li>
 							<li>
 								<a id="localeSwitcher_th"
-									href="/myresearch/signin.pagelayoutselector.pageLayout.popuplocaleswitcherlistux:changelocale/th">ไทย</a>
+									href="/myresearch/signin.PageLayout.pageLayout.popuplocaleswitcherlistux:changelocale/th">ไทย</a>
 							</li>
 							<li>
 								<a id="localeSwitcher_tr"
-									href="/myresearch/signin.pagelayoutselector.pageLayout.popuplocaleswitcherlistux:changelocale/tr">Türkçe</a>
+									href="/myresearch/signin.PageLayout.pageLayout.popuplocaleswitcherlistux:changelocale/tr">Türkçe</a>
 							</li>
 							<li>
 								<a id="localeSwitcher_zh_CN"
-									href="/myresearch/signin.pagelayoutselector.pageLayout.popuplocaleswitcherlistux:changelocale/zh_CN">中文(简体)‎</a>
+									href="/myresearch/signin.PageLayout.pageLayout.popuplocaleswitcherlistux:changelocale/zh_CN">中文(简体)‎</a>
 							</li>
 							<li>
 								<a id="localeSwitcher_zh_TW"
-									href="/myresearch/signin.pagelayoutselector.pageLayout.popuplocaleswitcherlistux:changelocale/zh_TW">中文(繁體)‎</a>
+									href="/myresearch/signin.PageLayout.pageLayout.popuplocaleswitcherlistux:changelocale/zh_TW">中文(繁體)‎</a>
 							</li>
 						</ul>
 					</div>
