@@ -27,7 +27,7 @@ public class PhotoUploadAction extends Action
 
 {
 
-	   private int maxFileSize = 500 * 1024 * 1024;
+	   private int maxFileSize = 5 * 1024  * 1024 * 1024;
 	   private int maxMemSize = 1 * 1024 * 1024;
 	   public static String filePath = "/var/www/wedding/";
 	   private File file ;
