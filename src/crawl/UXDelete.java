@@ -11,7 +11,6 @@ import org.apache.commons.io.FileUtils;
 public class UXDelete {
 	
 	private static String TranslationDirectory = "/Users/ScottMcCarthy/git/OneSearch-Translations/src/main/resources/com/proquest/apps/onesearch";
-	private static String TranslationDirectoryPi = "/home/pi/OneSearch/OneSearch-Translations/src/main/resources/com/proquest/apps/onesearch";
 
 	private static List<File> filterUXfiles(Collection<File> files){
 		List<File> uxFiles = new ArrayList<File>();
@@ -26,21 +25,18 @@ public class UXDelete {
 			File destination = new File(uxFile.getAbsolutePath().replace("UX_", "_"));
 			try {
 				FileUtils.copyFile(uxFile, destination);
+				FileUtils.deleteQuietly(uxFile);
 			} catch (IOException e) {
 				e.printStackTrace();
-			}
-			
+			}			
 		}
 	}
 	
 	public static void main(String[] args) {
 		System.out.println("Starting...");
-		File transDir = new File(TranslationDirectoryPi);
+		File transDir = new File(TranslationDirectory);
 		Collection<File> allFiles = FileUtils.listFiles(transDir, null, true);
 		killUXFiles(filterUXfiles(allFiles));
-		
-
-
+		System.out.println("Finished.");
 	}
-
 }
