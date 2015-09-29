@@ -95,7 +95,7 @@ public class Dilbert {
 
 	    Properties mailProps = new Properties();
 	    mailProps.put("mail.transport.protocol", "smtp");
-	    mailProps.put("mail.host", "menacef1.dnsalias.com");
+	    mailProps.put("mail.host", "localhost");
 	    mailProps.put("mail.smtp.port", "444");
 	    mailProps.put("mail.from", "Scott.McCarthy@MenaceF1.co.uk");
 	    return Session.getDefaultInstance(mailProps);
