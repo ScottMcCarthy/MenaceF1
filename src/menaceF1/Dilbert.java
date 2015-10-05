@@ -27,9 +27,11 @@ public class Dilbert {
 	private static String cartoonURL() {
 		String css = "img-responsive img-comic";
 		String img = "src=";
-		String url = siteHTML().substring(siteHTML().indexOf(css)).substring(siteHTML().substring(siteHTML().indexOf(css)).indexOf(img)+img.length()+1, 
-				siteHTML().substring(siteHTML().substring(siteHTML().indexOf(css)).indexOf(img)).indexOf("\" />")-9);
-		return url;
+
+		int startIndex = siteHTML().substring(siteHTML().indexOf(css)).indexOf(img)+img.length()+1;
+		String snipToUrlStart = siteHTML().substring(siteHTML().indexOf(css)).substring(startIndex);
+		int endIndex = snipToUrlStart.indexOf("\" />");
+		return siteHTML().substring(siteHTML().indexOf(css)).substring(startIndex,startIndex+endIndex);
 	}
 	
 	private static String siteHTML() {
@@ -75,13 +77,13 @@ public class Dilbert {
 	}
 	
 	public static void main(String[] args) {
-		System.out.println("Dilbert Grabber v1");
+		System.out.println("Dilbert Grabber v1.01");
 		System.out.println("Dilbert URL: "+cartoonURL());
 
 		Message message;
 		try {
 			message = buildSimpleMessage(buildSimpleSession(), imageFile(cartoonURL()));
-			message.setRecipient(RecipientType.TO, new InternetAddress("Scott.McCarthy@ProQuest.com"));
+			message.setRecipient(RecipientType.TO, new InternetAddress("Scott.McCarthy@MenaceF1.co.uk"));
 			
 
 			
