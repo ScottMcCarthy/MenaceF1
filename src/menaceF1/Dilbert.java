@@ -85,8 +85,6 @@ public class Dilbert {
 			message = buildSimpleMessage(buildSimpleSession(), imageFile(cartoonURL()));
 			message.setRecipient(RecipientType.TO, new InternetAddress("Scott.McCarthy@MenaceF1.co.uk"));
 			
-
-			
 			Transport.send(message);	
 		} catch (MessagingException e) {
 			e.printStackTrace();
