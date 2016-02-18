@@ -18,19 +18,6 @@ public class F1Car {
 		carNumber = number;
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	public String getTeamName() {
 		return teamName;
 	}
