@@ -6,15 +6,34 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStream;
+import java.net.URL;
+import java.nio.charset.Charset;
+
+import org.apache.commons.io.IOUtils;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 public class OAScan {
 
 	public static void main(String[] args) {
-		readFile("/Users/smccarth/Library/Mobile Documents/com~apple~CloudDocs/logs/LION/Solr/nohup.out"
+		readFile("/Users/smccarth/Library/Mobile Documents/com~apple~CloudDocs/logs/AJRCCM-DOI-TEST.txt"
 				,
-				"/Users/smccarth/Library/Mobile Documents/com~apple~CloudDocs/logs/LION/Solr/solr.csv"
+				"/Users/smccarth/Library/Mobile Documents/com~apple~CloudDocs/logs/results.txt"
 				);
 	}
+	
+	private static boolean checkOAFromService() {
+		try {
+			JSONObject json = new JSONObject(IOUtils.toString(new URL("https://api.oadoi.org/v2/10.1371/journal.pntd.0002030?email=Scott.McCarthy@ProQuest.com"), Charset.forName("UTF-8")));
+			System.out.println("JSON WAS: "+json);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return false;
+	}
+	
+
 	
 	private static void readFile(String filename, String outputFilename) {
 		try {
@@ -26,22 +45,13 @@ public class OAScan {
 			csvBuffer.append("\n");
 			String line;
 			while ((line = bufferedReader.readLine()) != null) {
-				if ( 
-					line.contains("params=") &&
-					line.contains("hits=") &&
-					!line.contains("freedom")
-						) {
 					try {
-						line = line.replaceAll(",", ".");
-						String core = line.substring(line.indexOf('[')+1, line.indexOf(']'));
-						String query = line.substring(line.indexOf('{')+1, line.indexOf('}'));
-						String hits = line.substring(line.indexOf("hits=")+5, line.indexOf("status="));
-						String qtime = line.substring(line.indexOf("QTime=")+6);
-						String csvLine = core.trim() + "," + query.trim() + "," + hits.trim() + "," + qtime.trim();
+						System.out.println("Reading a line");
+						checkOAFromService();
+						String csvLine = "LINE";
 						csvBuffer.append(csvLine);
 						csvBuffer.append("\n");
 					} catch (ArrayIndexOutOfBoundsException e) {e.printStackTrace();}
-				}
 			}
 			fileReader.close();
 			
