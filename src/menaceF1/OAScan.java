@@ -15,7 +15,7 @@ import org.json.JSONObject;
 public class OAScan {
 
 	public static void main(String[] args) {
-		readFile("/Users/smccarth/Library/Mobile Documents/com~apple~CloudDocs/logs/AJRCCM-DOI-TEST.txt"
+		readFile("/Users/smccarth/Library/Mobile Documents/com~apple~CloudDocs/logs/natureDOIs.txt"
 				,
 				"/Users/smccarth/Library/Mobile Documents/com~apple~CloudDocs/logs/results.csv"
 				);
@@ -24,7 +24,6 @@ public class OAScan {
 	private static boolean checkOAFromService(String articleID) {
 		try {
 			JSONObject json = new JSONObject(IOUtils.toString(new URL("https://api.oadoi.org/v2/"+articleID+"?email=Scott.McCarthy@ProQuest.com"), Charset.forName("UTF-8")));
-			System.out.println("JSON WAS: "+json);
 			return json.getBoolean("is_oa");
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -45,12 +44,9 @@ public class OAScan {
 			String line;
 			while ((line = bufferedReader.readLine()) != null) {
 					try {
-						System.out.println("Reading a line");
 						String doi = line.split("\t")[0];
 						String title = line.split("\t")[1];
 						String journal = line.split("\t")[2];
-						
-						System.out.println("Journal ID: "+doi);
 						checkOAFromService(doi);
 						String csvLine = doi+","+title.replaceAll(",", " ")+","+journal.replaceAll(",", " ")+","+checkOAFromService(doi);
 						System.out.println("OUTPUT: "+csvLine);

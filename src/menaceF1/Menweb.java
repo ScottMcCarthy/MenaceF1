@@ -276,6 +276,7 @@ public class Menweb {
 			
 
 		File dir = new File(path);
+		System.out.println("Checking for images in: "+path);
 		File[] dirList = dir.listFiles();
 		String[] fileListArray = dir.list();
 		ArrayList<String> fileList = new ArrayList<String>();

@@ -1,68 +1,57 @@
 <root>
 	<global>
-		<Title>The 2/1st South Wales Mounted Brigade
-			Revue
+		<Title>The Temporary
+			Gazette
 		</Title>
-		<MpubId>2028667</MpubId>
-		<SortTitle>2/1st
-			South Wales Mounted Brigade Revue
+		<MpubId>2027767</MpubId>
+		<SortTitle>Temporary
+			Gazette
 			The
 		</SortTitle>
 		<SourceType>Magazines</SourceType>
 		<Locators>
 			<Locator Type="CHPMID">
-				<Name>TRJ00004</Name>
+				<Name>TRJ00944</Name>
 			</Locator>
 		</Locators>
-		<CatalogNum>400321.00</CatalogNum>
-		<Languages>
-			<Language>eng</Language>
-		</Languages>
+		<CatalogNum>401221.00</CatalogNum>
 		<Flags>
 			<Flag Type="BLOCK_BY_PUB">N</Flag>
 			<Flag Type="ARTICLE_TRANSLATION">N</Flag>
 			<Flag Type="ALERTING_FLAG">N</Flag>
 			<Flag Type="DOC_USAGE_ROYALTIES">Y</Flag>
 			<Flag Type="PEERREVIEWEDFLAG">N</Flag>
-			<Flag Type="UNIT_NAME">2/1st South Wales Mounted Brigade. British
-				Army.
+			<Flag Type="UNIT_NAME">7th Officer Cadet Battalion. Moore Park,
+				near Fermoy, Cork.
 			</Flag>
-			<Flag Type="UNIT_TYPE">Cavalry</Flag>
+			<Flag Type="UNIT_TYPE">Training</Flag>
 			<Flag Type="UNIT_ORIGIN">United
 				Kingdom
 			</Flag>
-			<Flag Type="UNIT_LOCATION">United
-				Kingdom
-			</Flag>
+			<Flag Type="UNIT_LOCATION">Ireland</Flag>
 			<Flag Type="SOURCE_INSTITUTION">British
 				Library
 			</Flag>
-			<Flag Type="SOURCE_INSTITUTION">Imperial War
-				Museum
-			</Flag>
 			<Flag Type="HOLDING_INSTITUTION">British
 				Library
-			</Flag>
-			<Flag Type="HOLDING_INSTITUTION">Imperial War
-				Museum
 			</Flag>
 			<Flag Type="PRIMARY_SOURCE_FLAG">N</Flag>
 		</Flags>
 		<CurrentTitle>
 			<Title>The
-				2/1st South Wales Mounted Brigade
-				Revue
+				Temporary
+				Gazette
 			</Title>
-			<SortTitle>2/1st South
-				Wales Mounted Brigade Revue
+			<SortTitle>Temporary
+				Gazette
 				The
 			</SortTitle>
 			<Locators>
 				<Locator Type="CHPMID">
-					<Name>TRJ00004</Name>
+					<Name>TRJ00944</Name>
 				</Locator>
 			</Locators>
-			<CatalogNum>400321.00</CatalogNum>
+			<CatalogNum>401221.00</CatalogNum>
 		</CurrentTitle>
 		<searchRights>
 			<appearsIn>
@@ -78,22 +67,7 @@
 		</searchRights>
 		<CoverImageType>None</CoverImageType>
 		<BrowseType>IssueDateBrowse</BrowseType>
-		<EmbargoDays>0</EmbargoDays>
 		<HasGaps>0</HasGaps>
-		<CoverageRange>
-			<AlphaStartDate>Mar
-				1,
-				1916
-			</AlphaStartDate>
-			<AlphaEndDate>Dec
-				1,
-				1916
-			</AlphaEndDate>
-			<StartIssue>1</StartIssue>
-			<EndIssue>10</EndIssue>
-			<NumericStartDate>19160301</NumericStartDate>
-			<NumericEndDate>19161201</NumericEndDate>
-		</CoverageRange>
 		<PubFrequencies />
 		<ContentModel>CM_ENHANCED_PERIODICALS</ContentModel>
 	</global>
