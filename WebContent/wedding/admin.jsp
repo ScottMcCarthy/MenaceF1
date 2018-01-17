@@ -462,8 +462,8 @@ function colapseSection(id)
 <%
 			Menweb menJava = new Menweb();
 			menJava.setShowLogo(false);
-			menJava.directoryTrawler("/var/www/wedding/");
-			menJava.restrictedGalleryFront("/var/www/wedding/",out,"restrictedWeddingGallery.jsp");
+			menJava.directoryTrawler("/var/www/html/wedding/");
+			menJava.restrictedGalleryFront("/var/www/html/wedding/",out,"restrictedWeddingGallery.jsp");
 %>	
 			</p>
 			</div>

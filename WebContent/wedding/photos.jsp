@@ -96,8 +96,8 @@
 <%
 			Menweb menJava = new Menweb();
 			menJava.setShowLogo(false);
-			menJava.directoryTrawler("/var/www/wedding/");
-			menJava.galleryFront("/var/www/wedding/",out,"weddingGallery.jsp");
+			menJava.directoryTrawler("/var/www/html/wedding/");
+			menJava.galleryFront("/var/www/html/wedding/",out,"weddingGallery.jsp");
 %>				
 			</td>
 		</tr>

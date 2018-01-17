@@ -29,7 +29,7 @@ public class PhotoUploadAction extends Action
 
 	   private int maxFileSize = 5 * 1024  * 1024 * 1024;
 	   private int maxMemSize = 1 * 1024 * 1024;
-	   public static String filePath = "/var/www/wedding/";
+	   public static String filePath = "/var/www/html/wedding/";
 	   private File file ;
 
 	   static String convertStreamToString(java.io.InputStream is) {

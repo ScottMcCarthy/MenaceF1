@@ -43,7 +43,7 @@ pageEncoding="ISO-8859-1"
 	</tbody>
 </table>
 <%
-			menJava.directoryTrawler("/var/www/extras/FootballPhotos2012/");
+			menJava.directoryTrawler("/var/www/html/extras/FootballPhotos2012/");
 %>
 
 
@@ -67,7 +67,7 @@ pageEncoding="ISO-8859-1"
 
 <BR>
 <%
-			menJava.galleryFront("/var/www/extras/FootballPhotos2012/",out,"gallery.jsp");
+			menJava.galleryFront("/var/www/html/extras/FootballPhotos2012/",out,"gallery.jsp");
 %>
 
 
