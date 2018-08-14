@@ -98,6 +98,8 @@ public class Menweb {
 
 	public void makeThumb(String path) {
 	
+		System.out.println("Making thumb for: "+path);
+		
 		int sourceHeight = 0;
 		int sourceWidth = 0;
 		
@@ -134,6 +136,8 @@ public class Menweb {
 	}
 
 	public void makeMidsize(String path) {
+		
+		System.out.println("Making midsize for: "+path);
 	
 		int sourceHeight = 0;
 		int sourceWidth = 0;
@@ -198,7 +202,7 @@ public class Menweb {
 		File[] dirList = dir.listFiles();
 		if (dirList==null) return;
 		for (int i=0;i<dirList.length;i++) {
-				if (dirList[i].isDirectory() && !dirList[i].toString().endsWith("extras") && !dirList[i].toString().endsWith("wedding") ) {
+				if (dirList[i].isDirectory() && dirList[i].toString().contains("-") && !dirList[i].toString().endsWith("extras") && !dirList[i].toString().endsWith("wedding") ) {
 					File thumbsDir  = new File(dirList[i] + "/thumbs");
 					File midsizeDir = new File(dirList[i] + "/midsize");
 					if (!thumbsDir.exists() && !midsizeDir.exists()) {
@@ -282,7 +286,7 @@ public class Menweb {
 		ArrayList<String> fileList = new ArrayList<String>();
 		Map<String,File> dirFileMap = new HashMap<String,File>();
 		for (int x=0;x<fileListArray.length;x++) {
-			if (dirList[x].isDirectory() && !dirList[x].toString().endsWith("extras") && !dirList[x].toString().endsWith("wedding") && !dirList[x].toString().endsWith("RESTRICTED")) {
+			if (dirList[x].isDirectory() && !dirList[x].toString().endsWith("extras")  && dirList[x].toString().contains("-")  && !dirList[x].toString().endsWith("wedding") && !dirList[x].toString().endsWith("RESTRICTED")) {
 				fileList.add(fileListArray[x]);
 				dirFileMap.put(fileListArray[x], dirList[x]);
 				}
@@ -323,8 +327,14 @@ public class Menweb {
 		File[] dirList = dir.listFiles();
 		String[] fileListArray = dir.list();
 		
+		int numberOfFiles = 0;
+		if (fileListArray!=null) numberOfFiles = fileListArray.length;
+		
+		int numberOfDirectories = 0;
+		if (dirList!=null) numberOfDirectories = dirList.length;
+		
 		ArrayList<String> fileList = new ArrayList<String>();
-		for (int x=0;x<fileListArray.length;x++) {
+		for (int x=0;x<numberOfFiles;x++) {
 			if (!dirList[x].isDirectory()) {
 				fileList.add(fileListArray[x]);
 				}
@@ -340,7 +350,7 @@ public class Menweb {
 		
 		String imagePath = getDomainPrefix()+"/"+localPath+"/"+filename+"/thumbs/cover.JPG";
 		if (!fileList.contains("cover.jpg") && !fileList.contains("cover.JPG")) {
-			for (int i=0;i<dirList.length;i++) {
+			for (int i=0;i<numberOfDirectories;i++) {
 				imagePath =getDomainPrefix()+"/"+localPath+"/"+filename+"/thumbs/"+fileList.get(i);
 			}			
 		}

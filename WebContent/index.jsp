@@ -47,7 +47,7 @@ pageEncoding="ISO-8859-1"
 	</tbody>
 </table>
 <%
-			menJava.directoryTrawler("/var/www");
+			menJava.directoryTrawler("/var/www/html");
 %>
 <TABLE border="1" width="100%" bgcolor="#ffffff">
 	<TBODY>
@@ -81,7 +81,7 @@ pageEncoding="ISO-8859-1"
 </TABLE>
 
 <%
-			menJava.galleryFront("/var/www",out,"gallery.jsp");
+			menJava.galleryFront("/var/www/html",out,"gallery.jsp");
 %>
 
 
