@@ -68,16 +68,16 @@ public class Dilbert {
 	
 	private static File imageFile(String path){
 		try {
-			saveImage(path,"/mysql/dilbert.jpg");
+			saveImage(path,"/home/pi/dilbert.jpg");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		return new File("/mysql/dilbert.jpg");
+		return new File("/home/pi/dilbert.jpg");
 		
 	}
 	
 	public static void main(String[] args) {
-		System.out.println("Dilbert Grabber v1.01");
+		System.out.println("Dilbert Grabber v1.02");
 		System.out.println("Dilbert URL: "+cartoonURL());
 
 		Message message;
