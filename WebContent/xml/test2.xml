@@ -1,267 +1,160 @@
-<root>
-	<global>
-		<Misc>
-			<ExportVersion>FAST_v5.1.xsd</ExportVersion>
-			<ExportMinorVersion>44</ExportMinorVersion>
-			<GSVersion>Global_Schema_v5.1.xsd</GSVersion>
-			<RouterUpdateTime>20180605132547</RouterUpdateTime>
-			<RouterReasons>PROVIDER_UPDATE</RouterReasons>
-			<ParentInfo>
-				<PublicationID>23480</PublicationID>
-			</ParentInfo>
-			<LastUpdateDate>20180605132547</LastUpdateDate>
-			<AuditBatchFileName>optdlv_eFeeds_MSTAR_NIGHTLY_MLAIB_20180605131016-8273326503.xml
-			</AuditBatchFileName>
-			<CreateDate>20180530143203</CreateDate>
-			<VendorUpdateDate>2018-05-30T14:32:03</VendorUpdateDate>
-			<VendorUpdateDate>2018-06-04T15:49:21</VendorUpdateDate>
-			<VendorUpdateDate>2018-06-05T13:25:47</VendorUpdateDate>
-		</Misc>
-		<Obj>
-			<SourceTypes>
-				<other SourceTypeOrigin="Default">CSAPTother</other>
-				<mstar>Other Sources</mstar>
-			</SourceTypes>
-			<SourceRollupType>Other Sources</SourceRollupType>
-			<ObjectTypes>
-				<other ObjectTypeOrigin="IP">Journal</other>
-				<mstar>Feature</mstar>
-				<mstar>Article</mstar>
-			</ObjectTypes>
-			<ObjectRollupType>Articles - All Types</ObjectRollupType>
-			<TitleAtt>
-				<Title>Interdisciplinary Studies of Literature</Title>
-			</TitleAtt>
-			<NumericDate>2017-01-01</NumericDate>
-			<StartDate>2017-01-01</StartDate>
-			<RawAlphaDate>2017</RawAlphaDate>
-			<Language>
-				<RawLang>English; Chinese</RawLang>
-			</Language>
-			<Language>
-				<ISO>
-					<ISOCode>ENG</ISOCode>
-					<ISOExpansion ISOCode="ENG">English</ISOExpansion>
-				</ISO>
-			</Language>
-			<Language IsPrimary="true">
-				<ISO>
-					<ISOCode>CHI</ISOCode>
-					<ISOExpansion ISOCode="ENG">Chinese</ISOExpansion>
-				</ISO>
-			</Language>
-			<Copyright>
-				<CopyrightData>© 2018</CopyrightData>
-			</Copyright>
-			<PeerReviewed>true</PeerReviewed>
-			<ObjectIDs>
-				<ObjectID>
-					<ISSN>2520-4920</ISSN>
-				</ObjectID>
-				<ObjectID>
-					<AccNum>09005</AccNum>
-				</ObjectID>
-				<ObjectID IDOrigin="CSA">
-					<CSAUnique>MLAPERIOD09005</CSAUnique>
-				</ObjectID>
-			</ObjectIDs>
-			<Contributors>
-				<Contributor ContribOrder="1">
-					<Editor>
-						<DisplayForm>Nie Zhenzhao</DisplayForm>
-						<OriginalFormAtt>
-							<OriginalForm>Nie Zhenzhao</OriginalForm>
-						</OriginalFormAtt>
-					</Editor>
-				</Contributor>
-				<Contributor ContribOrder="2">
-					<Sponsor>
-						<DisplayForm>International Association for Ethical Literary
-							Criticism</DisplayForm>
-						<OriginalFormAtt>
-							<OriginalForm>International Association for Ethical Literary
-								Criticism</OriginalForm>
-						</OriginalFormAtt>
-					</Sponsor>
-				</Contributor>
-			</Contributors>
-			<Links>
-				<OtherLink>
-					<ResLoc>http://www.isljournal.com/</ResLoc>
-				</OtherLink>
-			</Links>
-			<Terms>
-				<GenSubjTerm>
-					<GenSubjValue>Literature</GenSubjValue>
-				</GenSubjTerm>
-				<GenSubjTerm>
-					<GenSubjValue>Literary theory and criticism</GenSubjValue>
-				</GenSubjTerm>
-			</Terms>
-			<Abstract>
-				<Primary WordCount="39">
-					<AbsText>Publishes work with a strategic focus on literary,
-						historical and interdisciplinary approaches, encourages dialogues
-						between literature and other disciplines of humanities, aiming to
-						establish an international platform for scholars to exchange their
-						innovative views that stimulate critical interdisciplinary
-						discussions.</AbsText>
-				</Primary>
-			</Abstract>
-			<GenericData>
-				<MLAJournalStatus>Active</MLAJournalStatus>
-			</GenericData>
-			<GenericData>
-				<AvailPrintElec>Available in print and electronically
-				</AvailPrintElec>
-			</GenericData>
-			<GenericData>
-				<EComment>Available in open access online format.</EComment>
-			</GenericData>
-			<GenericData>
-				<FreqEPub>4 times/year (Apr, June, Sept, Dec)</FreqEPub>
-			</GenericData>
-			<GenericData>
-				<SubscriptionRate>USD 160.00/year</SubscriptionRate>
-			</GenericData>
-			<GenericData>
-				<SubscriptionRateYear>2017-2018</SubscriptionRateYear>
-			</GenericData>
-			<GenericData>
-				<PublishesBookReviews>Yes</PublishesBookReviews>
-			</GenericData>
-			<GenericData>
-				<PublishesAbstracts>Yes</PublishesAbstracts>
-			</GenericData>
-			<GenericData>
-				<PublishesShortNotes>No</PublishesShortNotes>
-			</GenericData>
-			<GenericData>
-				<FrequencyPublication>4 times/year (Apr, June, Sept, Dec)
-				</FrequencyPublication>
-			</GenericData>
-			<GenericData>
-				<AcceptsAdvertising>No</AcceptsAdvertising>
-			</GenericData>
-			<GenericData>
-				<Pagination>Consecutive</Pagination>
-			</GenericData>
-			<GenericData>
-				<LanguagesPublished>English; Chinese</LanguagesPublished>
-			</GenericData>
-			<GenericData>
-				<ChargeForSubmission>No</ChargeForSubmission>
-			</GenericData>
-			<GenericData>
-				<ChargeForPages>No</ChargeForPages>
-			</GenericData>
-			<GenericData>
-				<ArticleLength>6,000-10,000 words</ArticleLength>
-			</GenericData>
-			<GenericData>
-				<BookReviewLength>4,500 words</BookReviewLength>
-			</GenericData>
-			<GenericData>
-				<PreferredEditorialStyle>MLA</PreferredEditorialStyle>
-			</GenericData>
-			<GenericData>
-				<CopyrightHolder>Knowledge Hub Publishing Company Limited
-				</CopyrightHolder>
-			</GenericData>
-			<GenericData>
-				<SubmissionPubTime>2 months</SubmissionPubTime>
-			</GenericData>
-			<GenericData>
-				<DecisionPubTime>12 months</DecisionPubTime>
-			</GenericData>
-			<GenericData>
-				<NumReadersDecision>2</NumReadersDecision>
-			</GenericData>
-			<GenericData>
-				<MLAUpdateCode>20180605</MLAUpdateCode>
-			</GenericData>
-			<SourceAttribution>Modern Language Association</SourceAttribution>
-		</Obj>
-		<PublicationInfo>
-			<PublicationTitleAtt>
-				<PublicationTitle>Interdisciplinary Studies of Literature
-				</PublicationTitle>
-			</PublicationTitleAtt>
-			<AbbrPubTitleAtt>
-				<AbbrPubTitle>IStLit</AbbrPubTitle>
-			</AbbrPubTitleAtt>
-			<Locators>
-				<LocatorID>
-					<ISSN>2520-4920</ISSN>
-				</LocatorID>
-			</Locators>
-			<Publisher ContactType="Editorial">
-				<PublisherOrganizationName>Knowledge Hub Publishing Company Limited
-				</PublisherOrganizationName>
-				<PublisherMailingAddress>Amtel Building, 148 Des Voeux Road Central,
-					Hong Kong SAR,</PublisherMailingAddress>
-				<PublisherMailingAddress>School of International Studies, Zhejiang
-					University，866， Yuhangtang Road, Hangzhou, China
-				</PublisherMailingAddress>
-				<PublisherEmailAddress>isl@163.com</PublisherEmailAddress>
-				<PublisherCountryName>China</PublisherCountryName>
-			</Publisher>
-		</PublicationInfo>
-		<DFS>
-			<PubFrosting>
-				<Title>Illumina TPD MLA Directory of Periodicals - unstructured
-				</Title>
-				<MpubId>23480</MpubId>
-				<SortTitle>Illumina TPD MLA Directory of Periodicals - unstructured
-				</SortTitle>
-				<SourceType>Undefined</SourceType>
-				<Locators>
-					<Locator Type="CSAPMID">
-						<Name>CSA0045</Name>
-					</Locator>
-				</Locators>
-				<CatalogNum>104331.00</CatalogNum>
-				<Flags>
-					<Flag Type="BLOCK_BY_PUB">Y</Flag>
-					<Flag Type="ARTICLE_TRANSLATION">Y</Flag>
-					<Flag Type="ALERTING_FLAG">Y</Flag>
-					<Flag Type="DOC_USAGE_ROYALTIES">Y</Flag>
-					<Flag Type="UNSTRUCTURED_DATA">Y</Flag>
-					<Flag Type="LION_CONTENT_TYPE">Criticism</Flag>
-				</Flags>
-				<CurrentTitle>
-					<Title>Illumina TPD MLA Directory of Periodicals - unstructured
-					</Title>
-					<SortTitle>Illumina TPD MLA Directory of Periodicals - unstructured
-					</SortTitle>
-					<Locators>
-						<Locator Type="CSAPMID">
-							<Name>CSA0045</Name>
-						</Locator>
-					</Locators>
-					<CatalogNum>104331.00</CatalogNum>
-				</CurrentTitle>
-				<searchRights>
-					<advancedIn>
-						<product>1007534|1007944|10000069</product>
-					</advancedIn>
-					<blockedFor>
-						<blockRule>
-						</blockRule>
-					</blockedFor>
-				</searchRights>
-				<CoverImageType>None</CoverImageType>
-				<BrowseType>None</BrowseType>
-				<HasGaps>0</HasGaps>
-				<PubFrequencies />
-				<ContentModel>CM_DEFAULT</ContentModel>
-			</PubFrosting>
-		</DFS>
-		<RANGES>
-			<LastUpdateDateRange>2018-06-05</LastUpdateDateRange>
-			<CreateDateRange>2018-05-30</CreateDateRange>
-			<RouterUpdateTimeRange>2018-06-05</RouterUpdateTimeRange>
-		</RANGES>
-	</global>
-</root>
-		
+<SearchRequest>
+	<Search>
+		<iql>
+			<spellcorrect>false</spellcorrect>
+			<synonyms>true</synonyms>
+			<lemmatization>true</lemmatization>
+			<dictgroup>CMB</dictgroup>
+			<op>
+				<and>
+					<op>
+						<filter>
+							<op>
+								<f>
+									<n>bundles</n>
+									<numOp>
+										<orN>
+											<nv>1008829</nv>
+											<nv>1008821</nv>
+											<nv>1008823</nv>
+											<nv>1008802</nv>
+											<nv>1008846</nv>
+											<nv>1008847</nv>
+											<nv>1008825</nv>
+											<nv>1008826</nv>
+											<nv>1008848</nv>
+											<nv>1008827</nv>
+											<nv>1008849</nv>
+											<nv>1008828</nv>
+											<nv>1009397</nv>
+											<nv>1009396</nv>
+											<nv>1009398</nv>
+											<nv>1009378</nv>
+											<nv>1008840</nv>
+											<nv>1008841</nv>
+											<nv>1008820</nv>
+											<nv>1008842</nv>
+											<nv>1007533</nv>
+											<nv>1009395</nv>
+											<nv>1008818</nv>
+											<nv>1008819</nv>
+											<nv>1008832</nv>
+											<nv>1008834</nv>
+											<nv>1008878</nv>
+											<nv>1008835</nv>
+											<nv>1008836</nv>
+											<nv>1008837</nv>
+											<nv>1008838</nv>
+											<nv>1008839</nv>
+											<nv>1009265</nv>
+											<nv>1009266</nv>
+											<nv>1008850</nv>
+											<nv>1009400</nv>
+											<nv>1008851</nv>
+											<nv>1008830</nv>
+											<nv>1008831</nv>
+											<nv>1008853</nv>
+										</orN>
+									</numOp>
+								</f>
+							</op>
+						</filter>
+					</op>
+					<op>
+						<f>
+							<n>all</n>
+							<strOp>
+								<v>vagina</v>
+							</strOp>
+						</f>
+					</op>
+					<op>
+						<filter>
+							<op>
+								<f>
+									<n>searchSegment</n>
+									<strOp>
+										<v ling="false">LitTexts</v>
+									</strOp>
+								</f>
+							</op>
+						</filter>
+					</op>
+					<op>
+						<filter>
+							<op>
+								<not>
+									<op>
+										<f>
+											<n>blacklisted</n>
+											<numOp>
+												<equals>194</equals>
+											</numOp>
+										</f>
+									</op>
+								</not>
+							</op>
+						</filter>
+					</op>
+				</and>
+			</op>
+		</iql>
+	</Search>
+	<DedupField>PQIS</DedupField>
+	<SpellSuggest>true</SpellSuggest>
+	<FacetRequest>
+		<FacetName>facetlist</FacetName>
+	</FacetRequest>
+	<FacetRequest>
+		<FacetName>searchSegment</FacetName>
+		<Max>100</Max>
+	</FacetRequest>
+	<FacetRequest>
+		<FacetName>decade</FacetName>
+		<Max>110</Max>
+		<Order>name/ascending</Order>
+	</FacetRequest>
+	<FacetRequest>
+		<FacetName>year</FacetName>
+		<Max>1100</Max>
+		<Order>name/ascending</Order>
+	</FacetRequest>
+	<FacetRequest>
+		<FacetName>yearmonth</FacetName>
+		<Max>120</Max>
+		<Order>name/ascending</Order>
+	</FacetRequest>
+	<FacetRequest>
+		<FacetName>month</FacetName>
+		<Order>name/ascending</Order>
+	</FacetRequest>
+	<FacetRequest>
+		<FacetName>day</FacetName>
+		<Order>name/ascending</Order>
+	</FacetRequest>
+	<FacetRequest>
+		<FacetName>pubTitle</FacetName>
+	</FacetRequest>
+	<FacetRequest>
+		<FacetName>objectype</FacetName>
+	</FacetRequest>
+	<FacetRequest>
+		<FacetName>sourcetype</FacetName>
+	</FacetRequest>
+	<FacetRequest>
+		<FacetName>language</FacetName>
+		<Max>200</Max>
+	</FacetRequest>
+	<FacetRequest>
+		<FacetName>peer</FacetName>
+	</FacetRequest>
+	<Sort>relevance</Sort>
+	<HHL>true</HHL>
+	<RequestInfo>
+		<App>PQIS</App>
+		<Session>8viy79qzx9kj13jr76u942ioa</Session>
+		<Activity>Basic~basic:lion1</Activity>
+		<TransId>8viy79qzx9kj13jr76u942ioa:1544027892082:57001</TransId>
+		<Account>81329</Account>
+	</RequestInfo>
+</SearchRequest>
