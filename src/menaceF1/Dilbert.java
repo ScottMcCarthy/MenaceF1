@@ -36,7 +36,7 @@ public class Dilbert {
 	
 	private static String siteHTML() {
 		try {
-			URL url = new URL("http://dilbert.com");
+			URL url = new URL("https://dilbert.com");
 			InputStream is = url.openStream();
 			int ptr = 0;
 			StringBuffer buffer = new StringBuffer();
@@ -51,6 +51,7 @@ public class Dilbert {
 	}
 	
 	private static void saveImage(String imageUrl, String destinationFile) throws IOException {
+		if (imageUrl.startsWith("//")) imageUrl = "https:"+imageUrl;
 		URL url = new URL(imageUrl);
 		InputStream is = url.openStream();
 		OutputStream os = new FileOutputStream(destinationFile);
@@ -68,16 +69,16 @@ public class Dilbert {
 	
 	private static File imageFile(String path){
 		try {
-			saveImage(path,"/mysql/dilbert.jpg");
+			saveImage(path,"/home/pi/dilbert.jpg");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		return new File("/mysql/dilbert.jpg");
+		return new File("/home/pi/dilbert.jpg");
 		
 	}
 	
 	public static void main(String[] args) {
-		System.out.println("Dilbert Grabber v1.01");
+		System.out.println("Dilbert Grabber v1.03");
 		System.out.println("Dilbert URL: "+cartoonURL());
 
 		Message message;

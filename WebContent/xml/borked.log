@@ -1,0 +1,25 @@
+INFO:cherrypy.error:[19/Apr/2018:15:06:39] ENGINE Listening for SIGHUP.
+INFO:cherrypy.error:[19/Apr/2018:15:06:39] ENGINE Listening for SIGTERM.
+INFO:cherrypy.error:[19/Apr/2018:15:06:39] ENGINE Listening for SIGUSR1.
+INFO:cherrypy.error:[19/Apr/2018:15:06:39] ENGINE Bus STARTING
+INFO:cherrypy.error:[19/Apr/2018:15:06:39] ENGINE Forking once.
+INFO:cherrypy.error:[19/Apr/2018:15:06:39] ENGINE Forking twice.
+INFO:cherrypy.error:[19/Apr/2018:15:06:39] ENGINE Daemonized to PID: 18636
+INFO:cherrypy.error:[19/Apr/2018:15:06:39] ENGINE PID 18636 written to '/tmp/pyffd.pid'.
+INFO:cherrypy.error:[19/Apr/2018:15:06:39] ENGINE Serving on http://127.0.0.1:8080
+DEBUG:cherrypy.error.4576650000:[19/Apr/2018:15:06:39]  calling 'when' in PL[examples/mdx] using args: [{'xslt': {'stylesheet': 'tidy.xsl'}}, 'break'] and opts: ['normalize']
+DEBUG:cherrypy.error.4576650000:[19/Apr/2018:15:06:39]  calling 'when' in PL[examples/mdx] using args: [{'xslt': {'stylesheet': 'tidy.xsl'}}, 'break'] and opts: ['edugain']
+DEBUG:cherrypy.error.4576650000:[19/Apr/2018:15:06:39]  calling 'when' in PL[examples/mdx] using args: [{'load': ['examples/links.xrd as links via normalize']}, 'loadstats', 'select', {'fork and merge': [{'select': "!//md:EntityDescriptor[md:Extensions[mdrpi:RegistrationInfo[@registrationAuthority='http://www.swamid.se/']]]"}, {'setattr': {'http://pyff.io/collection': 'swamid-2.0'}}]}, {'fork and merge': [{'select': ['http://pyff.io/collection=swamid-2.0+http://pyff.io/role=idp']}, {'setattr': {'http://pyff.io/collection': 'swamid-idp'}}]}, {'fork': [{'select as /md/foo-2.0': ['http://pyff.io/collection=swamid-2.0']}, 'break']}, {'fork': [{'select as /md/skolfederation-2.0': ['http://meta01.skolfederation.se/skolfederation-2_0.xml']}, 'break']}, {'fork': [{'select as /ndn': ['https://idp.nordu.net/idp/shibboleth']}, 'break']}, {'fork': [{'select as /md/swamid-kalmar-1.0': ['https://connect.sunet.se/shibboleth', 'https://www.diva-portal.org/shibboleth']}]}, 'break'] and opts: ['update']
+DEBUG:cherrypy.error.4576650000:[19/Apr/2018:15:06:39]  Processing [{'load': ['examples/links.xrd as links via normalize']}, 'loadstats', 'select', {'fork and merge': [{'select': "!//md:EntityDescriptor[md:Extensions[mdrpi:RegistrationInfo[@registrationAuthority='http://www.swamid.se/']]]"}, {'setattr': {'http://pyff.io/collection': 'swamid-2.0'}}]}, {'fork and merge': [{'select': ['http://pyff.io/collection=swamid-2.0+http://pyff.io/role=idp']}, {'setattr': {'http://pyff.io/collection': 'swamid-idp'}}]}, {'fork': [{'select as /md/foo-2.0': ['http://pyff.io/collection=swamid-2.0']}, 'break']}, {'fork': [{'select as /md/skolfederation-2.0': ['http://meta01.skolfederation.se/skolfederation-2_0.xml']}, 'break']}, {'fork': [{'select as /ndn': ['https://idp.nordu.net/idp/shibboleth']}, 'break']}, {'fork': [{'select as /md/swamid-kalmar-1.0': ['https://connect.sunet.se/shibboleth', 'https://www.diva-portal.org/shibboleth']}]}, 'break']
+DEBUG:cherrypy.error.4576650000:[19/Apr/2018:15:06:39]  load parsing 'examples/links.xrd as links via normalize'
+DEBUG:cherrypy.error.4576650000:[19/Apr/2018:15:06:39]  Refreshing all resources
+DEBUG:cherrypy.error.4576650000:[19/Apr/2018:15:06:39]  got status_code=200, encoding=utf8 from_cache=False from file:///Users/smccarth/git/pyFF/examples/links.xrd
+DEBUG:cherrypy.error.4576650000:[19/Apr/2018:15:06:39]  XRD: https://mds.swamid.se/md/swamid-2.0.xml verified by 40:a3:68:47:50:f3:86:43:36:0c:79:75:0f:87:0d:38:8c:f8:3e:44
+ERROR:cherrypy.error.4576650000:[19/Apr/2018:15:06:39]  'Config' object has no attribute 'request_cache_backend'
+INFO:cherrypy.error.4576650000:[19/Apr/2018:15:06:39]  pyff loadstats: {}
+
+DEBUG:cherrypy.error.4576650000:[19/Apr/2018:15:06:39]  selecting using args: None
+ERROR:cherrypy.error.4576650000:[19/Apr/2018:15:06:39]  PipeException('empty select - stop',)
+DEBUG:cherrypy.error.4576650000:[19/Apr/2018:15:06:39]  calling 'when' in PL[examples/mdx] using args: ['select', {'pipe': [{'when accept application/xml': [{'pipe': [{'when path /md/swamid-kalmar-1.0': [{'xslt': {'stylesheet': 'kalmar2.xsl'}}, 'break']}]}, {'xslt': {'stylesheet': 'tidy.xsl'}}, 'first', {'finalize': {'validUntil': 'P10D', 'cacheDuration': 'PT5H'}}, {'sign': {'cert': 'sign.crt', 'key': 'sign.key'}}, 'emit application/xml', 'break']}, {'when accept application/json': ['discojson', 'emit application/json', 'break']}]}] and opts: ['request']
+INFO:cherrypy.error:[19/Apr/2018:15:06:39] ENGINE Started monitor thread 'MDUpdate'.
+INFO:cherrypy.error:[19/Apr/2018:15:06:39] ENGINE Bus STARTED
