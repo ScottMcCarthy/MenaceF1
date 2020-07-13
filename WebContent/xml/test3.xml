@@ -1,18 +1,367 @@
-<div5 id="Sec000050">
-	<h4>
-		<center>
-			<strong>9</strong>
-		</center>
-	</h4>
-	<br>1
-		- 2 1 Ankunft] 1.) Ankunft nur auf dem vorderen Schutzblatt von "Schlo&szlig;heft
-		I" (siehe 10)11 wollte,] wollte12 verwirrt,] verwirrt21 angezogen,]
-		angezogen
-</div5>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsl:stylesheet
+	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+	xmlns:java="java"
+	xmlns:utf8bundle="com.proquest.apps.corelib.util.EncodingAwareResourceBundle"
+	version="1.0"
+	xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<xsl:output method="html" indent="no" encoding="UTF-8" />
+
+	<!-- If not empty then render hit highlights otherwise ignore them -->
+<xsl:param name="hitHighlight"/>
+<xsl:param name="renderLinks"/>
+<xsl:param name="baseUrl"/>
+<xsl:param name="displayTextOnly"/>
+<xsl:param name="inlineNumToken"/>
+<xsl:param name="locale"/>
+<xsl:param name="assetctx"/>
+<xsl:param name="loaderImagePath"/>
+
+<xsl:variable name="resources" select="utf8bundle:getBundle('com/proquest/apps/corelib/search/fulltext/xsl/fullTextHtml', $locale, 'UTF-8')"/>
+
+<xsl:template match="fullTextWrapper/Text/html/head/body">
+	<xsl:apply-templates/>
+</xsl:template>
+
+<!-- Ensuring structured full text fields added in the transformation to GS are maintained but their content is formatted. -->
+<xsl:template match='argument'><br/><blockquote><xsl:call-template name="lProcessStyle"/></blockquote><br/></xsl:template>
+
+<xsl:template match="div[@class='pqp_search_element']">
+	<div class='pqp_search_element'><xsl:attribute name="data-pqp-search-type"><xsl:value-of select='@data-pqp-search-type'/></xsl:attribute><xsl:apply-templates/></div>
+</xsl:template>
+
+<xsl:template match="div[object[@class='mstar_link_to_media']]"><xsl:apply-templates/></xsl:template>
+
+<xsl:template match="object[@class='mstar_link_to_record']"><xsl:copy-of select="."/></xsl:template>
+
+<xsl:template match='back | bibl | body'><xsl:apply-templates/></xsl:template>
+
+<xsl:template match='closer'><p><xsl:apply-templates/></p></xsl:template>
+
+<xsl:template match='div0 | div1 | div2 | div3 | div4 | div5 | div6 | div7'>
 <h4></h4>
-<div5 id="Sec000051">
-	<h4>
-		<center>
-			<strong>11</strong>
-		</center>
-	</h4>
+<xsl:copy>
+		<xsl:attribute name="id"><xsl:value-of select="@id"/></xsl:attribute>
+		<xsl:if test="@printRestriction = 'true'"><xsl:attribute name="printRestriction">true</xsl:attribute></xsl:if>
+		<xsl:call-template name="lProcessStyle"/>
+	</xsl:copy>
+</xsl:template>
+
+<xsl:template match='end_note'>
+<xsl:variable name="link"><xsl:value-of select="@link"/></xsl:variable>
+<xsl:variable name="pqid"><xsl:value-of select="@pqid"/></xsl:variable>
+<a href="#{$link}" id="{$pqid}">[<xsl:value-of select="@n"/>]</a><xsl:text> </xsl:text><xsl:apply-templates/>
+</xsl:template>
+	
+<xsl:template match='epigraph'><p><strong>Epigraph:</strong></p><xsl:apply-templates/></xsl:template>
+
+<xsl:template match='figure'>[Figure: <xsl:apply-templates/>]</xsl:template>
+
+<xsl:template match='figdesc'>[Figure: <xsl:apply-templates/>]</xsl:template>
+
+<xsl:template match='front'><xsl:apply-templates/></xsl:template>
+
+<xsl:template match='full_text'>
+  <xsl:apply-templates/>
+  <xsl:if test="$assetctx">
+  	<br/>
+	  <p align="center">
+	  	<xsl:element name="img">
+	  		<xsl:attribute name="id"><xsl:text>tcpLogo</xsl:text></xsl:attribute>
+	  		<xsl:attribute name="src"><xsl:value-of select="$assetctx"/> </xsl:attribute>
+	  		<xsl:attribute name="alt"><xsl:value-of select="java:getString($resources,'tcplogoAltText')"/></xsl:attribute>
+	  		<xsl:attribute name="title"><xsl:value-of select="java:getString($resources,'tcplogoAltText')"/></xsl:attribute>
+	  	</xsl:element>
+	  </p>
+  </xsl:if>
+</xsl:template>
+
+<xsl:template match='gap'><xsl:value-of select="@disp"/></xsl:template>
+
+<xsl:template match='ft_head'><br/><h4><xsl:apply-templates/></h4></xsl:template>
+
+<xsl:template match='hi'><em><xsl:apply-templates/></em></xsl:template>
+
+<xsl:template match='item'><li style="margin-left: 40px;"><xsl:apply-templates/></li></xsl:template>
+
+<xsl:template match='l'><xsl:apply-templates/><br/></xsl:template>
+
+<xsl:template match='list'><ul style="list-style-type:disc;"><xsl:apply-templates/></ul></xsl:template>
+
+<xsl:template match="milestone">
+  <xsl:choose>
+     <xsl:when test='@unit = "use"'>[U&#383;e]</xsl:when>
+     <xsl:otherwise><xsl:value-of select="@unit"/></xsl:otherwise>
+  </xsl:choose>  
+ </xsl:template>
+
+<xsl:template match='note'>
+<xsl:variable name="link"><xsl:value-of select="@link"/></xsl:variable>
+<xsl:variable name="pqid"><xsl:value-of select="@pqid"/></xsl:variable>
+<xsl:variable name="title"><xsl:value-of select="."/></xsl:variable>
+<sup><a href="#{$link}" id="{$pqid}" title="{$title}">[<xsl:value-of select="@n"/>]</a></sup>
+</xsl:template>
+
+<xsl:template match='pb'><br/><hr/><small><xsl:value-of select="."/></small><br/><br/></xsl:template>
+
+<xsl:template match="postscript"><br/><p><b>[Postscript starts here]</b></p><xsl:apply-templates/></xsl:template>
+
+<xsl:template match='p'><p><xsl:call-template name="lProcessStyle"/></p> </xsl:template>
+
+<xsl:template match='q'><blockquote><xsl:apply-templates/></blockquote></xsl:template>
+
+<xsl:template match='seg[@rend="decorInit"]'><font color="rgb(17,130,137)"><xsl:apply-templates/></font></xsl:template>
+
+<xsl:template match='signed'><xsl:apply-templates/></xsl:template>
+
+<xsl:template match='sub'><sub><xsl:apply-templates/></sub></xsl:template>
+
+<xsl:template match='sup'><sup><xsl:apply-templates/></sup></xsl:template>
+
+<xsl:template match='trailer'><p>&#160;&#160;&#160;&#160;<xsl:apply-templates/></p></xsl:template>
+
+<xsl:template match='tbl'><table style="border: 1px solid black;"><xsl:apply-templates/></table></xsl:template>
+<xsl:template match='row'><tr><xsl:apply-templates/></tr></xsl:template>
+<xsl:template match='cell'><td><xsl:apply-templates/></td></xsl:template>
+
+<!--The rest of the code below comes from the fullTextHtml.xsl file-->
+
+<xsl:template match="span[@class='hit']">
+	<xsl:choose>
+		<xsl:when test="$hitHighlight"><xsl:copy-of select="."/></xsl:when>
+		<xsl:otherwise><xsl:copy-of select="text()"/></xsl:otherwise>
+	</xsl:choose>
+</xsl:template>
+
+<xsl:template match="span[@class='hit']" mode="noHighlights"/>
+
+<xsl:template match="emailLink">
+	<xsl:element name="a">
+		<xsl:attribute name="class">mailToOverride</xsl:attribute>
+		<xsl:attribute name="href">mailto://<xsl:value-of select="."/></xsl:attribute>
+		<xsl:value-of select="."/>
+	</xsl:element>
+</xsl:template>
+
+<xsl:template match="object[@class='mstar_text_entity']">
+	<xsl:element name="div"><strong><xsl:value-of select="param[@name='mstar_entity_type']/@value"/></strong></xsl:element>
+	<xsl:element name="div"><xsl:copy-of select="div"/></xsl:element>
+</xsl:template>
+
+<xsl:template match="object[@class='mstar_link_to_media']|contentItem/tableGroup|contentItem/figureGroup">
+	<xsl:if test="@thumbPath!=''"> 
+		<xsl:element name="a">
+			<xsl:attribute name="name"><xsl:value-of select="@inlineNum"/></xsl:attribute>
+		</xsl:element>
+		<xsl:choose>
+			<xsl:when test="$displayTextOnly"/>
+			<xsl:otherwise>
+				<xsl:choose>
+					<xsl:when test="@alignment and @alignment!='left'">
+						<div class="document_view_image_only">
+							<xsl:element name="img">
+								<xsl:attribute name="src"><xsl:value-of select="@thumbPath"/></xsl:attribute>
+								<xsl:attribute name="class">textPlusGraphicsImageClass active</xsl:attribute>
+								<xsl:attribute name="alt">View Image - <xsl:apply-templates select="@imageViewerCaption" mode="noHighlights"/></xsl:attribute>
+								<xsl:attribute name="title">View Image - <xsl:apply-templates select="@imageViewerCaption" mode="noHighlights"/></xsl:attribute>
+								<xsl:if test="@fullSizePath!=''">
+									<xsl:attribute name="data-original"><xsl:value-of select="@fullSizePath"/></xsl:attribute>
+								</xsl:if>
+							</xsl:element>
+							<xsl:element name="a">
+								<xsl:attribute name="href">	
+									<xsl:call-template name="insertInlineNum">
+										<xsl:with-param name="url" select="$baseUrl"/>
+										<xsl:with-param name="token" select="$inlineNumToken"/>
+										<xsl:with-param name="inlineNum" select="@inlineNum"/>
+									</xsl:call-template>
+								</xsl:attribute>
+								<xsl:attribute name="title"><xsl:apply-templates select="div[@class='mstar_lm_caption']" mode="noHighlights"/></xsl:attribute>
+								<xsl:attribute name="class">sr-only sr-only-focusable</xsl:attribute>
+								<xsl:attribute name="onclick">javascript:pqga.pushEventToGA('enlargeImageLinkEvent')</xsl:attribute>
+								<xsl:value-of select="java:getString($resources,'enlargeThisImage')"/>
+							</xsl:element>
+							<div class="small document_view_image_only_caption"><p><xsl:value-of select="@imageViewerCaption"/></p></div>
+						</div>
+					</xsl:when>
+					<xsl:otherwise>
+						<div class="document_view_image">
+						  
+							<xsl:element name="img">
+								<xsl:attribute name="src"><xsl:value-of select="@thumbPath"/></xsl:attribute>
+								<xsl:attribute name="class">textPlusGraphicsImageClass active</xsl:attribute>
+								<xsl:attribute name="alt">View Image - <xsl:apply-templates select="@imageViewerCaption" mode="noHighlights"/></xsl:attribute>
+								<xsl:attribute name="title">View Image - <xsl:apply-templates select="@imageViewerCaption" mode="noHighlights"/></xsl:attribute>
+								<xsl:if test="@fullSizePath and @fullSizePath!=''">
+									<xsl:attribute name="data-original"><xsl:value-of select="@fullSizePath"/></xsl:attribute>
+								</xsl:if>
+							</xsl:element>
+							<xsl:element name="a">
+								<xsl:attribute name="href">	
+									<xsl:call-template name="insertInlineNum">
+										<xsl:with-param name="url" select="$baseUrl"/>
+										<xsl:with-param name="token" select="$inlineNumToken"/>
+										<xsl:with-param name="inlineNum" select="@inlineNum"/>
+									</xsl:call-template>
+								</xsl:attribute>
+								<xsl:attribute name="title"><xsl:apply-templates select="div[@class='mstar_lm_caption']" mode="noHighlights"/></xsl:attribute>
+								<xsl:attribute name="class">sr-only sr-only-focusable</xsl:attribute>
+								<xsl:attribute name="onclick">javascript:pushEventToGA('enlargeImageLinkEvent')</xsl:attribute>
+								<xsl:value-of select="java:getString($resources,'enlargeThisImage')"/>
+							</xsl:element>
+							<div class="small document_view_caption"><p><xsl:value-of select="@imageViewerCaption"/></p></div>
+							</div>
+					</xsl:otherwise>
+				</xsl:choose>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:if>
+</xsl:template>
+
+<xsl:template name="insertInlineNum">
+	<xsl:param name="url"/>
+	<xsl:param name="token"/>
+	<xsl:param name="inlineNum"/>
+	<xsl:choose>
+		<xsl:when test="contains($url, $token)">
+			<xsl:value-of select="substring-before($url, $token)"/>
+			<xsl:value-of select="$inlineNum"/>
+			<xsl:value-of select="substring-after($url, $token)"/>
+		</xsl:when>
+		<xsl:otherwise>
+			<xsl:value-of select="$url"/>
+		</xsl:otherwise>
+	</xsl:choose>
+</xsl:template>
+
+<xsl:template match="div[@class='fullImgDivClass']">
+	<xsl:copy-of select="."/>
+</xsl:template>
+
+<xsl:template name="lProcessStyle">
+	<xsl:param name="textBefore"/><!--Additional text to put before the call to apply templates-->
+	<xsl:param name="textAfter"/><!--Additional text to put after the call to apply templates-->
+	
+	<xsl:choose>
+		<xsl:when test="@r='roman' or @rend='roman'">
+			<xsl:value-of select="$textBefore"/>
+			<xsl:apply-templates/>
+			<xsl:value-of select="$textAfter"/>
+		</xsl:when>
+		<xsl:when test="@r='gothic' or @r='italic' or @rend='gothic' or @rend='italic'">
+			<xsl:value-of select="$textBefore"/>
+			<em><xsl:apply-templates/></em>
+			<xsl:value-of select="$textAfter"/>
+		</xsl:when>
+		<xsl:when test="@r='bold' or @rend='bold'">
+			<xsl:value-of select="$textBefore"/>
+			<strong><xsl:apply-templates/></strong>
+			<xsl:value-of select="$textAfter"/>
+		</xsl:when>
+		<xsl:when test="@r='smcap' or @rend='smcap'">
+			<xsl:value-of select="$textBefore"/>
+			<strong><xsl:apply-templates/></strong>
+			<xsl:value-of select="$textAfter"/>
+		</xsl:when>
+		<xsl:when test="@r='boldsmallcaps' or @rend='boldsmallcaps'">
+			<xsl:value-of select="$textBefore"/>
+			<strong><xsl:apply-templates/></strong>
+			<xsl:value-of select="$textAfter"/>
+		</xsl:when>
+		<xsl:when test="@r='smcapit' or @rend='smcapit'">
+			<xsl:value-of select="$textBefore"/>
+			<strong><em><xsl:apply-templates/></em></strong>
+			<xsl:value-of select="$textAfter"/>
+		</xsl:when>
+		<xsl:when test="@r='capit' or @rend='capit'">
+			<xsl:value-of select="$textBefore"/>
+			<strong><xsl:apply-templates/></strong>
+			<xsl:value-of select="$textAfter"/>
+		</xsl:when>
+		<xsl:when test="@r='score' or @rend='score'">
+			<xsl:value-of select="$textBefore"/>
+			<strike><xsl:apply-templates/></strike>
+			<xsl:value-of select="$textAfter"/>
+		</xsl:when>
+		<xsl:when test="@rend='italics'">
+			<xsl:value-of select="$textBefore"/>
+			<em><xsl:apply-templates/></em>
+			<xsl:value-of select="$textAfter"/>
+		</xsl:when>
+		<xsl:when test="@r='small' or @rend='small'">
+			<xsl:value-of select="$textBefore"/>
+			<small><xsl:apply-templates/></small>
+			<xsl:value-of select="$textAfter"/>
+		</xsl:when>
+		<xsl:when test="@r='smallcaps' or @rend='smallcaps'">
+			<xsl:value-of select="$textBefore"/>
+			<small><strong><xsl:apply-templates/></strong></small>
+			<xsl:value-of select="$textAfter"/>
+		</xsl:when>
+		<xsl:when test="@r='smallgo' or @rend='smallgo' or @r='smcapit' or @rend='smcapit' or @r='italicsmallcaps' or @rend='italicsmallcaps'">
+			<xsl:value-of select="$textBefore"/>
+			<small><em><xsl:apply-templates/></em></small>
+			<xsl:value-of select="$textAfter"/>
+		</xsl:when>
+		<xsl:when test="@r='bolditalics' or @rend='bolditalics'">
+			<xsl:value-of select="$textBefore"/>
+			<strong><i><xsl:apply-templates/></i></strong>
+			<xsl:value-of select="$textAfter"/>
+		</xsl:when>
+		<xsl:when test="@r='underline' or @rend='underline'">
+			<xsl:value-of select="$textBefore"/>
+			<u><xsl:apply-templates/></u>
+			<xsl:value-of select="$textAfter"/>
+		</xsl:when>
+		<xsl:otherwise>
+			<xsl:value-of select="$textBefore"/>
+				<xsl:apply-templates/>
+			<xsl:value-of select="$textAfter"/>
+		</xsl:otherwise>
+	</xsl:choose>
+</xsl:template>
+
+<xsl:template
+	match="object[@class='mstar_link_to_media_dpmi']">
+	<xsl:variable name="caption">
+		<xsl:value-of
+			select="param[@name='caption']/@value" />
+	</xsl:variable>
+	<xsl:variable name="pageNo">
+		<xsl:value-of
+			select="param[@name='pageNo']/@value" />
+	</xsl:variable>
+	<xsl:variable name="thumbPath">
+		<xsl:value-of select="param[@name='thumbPath']/@value" />
+	</xsl:variable>
+	<xsl:variable name="fullSizePath">
+		<xsl:value-of select="param[@name='fullSizePath']/@value" />
+	</xsl:variable>
+	
+	<xsl:if test="$thumbPath!=''">
+		<xsl:element name="a">
+			<xsl:attribute name="name"><xsl:value-of select="$pageNo" /></xsl:attribute>
+		</xsl:element>
+		
+		<div class="document_view_dpmi_image">
+		<hr/>
+				<xsl:attribute name="src"><xsl:value-of select="$loaderImagePath" /></xsl:attribute>
+				<xsl:attribute name="data-src"><xsl:value-of select="$thumbPath" /></xsl:attribute>
+				<xsl:attribute name="class">lazy img-responsive textPlusGraphicsImageClass active</xsl:attribute>
+				<xsl:attribute name="alt">View Image - <xsl:value-of select="$caption"/></xsl:attribute>
+				<xsl:attribute name="title">View Image - <xsl:value-of select="$caption"/></xsl:attribute>
+				<xsl:if test="$fullSizePath and $fullSizePath!=''">
+					<xsl:attribute name="data-original"><xsl:value-of select="$fullSizePath" /></xsl:attribute>
+				</xsl:if>
+			<div class="small document_view_caption">
+				<p>
+					<xsl:value-of select="$caption" />
+				</p>
+			</div>
+		</div>
+	</xsl:if>
+</xsl:template>
+
+</xsl:stylesheet>

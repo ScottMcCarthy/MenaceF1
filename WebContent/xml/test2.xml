@@ -1,57 +1,17 @@
-<div5 n="7" id="Sec000050">
-	<a href="#003EE007" />
-	<comhd5 align="left">
-		<div>
-			<a class="intraDocLink" id="intraDocLink_282"
-				href="/docview/47585557?accountid=81329&amp;pd=47585315">9</a>
-		</div>
-	</comhd5>
-	<n>
-		<a>
-			<li>1 - 2</li>
-		</a>
-		1 Ankunft
-		<bo>]</bo>
-		1.) Ankunft
-		<it>
-			nur auf dem vorderen Schutzblatt von "Schloßheft I" (siehe
-			<div>
-				<a class="intraDocLink" id="intraDocLink_283"
-					href="/docview/47585557?accountid=81329&amp;pd=47585315">10</a>
-			</div>
-			)
-		</it>
-	</n>
-	<n>
-		<a>
-			<li>11</li>
-		</a>
-		wollte,
-		<bo>]</bo>
-		wollte
-	</n>
-	<n>
-		<a>
-			<li>12</li>
-		</a>
-		verwirrt,
-		<bo>]</bo>
-		verwirrt
-	</n>
-	<n>
-		<a>
-			<li>21</li>
-		</a>
-		angezogen,
-		<bo>]</bo>
-		angezogen
-	</n>
-</div5>
-<div5 n="8" id="Sec000051">
-	<a href="#003EE008" />
-	<comhd5 align="left">
-		<div>
-			<a class="intraDocLink" id="intraDocLink_284"
-				href="/docview/47585557?accountid=81329&amp;pd=47585315">11</a>
-		</div>
-	</comhd5>
+<rmap>
+	<rclass>
+		<rights>R5</rights>
+		<product>1009130|1009870</product>
+		<advancedFmt>true</advancedFmt>
+	</rclass>
+	<rclass>
+		<rights>R2</rights>
+		<product>1009130|1009870</product>
+		<advancedFmt>false</advancedFmt>
+	</rclass>
+	<rclass>
+		<rights>R4</rights>
+		<product>1009130|1009870</product>
+		<advancedFmt>false</advancedFmt>
+	</rclass>
+</rmap>
